@@ -1,0 +1,48 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants"
+        }
+      }
+    ],
+    "file": "itemtypes/resource/honeycomb.json",
+    "condition": { "when": "PlaceHoneycombEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributes/groundStorageTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "scale": 0.5
+    },
+    "file": "itemtypes/resource/honeycomb.json",
+    "condition": { "when": "PlaceHoneycombEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "itemtypes/resource/honeycomb.json",
+    "condition": { "when": "PlaceHoneycombEnabled", "isValue": "true" },
+    "dependsOn": [{ "modid": "morepiles", "invert": true }]
+  }
+]

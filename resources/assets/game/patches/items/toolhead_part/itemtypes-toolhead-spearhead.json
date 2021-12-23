@@ -1,0 +1,74 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants",
+          "collisionBox": {
+            "x1": 0,
+            "y1": 0,
+            "z1": 0,
+            "x2": 1,
+            "y2": 0.155,
+            "z2": 1
+          }
+        }
+      }
+    ],
+    "file": "itemtypes/toolhead/spearhead.json",
+    "condition": { "when": "PlaceSpearHeadEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType",
+    "value": {
+      "@*-(copper|tinbronze|bismuthbronze|blackbronze|iron|meteoriciron|steel)": {
+        "groundStorageTransform": {
+          "translation": {
+            "x": 0.13,
+            "y": 0.15,
+            "z": 0.28
+          },
+          "rotation": {
+            "x": 90,
+            "y": 0,
+            "z": 0
+          },
+          "origin": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": 0.7
+        }
+      },
+      "*": {
+        "groundStorageTransform": {
+          "translation": {
+            "x": -0.45,
+            "y": 0,
+            "z": 0.5
+          },
+          "origin": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": 0.9
+        }
+      }
+    },
+    "file": "itemtypes/toolhead/spearhead.json",
+    "condition": { "when": "PlaceSpearHeadEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "itemtypes/toolhead/spearhead.json",
+    "condition": { "when": "PlaceSpearHeadEnabled", "isValue": "true" }
+  }
+]

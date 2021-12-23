@@ -1,0 +1,23 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants"
+        }
+      }
+    ],
+    "file": "itemtypes/food/rawcassava.json",
+    "condition": { "when": "PlaceRawCassavaEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "itemtypes/food/rawcassava.json",
+    "condition": { "when": "PlaceRawCassavaEnabled", "isValue": "true" }
+  }
+]

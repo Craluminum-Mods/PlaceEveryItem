@@ -1,0 +1,23 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "SingleCenter"
+        }
+      }
+    ],
+    "file": "itemtypes/toolhead/bowstave.json",
+    "condition": { "when": "PlaceBowstaveEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "itemtypes/toolhead/bowstave.json",
+    "condition": { "when": "PlaceBowstaveEnabled", "isValue": "true" }
+  }
+]

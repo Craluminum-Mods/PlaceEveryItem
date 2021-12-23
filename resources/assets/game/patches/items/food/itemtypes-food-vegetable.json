@@ -1,0 +1,23 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants"
+        }
+      }
+    ],
+    "file": "itemtypes/food/vegetable.json",
+    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "itemtypes/food/vegetable.json",
+    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+  }
+]

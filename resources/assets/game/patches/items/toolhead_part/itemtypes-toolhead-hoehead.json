@@ -1,0 +1,44 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants"
+        }
+      }
+    ],
+    "file": "itemtypes/toolhead/hoehead.json",
+    "condition": { "when": "PlaceHoeHeadEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributes",
+    "value": {
+      "groundStorageTransform": {
+        "translation": {
+          "x": -0.1,
+          "y": 0,
+          "z": 0.1
+        },
+        "origin": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": 0.85
+      }
+    },
+    "file": "itemtypes/toolhead/hoehead.json",
+    "condition": { "when": "PlaceHoeHeadEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "itemtypes/toolhead/hoehead.json",
+    "condition": { "when": "PlaceHoeHeadEnabled", "isValue": "true" }
+  }
+]

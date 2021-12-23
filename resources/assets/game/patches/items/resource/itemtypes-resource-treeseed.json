@@ -1,0 +1,71 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants"
+        }
+      }
+    ],
+    "file": "itemtypes/resource/treeseed.json",
+    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/*-crimsonkingmaple/groundStorageTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 90,
+        "y": 0,
+        "z": 45
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.1,
+        "z": 0.5
+      },
+      "scale": 0.9
+    },
+    "file": "itemtypes/resource/treeseed.json",
+    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/*-maple/groundStorageTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 90,
+        "y": 0,
+        "z": 45
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0.1,
+        "z": 0.5
+      },
+      "scale": 0.9
+    },
+    "file": "itemtypes/resource/treeseed.json",
+    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "itemtypes/resource/treeseed.json",
+    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" }
+  }
+]

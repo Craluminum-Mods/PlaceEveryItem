@@ -1,0 +1,47 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants"
+        }
+      }
+    ],
+    "file": "itemtypes/resource/crystalizedore-graded.json",
+    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributes/groundStorageTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": 1
+    },
+    "file": "itemtypes/resource/crystalizedore-graded.json",
+    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "itemtypes/resource/crystalizedore-graded.json",
+    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" }
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviorsByType",
+    "value": {
+      "@shovelhead-(copper|tinbronze|bismuthbronze|blackbronze|iron|meteoriciron|gold|silver|steel)": [
+        {
+          "name": "GroundStorable",
+          "properties": {
+            "layout": "Halves",
+            "collisionBox": {
+              "x1": 0,
+              "y1": 0,
+              "z1": 0,
+              "x2": 1,
+              "y2": 0.125,
+              "z2": 1
+            }
+          }
+        }
+      ],
+      "*": [
+        {
+          "name": "GroundStorable",
+          "properties": {
+            "layout": "Quadrants",
+            "collisionBox": {
+              "x1": 0,
+              "y1": 0,
+              "z1": 0,
+              "x2": 1,
+              "y2": 0.0746,
+              "z2": 1
+            }
+          }
+        }
+      ]
+    },
+    "file": "itemtypes/toolhead/shovelhead.json",
+    "condition": { "when": "PlaceShovelHeadEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType",
+    "value": {
+      "@shovelhead-(copper|tinbronze|bismuthbronze|blackbronze|iron|meteoriciron|gold|silver|steel)": {
+        "groundStorageTransform": {
+          "rotation": {
+            "x": 0,
+            "y": 90,
+            "z": 0
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0,
+            "z": 0.5
+          },
+          "scale": 1
+        }
+      },
+      "*": {
+        "groundStorageTransform": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0.325
+          },
+          "rotation": {
+            "x": 0,
+            "y": 90,
+            "z": 0
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0,
+            "z": 0.5
+          },
+          "scale": 0.95
+        }
+      }
+    },
+    "file": "itemtypes/toolhead/shovelhead.json",
+    "condition": { "when": "PlaceShovelHeadEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "itemtypes/toolhead/shovelhead.json",
+    "condition": { "when": "PlaceShovelHeadEnabled", "isValue": "true" }
+  }
+]

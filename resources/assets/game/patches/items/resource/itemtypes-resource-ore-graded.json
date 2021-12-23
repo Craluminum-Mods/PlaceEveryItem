@@ -1,0 +1,23 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviorsByType/ore-*",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants"
+        }
+      }
+    ],
+    "file": "itemtypes/resource/ore-graded.json",
+    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "itemtypes/resource/ore-graded.json",
+    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" }
+  }
+]

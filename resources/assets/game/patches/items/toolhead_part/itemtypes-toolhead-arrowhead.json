@@ -1,0 +1,31 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants",
+          "collisionBox": {
+            "x1": 0,
+            "y1": 0,
+            "z1": 0,
+            "x2": 1,
+            "y2": 0.0683,
+            "z2": 1
+          }
+        }
+      }
+    ],
+    "file": "itemtypes/toolhead/arrowhead.json",
+    "condition": { "when": "PlaceArrowHeadEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "itemtypes/toolhead/arrowhead.json",
+    "condition": { "when": "PlaceArrowHeadEnabled", "isValue": "true" }
+  }
+]

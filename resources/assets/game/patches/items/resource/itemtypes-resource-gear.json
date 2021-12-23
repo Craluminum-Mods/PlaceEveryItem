@@ -1,0 +1,55 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants",
+          "collisionBox": {
+            "x1": 0,
+            "y1": 0,
+            "z1": 0,
+            "x2": 1,
+            "y2": 0.125,
+            "z2": 1
+          }
+        }
+      }
+    ],
+    "file": "itemtypes/resource/gear.json",
+    "condition": { "when": "PlaceGearEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/*-rusty/groundStorageTransform",
+    "value": {
+      "translation": {
+        "x": 0.151,
+        "y": 0,
+        "z": 0.06
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "origin": {
+        "x": 0.25,
+        "y": 0,
+        "z": 0.25
+      },
+      "scale": 1
+    },
+    "file": "itemtypes/resource/gear.json",
+    "condition": { "when": "PlaceGearEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "itemtypes/resource/gear.json",
+    "condition": { "when": "PlaceGearEnabled", "isValue": "true" }
+  }
+]
