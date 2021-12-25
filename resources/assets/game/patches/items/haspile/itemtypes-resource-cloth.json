@@ -40,7 +40,7 @@
         "y": 0,
         "z": 0.5
       },
-      "scale": 0.8
+      "scale": 0.95
     },
     "file": "itemtypes/resource/cloth.json",
     "condition": { "when": "PlaceClothEnabled", "isValue": "true" }

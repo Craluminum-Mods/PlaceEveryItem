@@ -26,6 +26,11 @@
     "path": "/attributes",
     "value": {
       "groundStorageTransform": {
+        "translation": {
+          "x": 0,
+          "y": -0.025,
+          "z": 0
+        },
         "scale": 0.95
       }
     },

@@ -17,11 +17,6 @@
     "op": "add",
     "path": "/attributesByType/*-crimsonkingmaple/groundStorageTransform",
     "value": {
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
       "rotation": {
         "x": 90,
         "y": 0,
@@ -29,7 +24,7 @@
       },
       "origin": {
         "x": 0.5,
-        "y": 0.1,
+        "y": 0.08,
         "z": 0.5
       },
       "scale": 0.9
@@ -41,11 +36,6 @@
     "op": "add",
     "path": "/attributesByType/*-maple/groundStorageTransform",
     "value": {
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
       "rotation": {
         "x": 90,
         "y": 0,
@@ -53,10 +43,30 @@
       },
       "origin": {
         "x": 0.5,
-        "y": 0.1,
+        "y": 0.08,
         "z": 0.5
       },
       "scale": 0.9
+    },
+    "file": "itemtypes/resource/treeseed.json",
+    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/@.*-(larch|redwood|pine|darkpine)",
+    "value": {
+      "groundStorageTransform": {
+        "rotation": {
+          "x": 0,
+          "y": 45,
+          "z": -90
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.08,
+          "z": 0.5
+        }
+      }
     },
     "file": "itemtypes/resource/treeseed.json",
     "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" }

@@ -48,9 +48,9 @@
       "*": {
         "groundStorageTransform": {
           "translation": {
-            "x": -0.45,
+            "x": -0.33,
             "y": 0,
-            "z": 0.5
+            "z": 0.05
           },
           "origin": {
             "x": 0,

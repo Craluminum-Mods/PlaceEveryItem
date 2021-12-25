@@ -20,20 +20,15 @@
     ],
     "file": "itemtypes/resource/flaxfibers.json",
     "condition": { "when": "PlaceFlaxFibersEnabled", "isValue": "true" }
-  },  
+  },
   {
     "op": "add",
     "path": "/attributes",
     "value": {
       "groundStorageTransform": {
-        "translation": {
-          "x": 0,
-          "y": 0,
-          "z": 0
-        },
         "rotation": {
           "x": 0,
-          "y": 0,
+          "y": 45,
           "z": 0
         },
         "origin": {
@@ -41,7 +36,7 @@
           "y": 0,
           "z": 0.5
         },
-        "scale": 0.55
+        "scale": 0.85
       }
     },
     "file": "itemtypes/resource/flaxfibers.json",

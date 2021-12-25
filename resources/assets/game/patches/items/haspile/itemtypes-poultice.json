@@ -25,14 +25,9 @@
     "op": "add",
     "path": "/attributesByType/*-linen-honey-sulfur/groundStorageTransform",
     "value": {
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
       "rotation": {
         "x": 0,
-        "y": 0,
+        "y": 45,
         "z": 0
       },
       "origin": {
@@ -49,14 +44,9 @@
     "op": "add",
     "path": "/attributesByType/*-linen-horsetail/groundStorageTransform",
     "value": {
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
       "rotation": {
         "x": 0,
-        "y": 0,
+        "y": 45,
         "z": 0
       },
       "origin": {
@@ -73,14 +63,9 @@
     "op": "add",
     "path": "/attributesByType/*-reed-honey-sulfur/groundStorageTransform",
     "value": {
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
       "rotation": {
         "x": 0,
-        "y": 0,
+        "y": 45,
         "z": 0
       },
       "origin": {
@@ -97,14 +82,9 @@
     "op": "add",
     "path": "/attributesByType/*-reed-horsetail/groundStorageTransform",
     "value": {
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
       "rotation": {
         "x": 0,
-        "y": 0,
+        "y": 45,
         "z": 0
       },
       "origin": {

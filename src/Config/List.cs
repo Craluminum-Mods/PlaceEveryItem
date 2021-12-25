@@ -63,10 +63,10 @@ namespace IWannaPlaceEveryItem.List
 		public Part Leather { get; set; } = new Part(true, $"{qr}");
 		public Part Metalbit { get; set; } = new Part(true, $"{qr}");
 		public Part Nugget { get; set; } = new Part(true, $"{qr}");
-		public Part OreChunk { get; set; } = new Part(true, $"{qr} ({allt} of graded/ungraded/crystalized ore chunks)");
+		public Part OreChunk { get; set; } = new Part(true, $"{qr} ({allt} graded/ungraded/crystalized ore chunks)");
 		public Part Padlock { get; set; } = new Part(true, $"{qr}");
 		public Part PapyrusTops { get; set; } = new Part(true, $"{hv}");
-		public Part Quartz { get; set; } = new Part(true, $"{qr} (amethyst, clear, rose, smoky");
+		public Part Quartz { get; set; } = new Part(true, $"{qr} (amethyst, clear, rose, smoky)");
 		public Part Quiver { get; set; } = new Part(true, $"{sc}");
 		public Part Resin { get; set; } = new Part(true, $"{qr}");
 		public Part ResonanceArchive { get; set; } = new Part(true, $"{qr}");
@@ -74,6 +74,7 @@ namespace IWannaPlaceEveryItem.List
 		public Part SewingKit { get; set; } = new Part(true, $"{qr}");
 		public Part SolderBar { get; set; } = new Part(true, $"{qr}");
 		public Part TreeSeed { get; set; } = new Part(true, $"{qr}");
+		public Part Bandage { get; set; } = new Part(true, $"{qr}");
 
 		// Has pile in More Piles 1.2.0
 		public Part Arrow { get; set; } = new Part(false, $"{hv} (any arrow, even modded ones),{mp}");
@@ -83,9 +84,10 @@ namespace IWannaPlaceEveryItem.List
 		public Part FlaxFibers { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part FlaxTwine { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Honeycomb { get; set; } = new Part(false, $"{qr},{mp}");
-		public Part Ironbloom { get; set; } = new Part(false, $"{qr},{mp}");
+		public Part IronBloom { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part MetalLamellae { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part MetalScales { get; set; } = new Part(false, $"{qr},{mp}");
+		public Part MetalChain { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Poultice { get; set; } = new Part(true, $"{qr},{mp}"); // Not used as pile currently
 		public Part Sail { get; set; } = new Part(false, $"{sc},{mp}");
 		public Part Stick { get; set; } = new Part(false, $"{hv},{mp}");

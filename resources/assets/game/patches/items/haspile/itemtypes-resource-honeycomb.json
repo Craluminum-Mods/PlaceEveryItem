@@ -17,14 +17,9 @@
     "op": "add",
     "path": "/attributes/groundStorageTransform",
     "value": {
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
       "rotation": {
         "x": 0,
-        "y": 0,
+        "y": 45,
         "z": 0
       },
       "origin": {
@@ -32,7 +27,7 @@
         "y": 0,
         "z": 0.5
       },
-      "scale": 0.5
+      "scale": 0.65
     },
     "file": "itemtypes/resource/honeycomb.json",
     "condition": { "when": "PlaceHoneycombEnabled", "isValue": "true" }
