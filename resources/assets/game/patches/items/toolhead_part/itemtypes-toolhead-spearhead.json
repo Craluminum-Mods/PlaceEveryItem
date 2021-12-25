@@ -25,7 +25,7 @@
     "op": "add",
     "path": "/attributesByType",
     "value": {
-      "@*-(copper|tinbronze|bismuthbronze|blackbronze|iron|meteoriciron|steel)": {
+      "@.*-(copper|tinbronze|bismuthbronze|blackbronze|iron|meteoriciron|steel)": {
         "groundStorageTransform": {
           "translation": {
             "x": 0.13,

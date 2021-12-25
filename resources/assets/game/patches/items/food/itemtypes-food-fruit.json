@@ -23,6 +23,68 @@
   },
   {
     "op": "add",
+    "path": "/attributes/groundStorageTransformByType",
+    "value": {
+      "@.*-(.*currant)": {
+        "origin": {
+          "x": 0.5,
+          "y": 0,
+          "z": 0.5
+        },
+        "scale": 0.9
+      },
+      "*-saguaro": {
+        "translation": {
+          "x": 0.04,
+          "y": 0,
+          "z": -0.04
+        },
+        "rotation": {
+          "x": 0,
+          "y": 45,
+          "z": 90
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.1,
+          "z": 0.5
+        },
+        "scale": 0.9
+      },
+      "*-pineapple": {
+        "translation": {
+          "x": -0.015,
+          "y": 0,
+          "z": 0.04
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0,
+          "z": 0.5
+        },
+        "scale": 0.85
+      },
+      "*-breadfruit": {
+        "rotation": {
+          "x": 0,
+          "y": 45,
+          "z": 0
+        }
+      },
+      "*-lychee": {
+        "origin": {
+          "x": 0.5,
+          "y": 0,
+          "z": 0.5
+        },
+        "scale": 0.8
+      }
+    },
+    "file": "itemtypes/food/fruit.json",
+    "condition": { "when": "PlaceFruitEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/food/fruit.json",

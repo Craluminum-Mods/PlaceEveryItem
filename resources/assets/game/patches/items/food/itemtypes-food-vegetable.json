@@ -15,6 +15,33 @@
   },
   {
     "op": "add",
+    "path": "/attributesByType/*-cabbage/groundStorageTransform",
+    "value": {
+      "origin": {
+        "x": 0.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "scale": 0.85
+    },
+    "file": "itemtypes/food/vegetable.json",
+    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/*-cassava/groundStorageTransform",
+    "value": {
+      "rotation": {
+        "x": 0,
+        "y": 23,
+        "z": 0
+      }
+    },
+    "file": "itemtypes/food/vegetable.json",
+    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/food/vegetable.json",

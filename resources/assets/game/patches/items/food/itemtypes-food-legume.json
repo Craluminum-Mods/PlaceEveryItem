@@ -15,6 +15,22 @@
   },
   {
     "op": "add",
+    "path": "/attributes/groundStorageTransformByType",
+    "value": {
+      "*-peanut": {
+        "origin": {
+          "x": 0.5,
+          "y": 0,
+          "z": 0.5
+        },
+        "scale": 0.75
+      }
+    },
+    "file": "itemtypes/food/legume.json",
+    "condition": { "when": "PlaceLegumeEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/food/legume.json",

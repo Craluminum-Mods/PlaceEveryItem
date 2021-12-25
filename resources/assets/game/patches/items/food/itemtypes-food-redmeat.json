@@ -23,6 +23,31 @@
   },
   {
     "op": "add",
+    "path": "/attributes/groundStorageTransformByType",
+    "value": {
+      "@.*-(?!vintage).*": {
+        "translation": {
+          "x": 0.045,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 45,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.5,
+          "z": 0.5
+        }
+      }
+    },
+    "file": "itemtypes/food/redmeat.json",
+    "condition": { "when": "PlaceMeatEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/food/redmeat.json",

@@ -25,17 +25,11 @@
     "op": "add",
     "path": "/attributes/groundStorageTransform",
     "value": {
-      "rotation": {
-        "x": 0,
-        "y": 45,
-        "z": 0
-      },
       "origin": {
         "x": 0.5,
         "y": 0,
         "z": 0.5
-      },
-      "scale": 0.7
+      }
     },
     "file": "itemtypes/resource/pressedmash.json",
     "condition": { "when": "PlacePressedMashEnabled", "isValue": "true" }

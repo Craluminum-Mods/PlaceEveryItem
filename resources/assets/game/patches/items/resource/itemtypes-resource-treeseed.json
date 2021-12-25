@@ -73,6 +73,31 @@
   },
   {
     "op": "add",
+    "path": "/attributesByType/*-ebony",
+    "value": {
+      "groundStorageTransform": {
+        "translation": {
+          "x": 0,
+          "y": 0,
+          "z": -0.05
+        },
+        "rotation": {
+          "x": 0,
+          "y": 45,
+          "z": -90
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.08,
+          "z": 0.5
+        }
+      }
+    },
+    "file": "itemtypes/resource/treeseed.json",
+    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/treeseed.json",
