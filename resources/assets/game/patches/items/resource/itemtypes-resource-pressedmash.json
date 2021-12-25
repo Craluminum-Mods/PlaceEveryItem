@@ -12,14 +12,14 @@
             "y1": 0,
             "z1": 0,
             "x2": 1,
-            "y2": 0.125,
+            "y2": 0.25,
             "z2": 1
           }
         }
       }
     ],
-    "file": "itemtypes/food/butter.json",
-    "condition": { "when": "PlaceButterEnabled", "isValue": "true" }
+    "file": "itemtypes/resource/pressedmash.json",
+    "condition": { "when": "PlacePressedMashEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -29,16 +29,22 @@
         "x": 0,
         "y": 45,
         "z": 0
-      }
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "scale": 0.7
     },
-    "file": "itemtypes/food/butter.json",
-    "condition": { "when": "PlaceButterEnabled", "isValue": "true" }
+    "file": "itemtypes/resource/pressedmash.json",
+    "condition": { "when": "PlacePressedMashEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
-    "file": "itemtypes/food/butter.json",
-    "condition": { "when": "PlaceButterEnabled", "isValue": "true" }
+    "file": "itemtypes/resource/pressedmash.json",
+    "condition": { "when": "PlacePressedMashEnabled", "isValue": "true" }
   }
 ]

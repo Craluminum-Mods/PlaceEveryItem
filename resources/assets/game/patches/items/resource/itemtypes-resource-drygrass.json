@@ -18,8 +18,8 @@
         }
       }
     ],
-    "file": "itemtypes/food/butter.json",
-    "condition": { "when": "PlaceButterEnabled", "isValue": "true" }
+    "file": "itemtypes/resource/drygrass.json",
+    "condition": { "when": "PlaceDryGrassEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -29,16 +29,22 @@
         "x": 0,
         "y": 45,
         "z": 0
-      }
+      },
+      "origin": {
+        "x": 0.5,
+        "y": -0.12,
+        "z": 0.5
+      },
+      "scale": 0.7
     },
-    "file": "itemtypes/food/butter.json",
-    "condition": { "when": "PlaceButterEnabled", "isValue": "true" }
+    "file": "itemtypes/resource/drygrass.json",
+    "condition": { "when": "PlaceDryGrassEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
-    "file": "itemtypes/food/butter.json",
-    "condition": { "when": "PlaceButterEnabled", "isValue": "true" }
+    "file": "itemtypes/resource/drygrass.json",
+    "condition": { "when": "PlaceDryGrassEnabled", "isValue": "true" }
   }
 ]

@@ -15,6 +15,24 @@
   },
   {
     "op": "add",
+    "path": "/attributes/groundStorageTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0.001,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 23,
+        "z": 0
+      }
+    },
+    "file": "itemtypes/food/rawcassava.json",
+    "condition": { "when": "PlaceRawCassavaEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/food/rawcassava.json",

@@ -18,8 +18,8 @@
         }
       }
     ],
-    "file": "itemtypes/food/butter.json",
-    "condition": { "when": "PlaceButterEnabled", "isValue": "true" }
+    "file": "itemtypes/resource/beeswax.json",
+    "condition": { "when": "PlaceBeeswaxEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -27,18 +27,25 @@
     "value": {
       "rotation": {
         "x": 0,
-        "y": 45,
+        "y": 23,
         "z": 0
-      }
+      },
+      "origin": {
+        "x": 0.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "scale": 0.7
     },
-    "file": "itemtypes/food/butter.json",
-    "condition": { "when": "PlaceButterEnabled", "isValue": "true" }
+    "file": "itemtypes/resource/beeswax.json",
+    "condition": { "when": "PlaceBeeswaxEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
-    "file": "itemtypes/food/butter.json",
-    "condition": { "when": "PlaceButterEnabled", "isValue": "true" }
+    "file": "itemtypes/resource/beeswax.json",
+    "condition": { "when": "PlaceBeeswaxEnabled", "isValue": "true" },
+    "dependsOn": [{ "modid": "morepiles", "invert": true }]
   }
 ]

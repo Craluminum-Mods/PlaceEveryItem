@@ -75,9 +75,15 @@ namespace IWannaPlaceEveryItem.List
 		public Part SolderBar { get; set; } = new Part(true, $"{qr}");
 		public Part TreeSeed { get; set; } = new Part(true, $"{qr}");
 		public Part Bandage { get; set; } = new Part(true, $"{qr}");
+		public Part Bullets { get; set; } = new Part(true, $"{qr}");
+		public Part PressedMash { get; set; } = new Part(true, $"{qr}");
+		public Part Paper { get; set; } = new Part(true, $"{qr}");
+		public Part DryGrass { get; set; } = new Part(true, $"{qr}");
 
 		// Has pile in More Piles 1.2.0
 		public Part Arrow { get; set; } = new Part(false, $"{hv} (any arrow, even modded ones),{mp}");
+		public Part Bone { get; set; } = new Part(false, $"{qr}");
+		public Part Beeswax { get; set; } = new Part(false, $"{qr}");		
 		public Part BambooStakes { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part ChuteSection { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Cloth { get; set; } = new Part(false, $"{hv},{mp}");
