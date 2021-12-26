@@ -42,6 +42,58 @@
   },
   {
     "op": "add",
+    "path": "/attributesByType/*-cookedcattailroot",
+    "value": {
+      "groundStorageTransform": {
+        "translation": {
+          "x": 0.19,
+          "y": 0.03,
+          "z": -0.04
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 90
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0,
+          "z": 0.5
+        },
+        "scale": 0.9
+      }
+    },
+    "file": "itemtypes/food/vegetable.json",
+    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/*-cookedpapyrusroot",
+    "value": {
+      "groundStorageTransform": {
+        "translation": {
+          "x": 0.16,
+          "y": 0,
+          "z": -0.16
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 45
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.05,
+          "z": 0.5
+        },
+        "scale": 0.9
+      }
+    },
+    "file": "itemtypes/food/vegetable.json",
+    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/food/vegetable.json",

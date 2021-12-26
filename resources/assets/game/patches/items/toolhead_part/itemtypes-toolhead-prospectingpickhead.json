@@ -26,17 +26,16 @@
     "path": "/attributes",
     "value": {
       "groundStorageTransform": {
-        "translation": {
-          "x": -0.2,
-          "y": 0,
-          "z": 0.075
-        },
-        "origin": {
+        "rotation": {
           "x": 0,
-          "y": 0,
+          "y": 45,
           "z": 0
         },
-        "scale": 0.95
+        "origin": {
+          "x": 0.85,
+          "y": 0,
+          "z": 1
+        }
       }
     },
     "file": "itemtypes/toolhead/prospectingpickhead.json",

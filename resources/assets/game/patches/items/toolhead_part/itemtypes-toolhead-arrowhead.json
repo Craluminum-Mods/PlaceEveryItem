@@ -23,6 +23,21 @@
   },
   {
     "op": "add",
+    "path": "/attributes",
+    "value": {
+      "groundStorageTransform": {
+        "rotation": {
+          "x": 0,
+          "y": 45,
+          "z": 0
+        }
+      }
+    },
+    "file": "itemtypes/toolhead/arrowhead.json",
+    "condition": { "when": "PlaceArrowHeadEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/toolhead/arrowhead.json",

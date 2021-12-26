@@ -6,7 +6,7 @@
       {
         "name": "GroundStorable",
         "properties": {
-          "layout": "Halves",
+          "layout": "Quadrants",
           "collisionBox": {
             "x1": 0,
             "y1": 0,
@@ -18,6 +18,32 @@
         }
       }
     ],
+    "file": "itemtypes/part/helvehammerhead.json",
+    "condition": { "when": "PlaceHelveHammerHeadEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributes",
+    "value": {
+      "groundStorageTransform": {
+        "translation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 45,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0,
+          "z": 0.5
+        },
+        "scale": 0.85
+      }
+    },
     "file": "itemtypes/part/helvehammerhead.json",
     "condition": { "when": "PlaceHelveHammerHeadEnabled", "isValue": "true" }
   },

@@ -6,7 +6,7 @@
       {
         "name": "GroundStorable",
         "properties": {
-          "layout": "Halves",
+          "layout": "Quadrants",
           "collisionBox": {
             "x1": 0,
             "y1": 0,
@@ -27,16 +27,21 @@
     "value": {
       "groundStorageTransform": {
         "translation": {
-          "x": -0.235,
+          "x": -0.11,
           "y": 0,
+          "z": 0.11
+        },
+        "rotation": {
+          "x": 0,
+          "y": 45,
           "z": 0
         },
         "origin": {
-          "x": 0,
+          "x": 0.5,
           "y": 0,
-          "z": 0
+          "z": 0.5
         },
-        "scale": 1
+        "scale": 0.85
       }
     },
     "file": "itemtypes/toolhead/pickaxehead.json",

@@ -6,7 +6,7 @@
       {
         "name": "GroundStorable",
         "properties": {
-          "layout": "Halves",
+          "layout": "Quadrants",
           "collisionBox": {
             "x1": 0,
             "y1": 0,
@@ -27,16 +27,21 @@
     "value": {
       "groundStorageTransform": {
         "translation": {
-          "x": -0.275,
+          "x": -0.125,
           "y": 0,
-          "z": 0.275
+          "z": 0.28
         },
-        "origin": {
+        "rotation": {
           "x": 0,
-          "y": 0,
+          "y": 40,
           "z": 0
         },
-        "scale": 0.8
+        "origin": {
+          "x": 0.5,
+          "y": 0,
+          "z": 0.5
+        },
+        "scale": 0.68
       }
     },
     "file": "itemtypes/toolhead/scythehead.json",

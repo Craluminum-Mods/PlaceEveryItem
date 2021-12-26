@@ -6,7 +6,7 @@
       {
         "name": "GroundStorable",
         "properties": {
-          "layout": "Halves",
+          "layout": "Quadrants",
           "collisionBox": {
             "x1": 0,
             "y1": 0,
@@ -27,7 +27,7 @@
     "value": {
       "rotation": {
         "x": 0,
-        "y": 90,
+        "y": 45,
         "z": 0
       },
       "origin": {
@@ -35,7 +35,7 @@
         "y": 0,
         "z": 0.5
       },
-      "scale": 0.8
+      "scale": 0.7
     },
     "file": "itemtypes/tool/arrow.json",
     "condition": { "when": "PlaceArrowEnabled", "isValue": "true" }

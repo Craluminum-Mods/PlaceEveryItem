@@ -6,7 +6,7 @@
       {
         "name": "GroundStorable",
         "properties": {
-          "layout": "Halves",
+          "layout": "Quadrants",
           "collisionBox": {
             "x1": 0,
             "y1": 0,
@@ -25,14 +25,9 @@
     "op": "add",
     "path": "/attributes/groundStorageTransform",
     "value": {
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
       "rotation": {
         "x": 0,
-        "y": 90,
+        "y": 32,
         "z": 0
       },
       "origin": {
@@ -40,7 +35,7 @@
         "y": 0,
         "z": 0.5
       },
-      "scale": 0.95
+      "scale": 0.7
     },
     "file": "itemtypes/resource/cloth.json",
     "condition": { "when": "PlaceClothEnabled", "isValue": "true" }

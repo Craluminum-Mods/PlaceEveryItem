@@ -15,8 +15,8 @@ namespace IWannaPlaceEveryItem.List
 		private const string mp = " (More Piles has a pile for it)";
 		private const string allt = "All types of ";
 		private const string sc = "SingleCenter";
-		private const string qr = "Quadrants";
 		private const string hv = "Halves";
+		private const string qr = "Quadrants";
 
 		// Foods
 		public Part Bread { get; set; } = new Part(true, $"{qr} ({allt}bread)");
@@ -39,33 +39,33 @@ namespace IWannaPlaceEveryItem.List
 		public Part AxeHead { get; set; } = new Part(true, $"{qr}");
 		public Part Bowstave { get; set; } = new Part(true, $"{sc}");
 		public Part HammerHead { get; set; } = new Part(true, $"{qr}");
-		public Part HelveHammerHead { get; set; } = new Part(true, $"{hv}");
+		public Part HelveHammerHead { get; set; } = new Part(true, $"{qr}");
 		public Part HoeHead { get; set; } = new Part(true, $"{qr}");
 		public Part KnifeBlade { get; set; } = new Part(true, $"{qr}");
-		public Part LongbladeHead { get; set; } = new Part(true, $"{hv}");
-		public Part PickaxeHead { get; set; } = new Part(true, $"{hv}");
+		public Part LongbladeHead { get; set; } = new Part(true, $"{qr}");
+		public Part PickaxeHead { get; set; } = new Part(true, $"{qr}");
 		public Part PounderCap { get; set; } = new Part(true, $"{qr}");
 		public Part PropickHead { get; set; } = new Part(true, $"{qr}");
-		public Part PulverizerToggle { get; set; } = new Part(true, $"{hv}");
-		public Part SawBlade { get; set; } = new Part(true, $"{hv}");
-		public Part ScytheHead { get; set; } = new Part(true, $"{hv}");
-		public Part ShovelHead { get; set; } = new Part(true, $"{hv} for metal, {qr} for stone");
+		public Part PulverizerToggle { get; set; } = new Part(true, $"{qr}");
+		public Part SawBlade { get; set; } = new Part(true, $"{qr}");
+		public Part ScytheHead { get; set; } = new Part(true, $"{qr}");
+		public Part ShovelHead { get; set; } = new Part(true, $"{qr} for metal, {qr} for stone");
 		public Part SpearHead { get; set; } = new Part(true, $"{qr}");
 
 		// Other
-		public Part CattailTops { get; set; } = new Part(true, $"{hv}");
+		public Part CattailTops { get; set; } = new Part(true, $"{qr}");
 		public Part Fat { get; set; } = new Part(true, $"{qr}");
 		public Part Feather { get; set; } = new Part(true, $"{qr}");
 		public Part Gear { get; set; } = new Part(true, $"{qr} (rusty, temporal)");
 		public Part GemRough { get; set; } = new Part(true, $"{qr}");
 		public Part Hide { get; set; } = new Part(true, $"{qr}");
-		public Part LargeGearSection { get; set; } = new Part(true, $"{sc}");
+		public Part LargeGearSection { get; set; } = new Part(true, $"{qr}");
 		public Part Leather { get; set; } = new Part(true, $"{qr}");
 		public Part Metalbit { get; set; } = new Part(true, $"{qr}");
 		public Part Nugget { get; set; } = new Part(true, $"{qr}");
 		public Part OreChunk { get; set; } = new Part(true, $"{qr} ({allt} graded/ungraded/crystalized ore chunks)");
 		public Part Padlock { get; set; } = new Part(true, $"{qr}");
-		public Part PapyrusTops { get; set; } = new Part(true, $"{hv}");
+		public Part PapyrusTops { get; set; } = new Part(true, $"{qr}");
 		public Part Quartz { get; set; } = new Part(true, $"{qr} (amethyst, clear, rose, smoky)");
 		public Part Quiver { get; set; } = new Part(true, $"{sc}");
 		public Part Resin { get; set; } = new Part(true, $"{qr}");
@@ -79,14 +79,15 @@ namespace IWannaPlaceEveryItem.List
 		public Part PressedMash { get; set; } = new Part(true, $"{qr}");
 		public Part Paper { get; set; } = new Part(true, $"{qr}");
 		public Part DryGrass { get; set; } = new Part(true, $"{qr}");
+		public Part Rot { get; set; } = new Part(true, $"{qr}");
 
 		// Has pile in More Piles 1.2.0
-		public Part Arrow { get; set; } = new Part(false, $"{hv} (any arrow, even modded ones),{mp}");
-		public Part Bone { get; set; } = new Part(false, $"{qr}");
-		public Part Beeswax { get; set; } = new Part(false, $"{qr}");		
+		public Part Arrow { get; set; } = new Part(false, $"{qr} (any arrow, even modded ones),{mp}");
+		public Part Bone { get; set; } = new Part(false, $"{qr},{mp}");
+		public Part Beeswax { get; set; } = new Part(false, $"{qr},{mp}");		
 		public Part BambooStakes { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part ChuteSection { get; set; } = new Part(false, $"{qr},{mp}");
-		public Part Cloth { get; set; } = new Part(false, $"{hv},{mp}");
+		public Part Cloth { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part FlaxFibers { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part FlaxTwine { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Honeycomb { get; set; } = new Part(false, $"{qr},{mp}");
@@ -95,8 +96,8 @@ namespace IWannaPlaceEveryItem.List
 		public Part MetalScales { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part MetalChain { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Poultice { get; set; } = new Part(true, $"{qr},{mp}"); // Not used as pile currently
-		public Part Sail { get; set; } = new Part(false, $"{sc},{mp}");
-		public Part Stick { get; set; } = new Part(false, $"{hv},{mp}");
+		public Part Sail { get; set; } = new Part(false, $"{qr},{mp}");
+		public Part Stick { get; set; } = new Part(false, $"{qr},{mp}");
 
 		private static readonly PropertyInfo[] propertyInfos = typeof(IWannaPlaceEveryItemConfig).GetProperties()
 			.Where(propertyInfo => propertyInfo.PropertyType == typeof(Part)).ToArray();

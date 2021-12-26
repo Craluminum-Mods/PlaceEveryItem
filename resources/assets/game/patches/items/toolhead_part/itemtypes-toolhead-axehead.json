@@ -25,18 +25,55 @@
     "op": "add",
     "path": "/attributes",
     "value": {
-      "groundStorageTransform": {
-        "translation": {
-          "x": 0,
-          "y": 0,
-          "z": 0.17
+      "groundStorageTransformByType": {
+        "@.*-(iron|meteoriciron|steel|gold|silver)": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0.17
+          },
+          "rotation": {
+            "x": 0,
+            "y": 45,
+            "z": 0
+          },
+          "origin": {
+            "x": 0.23,
+            "y": 0,
+            "z": 0.62
+          },
+          "scale": 0.85
         },
-        "origin": {
-          "x": 0,
-          "y": 0,
-          "z": 0
+        "@.*-(copper|tinbronze|bismuthbronze|blackbronze)": {
+          "rotation": {
+            "x": 0,
+            "y": 45,
+            "z": 0
+          },
+          "origin": {
+            "x": 0.78,
+            "y": 0,
+            "z": 1.06
+          },
+          "scale": 0.95
         },
-        "scale": 0.7
+        "*": {
+          "translation": {
+            "x": 0.03,
+            "y": 0,
+            "z": -0.26
+          },
+          "rotation": {
+            "x": 0,
+            "y": -45,
+            "z": 0
+          },
+          "origin": {
+            "x": 0,
+            "y": 0.5,
+            "z": 0
+          }
+        }
       }
     },
     "file": "itemtypes/toolhead/axehead.json",

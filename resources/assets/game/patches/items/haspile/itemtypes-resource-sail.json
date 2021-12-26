@@ -6,7 +6,7 @@
       {
         "name": "GroundStorable",
         "properties": {
-          "layout": "SingleCenter",
+          "layout": "Quadrants",
           "collisionBox": {
             "x1": 0,
             "y1": 0,
@@ -26,12 +26,17 @@
     "path": "/attributes",
     "value": {
       "groundStorageTransform": {
-        "translation": {
+        "rotation": {
           "x": 0,
-          "y": -0.025,
+          "y": 32,
           "z": 0
         },
-        "scale": 0.95
+        "origin": {
+          "x": 0.5,
+          "y": 0,
+          "z": 0.5
+        },
+        "scale": 0.6
       }
     },
     "file": "itemtypes/resource/sail.json",

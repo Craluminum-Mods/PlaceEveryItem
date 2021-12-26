@@ -23,10 +23,10 @@
   },
   {
     "op": "add",
-    "path": "/attributesByType",
+    "path": "/attributes",
     "value": {
-      "@.*-(copper|tinbronze|bismuthbronze|blackbronze|iron|meteoriciron|gold|silver|steel)": {
-        "groundStorageTransform": {
+      "groundStorageTransformByType": {
+        "@.*-(copper|tinbronze|bismuthbronze|blackbronze|iron|meteoriciron|gold|silver|steel)": {
           "translation": {
             "x": 0.0875,
             "y": 0.24,
@@ -43,10 +43,8 @@
             "z": 0
           },
           "scale": 0.95
-        }
-      },
-      "*": {
-        "groundStorageTransform": {
+        },
+        "*": {
           "translation": {
             "x": 0.105,
             "y": 0.25,

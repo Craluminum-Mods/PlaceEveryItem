@@ -15,6 +15,27 @@
   },
   {
     "op": "add",
+    "path": "/attributes",
+    "value": {
+      "groundStorageTransform": {
+        "rotation": {
+          "x": 0,
+          "y": 45,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.06,
+          "z": 0.5
+        },
+        "scale": 0.85
+      }
+    },
+    "file": "itemtypes/toolhead/bowstave.json",
+    "condition": { "when": "PlaceBowstaveEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/toolhead/bowstave.json",

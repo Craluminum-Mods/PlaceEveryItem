@@ -6,13 +6,13 @@
       {
         "name": "GroundStorable",
         "properties": {
-          "layout": "Halves",
+          "layout": "Quadrants",
           "collisionBox": {
             "x1": 0,
             "y1": 0,
             "z1": 0,
             "x2": 1,
-            "y2": 0.344,
+            "y2": 0.1875,
             "z2": 1
           }
         }
@@ -28,12 +28,12 @@
       "groundStorageTransform": {
         "translation": {
           "x": 0,
-          "y": -0.15,
+          "y": -0.1,
           "z": 0
         },
         "rotation": {
           "x": 0,
-          "y": 90,
+          "y": 45,
           "z": 0
         },
         "origin": {
@@ -41,7 +41,7 @@
           "y": 0,
           "z": 0.5
         },
-        "scale": 0.95
+        "scale": 0.75
       }
     },
     "file": "itemtypes/part/pulverizertoggle.json",

@@ -6,7 +6,7 @@
       {
         "name": "GroundStorable",
         "properties": {
-          "layout": "Halves",
+          "layout": "Quadrants",
           "collisionBox": {
             "x1": 0,
             "y1": 0,
@@ -27,13 +27,13 @@
     "value": {
       "groundStorageTransform": {
         "translation": {
-          "x": 0,
+          "x": -0.03,
           "y": 0,
           "z": 0
         },
         "rotation": {
           "x": 0,
-          "y": 90,
+          "y": 45,
           "z": 0
         },
         "origin": {
@@ -41,7 +41,7 @@
           "y": 0,
           "z": 0.5
         },
-        "scale": 0.75
+        "scale": 0.6
       }
     },
     "file": "itemtypes/resource/papyrustops.json",
