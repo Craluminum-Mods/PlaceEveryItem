@@ -37,6 +37,40 @@
           "z": 0.5
         },
         "scale": 0.8
+      },
+      "@.*-(carrot|parsnip)": {
+        "translation": {
+          "x": 0.055,
+          "y": 0,
+          "z": -0.055
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 45
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.057,
+          "z": 0.5
+        }
+      },
+      "*-turnip": {
+        "translation": {
+          "x": 0.035,
+          "y": 0,
+          "z": -0.035
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 45
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.1,
+          "z": 0.5
+        }
       }
     },
     "file": "itemtypes/food/pickledvegetable.json",
