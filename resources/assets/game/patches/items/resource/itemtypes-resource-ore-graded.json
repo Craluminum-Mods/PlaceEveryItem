@@ -1,15 +1,50 @@
 [
   {
     "op": "add",
+    "path": "/behaviorsByType/ore-poor-limonite-*",
+    "value": [ { "name": "GroundStorable", "properties": { "layout": "Quadrants" } } ],
+    "file": "itemtypes/resource/ore-graded.json",
+    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/behaviorsByType/ore-poor-hematite-*",
+    "value": [ { "name": "GroundStorable", "properties": { "layout": "Quadrants" } } ],
+    "file": "itemtypes/resource/ore-graded.json",
+    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/behaviorsByType/ore-medium-limonite-*",
+    "value": [ { "name": "GroundStorable", "properties": { "layout": "Quadrants" } } ],
+    "file": "itemtypes/resource/ore-graded.json",
+    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/behaviorsByType/ore-medium-hematite-*",
+    "value": [ { "name": "GroundStorable", "properties": { "layout": "Quadrants" } } ],
+    "file": "itemtypes/resource/ore-graded.json",
+    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/behaviorsByType/ore-*-limonite-*",
+    "value": [ { "name": "GroundStorable", "properties": { "layout": "Quadrants" } } ],
+    "file": "itemtypes/resource/ore-graded.json",
+    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/behaviorsByType/ore-*-hematite-*",
+    "value": [ { "name": "GroundStorable", "properties": { "layout": "Quadrants" } } ],
+    "file": "itemtypes/resource/ore-graded.json",
+    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
     "path": "/behaviorsByType/ore-*",
-    "value": [
-      {
-        "name": "GroundStorable",
-        "properties": {
-          "layout": "Quadrants"
-        }
-      }
-    ],
+    "value": [ { "name": "GroundStorable", "properties": { "layout": "Quadrants" } } ],
     "file": "itemtypes/resource/ore-graded.json",
     "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" }
   },
