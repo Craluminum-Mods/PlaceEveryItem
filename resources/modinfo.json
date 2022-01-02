@@ -1,11 +1,11 @@
 {
   "type": "code",
-  "name": "I Wanna Place Every Item",
-  "modid": "iwpei",
+  "name": "Place Every Item",
+  "modid": "pei",
   "version": "1.1.0",
 
   "description": "Adds the ability to place almost any item on the ground",
-  "website": "https://github.com/Craluminum2413/IWannaPlaceEveryItem",
+  "website": "https://github.com/Craluminum2413/PlaceEveryItem",
   "authors": [ "Craluminum2413" ],
 
   "dependencies": {

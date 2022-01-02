@@ -1,14 +1,14 @@
 ﻿using System.Collections.Generic;
 using Vintagestory.API.Common;
-using IWannaPlaceEveryItem.Constructor;
-using IWannaPlaceEveryItem.List;
+using PlaceEveryItem.Constructor;
+using PlaceEveryItem.List;
 
-[assembly: ModInfo("IWannaPlaceEveryItem",
+[assembly: ModInfo("PlaceEveryItem",
   Description = "Adds the ability to place almost any item on the ground",
-  Website = "https://github.com/Craluminum2413/IWannaPlaceEveryItem",
+  Website = "https://github.com/Craluminum2413/PlaceEveryItem",
   Authors = new[] { "Craluminum2413" })]
 
-namespace IWannaPlaceEveryItem
+namespace PlaceEveryItem
 {
   public class Core : ModSystem
 	{
@@ -16,11 +16,11 @@ namespace IWannaPlaceEveryItem
 		{
 			base.StartPre(api);
 
-			IWannaPlaceEveryItemConfig settingsFromDisk;
+			PlaceEveryItemConfig settingsFromDisk;
 
 			try
 			{
-				settingsFromDisk = api.LoadModConfig<IWannaPlaceEveryItemConfig>("IWannaPlaceEveryItemConfig.json");
+				settingsFromDisk = api.LoadModConfig<PlaceEveryItemConfig>("PlaceEveryItemConfig.json");
 			}
 			catch
 			{
@@ -29,8 +29,8 @@ namespace IWannaPlaceEveryItem
 
 			if (settingsFromDisk is null)
 			{
-				settingsFromDisk = IWannaPlaceEveryItemConfig.Loaded;
-				api.StoreModConfig<IWannaPlaceEveryItemConfig>(IWannaPlaceEveryItemConfig.Loaded, "IWannaPlaceEveryItemConfig.json");
+				settingsFromDisk = PlaceEveryItemConfig.Loaded;
+				api.StoreModConfig<PlaceEveryItemConfig>(PlaceEveryItemConfig.Loaded, "PlaceEveryItemConfig.json");
 			}
 
 			foreach (KeyValuePair<string, Part> p in settingsFromDisk)

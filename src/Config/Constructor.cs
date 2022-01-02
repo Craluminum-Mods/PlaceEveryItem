@@ -1,4 +1,4 @@
-namespace IWannaPlaceEveryItem.Constructor
+namespace PlaceEveryItem.Constructor
 {
   public class Part
 	{

@@ -23,6 +23,22 @@
   },
   {
     "op": "add",
+    "path": "/attributes",
+    "value": {
+      "groundStorageTransform": {
+        "origin": {
+          "x": 0.5,
+          "y": 0,
+          "z": 0.5
+        },
+        "scale": 0.7
+      }
+    },
+    "file": "itemtypes/resource/leather.json",
+    "condition": { "when": "PlaceLeatherEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/leather.json",

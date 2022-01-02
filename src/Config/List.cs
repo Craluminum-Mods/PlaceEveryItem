@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Newtonsoft.Json;
-using IWannaPlaceEveryItem.Constructor;
+using PlaceEveryItem.Constructor;
 using Vintagestory.API.Common;
 
-namespace IWannaPlaceEveryItem.List
+namespace PlaceEveryItem.List
 {
   [JsonObject]
-	public class IWannaPlaceEveryItemConfig : ModSystem, IEnumerable<KeyValuePair<string, Part>>
+	public class PlaceEveryItemConfig : ModSystem, IEnumerable<KeyValuePair<string, Part>>
 	{
-		public static IWannaPlaceEveryItemConfig Loaded { get; set; } = new IWannaPlaceEveryItemConfig();
+		public static PlaceEveryItemConfig Loaded { get; set; } = new PlaceEveryItemConfig();
 		private const string mp = " (More Piles has a pile for it)";
 		private const string allt = "All types of ";
 		private const string sc = "SingleCenter";
@@ -33,6 +33,7 @@ namespace IWannaPlaceEveryItem.List
 		public Part PickledVegetable { get; set; } = new Part(true, $"{qr} (All pickled vegetables)");
 		public Part RawCassava { get; set; } = new Part(true, $"{qr}");
 		public Part Vegetable { get; set; } = new Part(true, $"{qr} (All vegetables)");
+		public Part PressedMash { get; set; } = new Part(true, $"{qr}");
 
 		// Toolheads
 		public Part ArrowHead { get; set; } = new Part(true, $"{qr}");
@@ -76,12 +77,11 @@ namespace IWannaPlaceEveryItem.List
 		public Part TreeSeed { get; set; } = new Part(true, $"{qr}");
 		public Part Bandage { get; set; } = new Part(true, $"{qr}");
 		public Part Bullets { get; set; } = new Part(true, $"{qr}");
-		public Part PressedMash { get; set; } = new Part(true, $"{qr}");
 		public Part Paper { get; set; } = new Part(true, $"{qr}");
 		public Part DryGrass { get; set; } = new Part(true, $"{qr}");
 		public Part Rot { get; set; } = new Part(true, $"{qr}");
 
-		// Has pile in More Piles 1.2.0
+		// Has pile in More Piles 1.2.0+
 		public Part Arrow { get; set; } = new Part(false, $"{qr} (any arrow, even modded ones),{mp}");
 		public Part Bone { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Beeswax { get; set; } = new Part(false, $"{qr},{mp}");		
@@ -99,7 +99,7 @@ namespace IWannaPlaceEveryItem.List
 		public Part Sail { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Stick { get; set; } = new Part(false, $"{qr},{mp}");
 
-		private static readonly PropertyInfo[] propertyInfos = typeof(IWannaPlaceEveryItemConfig).GetProperties()
+		private static readonly PropertyInfo[] propertyInfos = typeof(PlaceEveryItemConfig).GetProperties()
 			.Where(propertyInfo => propertyInfo.PropertyType == typeof(Part)).ToArray();
 
 		public IEnumerator<KeyValuePair<string, Part>> GetEnumerator()
