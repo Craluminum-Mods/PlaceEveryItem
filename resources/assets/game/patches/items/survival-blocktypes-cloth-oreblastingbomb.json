@@ -1,7 +1,7 @@
 [
   {
     "op": "add",
-    "path": "/behaviors/0",
+    "path": "/behaviors/-",
     "value": {
       "name": "GroundStorable",
       "properties": {
@@ -38,8 +38,7 @@
           "x": 0.5,
           "y": 0,
           "z": 0.5
-        },
-        "scale": 1
+        }
       }
     },
     "file": "blocktypes/cloth/oreblastingbomb.json",

@@ -40,8 +40,7 @@
           "x": 0.5,
           "y": 0,
           "z": 0.5
-        },
-        "scale": 1
+        }
       }
     },
     "file": "itemtypes/resource/gear.json",
@@ -65,8 +64,7 @@
         "x": 0.5,
         "y": 0,
         "z": 0.5
-      },
-      "scale": 1
+      }
     },
     "file": "itemtypes/resource/gear.json",
     "condition": { "when": "PlaceGearEnabled", "isValue": "true" }
