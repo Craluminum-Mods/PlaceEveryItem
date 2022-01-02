@@ -31,9 +31,9 @@ namespace PlaceEveryItem.List
 		public Part Meat { get; set; } = new Part(true, $"{qr} (bushmeat, redmeat, poultry)");
 		public Part PickledLegume { get; set; } = new Part(true, $"{qr} (All pickled legumes)");
 		public Part PickledVegetable { get; set; } = new Part(true, $"{qr} (All pickled vegetables)");
+		public Part PressedMash { get; set; } = new Part(true, $"{qr}");
 		public Part RawCassava { get; set; } = new Part(true, $"{qr}");
 		public Part Vegetable { get; set; } = new Part(true, $"{qr} (All vegetables)");
-		public Part PressedMash { get; set; } = new Part(true, $"{qr}");
 
 		// Toolheads
 		public Part ArrowHead { get; set; } = new Part(true, $"{qr}");
@@ -80,11 +80,14 @@ namespace PlaceEveryItem.List
 		public Part Paper { get; set; } = new Part(true, $"{qr}");
 		public Part DryGrass { get; set; } = new Part(true, $"{qr}");
 		public Part Rot { get; set; } = new Part(true, $"{qr}");
+		public Part OreBlastingBomb { get; set; } = new Part(true, $"{qr}");
 
 		// Has pile in More Piles 1.2.0+
+		public Part AngledGear { get; set; } = new Part(false, $"{qr},{mp}");
+		public Part Axle { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Arrow { get; set; } = new Part(false, $"{qr} (any arrow, even modded ones),{mp}");
 		public Part Bone { get; set; } = new Part(false, $"{qr},{mp}");
-		public Part Beeswax { get; set; } = new Part(false, $"{qr},{mp}");		
+		public Part Beeswax { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part BambooStakes { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part ChuteSection { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Cloth { get; set; } = new Part(false, $"{qr},{mp}");
