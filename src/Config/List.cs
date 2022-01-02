@@ -64,7 +64,7 @@ namespace PlaceEveryItem.List
 		public Part Leather { get; set; } = new Part(true, $"{qr}");
 		public Part Metalbit { get; set; } = new Part(true, $"{qr}");
 		public Part Nugget { get; set; } = new Part(true, $"{qr}");
-		public Part OreChunk { get; set; } = new Part(true, $"{qr} ({allt} graded/ungraded/crystalized ore chunks)");
+		public Part OreChunk { get; set; } = new Part(true, $"{qr} ({allt}graded/ungraded/crystalized ore chunks)");
 		public Part Padlock { get; set; } = new Part(true, $"{qr}");
 		public Part PapyrusTops { get; set; } = new Part(true, $"{qr}");
 		public Part Quartz { get; set; } = new Part(true, $"{qr} (amethyst, clear, rose, smoky)");
