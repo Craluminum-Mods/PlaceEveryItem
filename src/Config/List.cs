@@ -54,7 +54,10 @@ namespace PlaceEveryItem.List
 		public Part SpearHead { get; set; } = new Part(true, $"{qr}");
 
 		// Other
+		public Part Bandage { get; set; } = new Part(true, $"{qr}");
+		public Part Bullets { get; set; } = new Part(true, $"{qr}");
 		public Part CattailTops { get; set; } = new Part(true, $"{qr}");
+		public Part DryGrass { get; set; } = new Part(true, $"{qr}");
 		public Part Fat { get; set; } = new Part(true, $"{qr}");
 		public Part Feather { get; set; } = new Part(true, $"{qr}");
 		public Part Gear { get; set; } = new Part(true, $"{qr} (rusty, temporal)");
@@ -64,40 +67,37 @@ namespace PlaceEveryItem.List
 		public Part Leather { get; set; } = new Part(true, $"{qr}");
 		public Part Metalbit { get; set; } = new Part(true, $"{qr}");
 		public Part Nugget { get; set; } = new Part(true, $"{qr}");
+		public Part OreBlastingBomb { get; set; } = new Part(true, $"{qr}");
 		public Part OreChunk { get; set; } = new Part(true, $"{qr} ({allt}graded/ungraded/crystalized ore chunks)");
 		public Part Padlock { get; set; } = new Part(true, $"{qr}");
+		public Part Paper { get; set; } = new Part(true, $"{qr}");
 		public Part PapyrusTops { get; set; } = new Part(true, $"{qr}");
 		public Part Quartz { get; set; } = new Part(true, $"{qr} (amethyst, clear, rose, smoky)");
 		public Part Quiver { get; set; } = new Part(true, $"{sc}");
 		public Part Resin { get; set; } = new Part(true, $"{qr}");
 		public Part ResonanceArchive { get; set; } = new Part(true, $"{qr}");
+		public Part Rot { get; set; } = new Part(true, $"{qr}");
 		public Part Seeds { get; set; } = new Part(true, $"{qr}");
 		public Part SewingKit { get; set; } = new Part(true, $"{qr}");
 		public Part SolderBar { get; set; } = new Part(true, $"{qr}");
 		public Part TreeSeed { get; set; } = new Part(true, $"{qr}");
-		public Part Bandage { get; set; } = new Part(true, $"{qr}");
-		public Part Bullets { get; set; } = new Part(true, $"{qr}");
-		public Part Paper { get; set; } = new Part(true, $"{qr}");
-		public Part DryGrass { get; set; } = new Part(true, $"{qr}");
-		public Part Rot { get; set; } = new Part(true, $"{qr}");
-		public Part OreBlastingBomb { get; set; } = new Part(true, $"{qr}");
 
 		// Has pile in More Piles 1.2.0+
 		public Part AngledGear { get; set; } = new Part(false, $"{qr},{mp}");
-		public Part Axle { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Arrow { get; set; } = new Part(false, $"{qr} (any arrow, even modded ones),{mp}");
-		public Part Bone { get; set; } = new Part(false, $"{qr},{mp}");
-		public Part Beeswax { get; set; } = new Part(false, $"{qr},{mp}");
+		public Part Axle { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part BambooStakes { get; set; } = new Part(false, $"{qr},{mp}");
+		public Part Beeswax { get; set; } = new Part(false, $"{qr},{mp}");
+		public Part Bone { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part ChuteSection { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Cloth { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part FlaxFibers { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part FlaxTwine { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Honeycomb { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part IronBloom { get; set; } = new Part(false, $"{qr},{mp}");
+		public Part MetalChain { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part MetalLamellae { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part MetalScales { get; set; } = new Part(false, $"{qr},{mp}");
-		public Part MetalChain { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Poultice { get; set; } = new Part(true, $"{qr},{mp}"); // Not used as pile currently
 		public Part Sail { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Stick { get; set; } = new Part(false, $"{qr},{mp}");
