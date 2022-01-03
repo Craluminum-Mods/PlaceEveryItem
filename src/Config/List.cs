@@ -101,6 +101,16 @@ namespace PlaceEveryItem.List
 		public Part Crystal { get; set; } = new Part(true, $"{qr} (All)");
 		public Part MoldRack { get; set; } = new Part(true, $"{qr}");
 		public Part Shelf { get; set; } = new Part(true, $"{qr}");
+		public Part Bed { get; set; } = new Part(true, $"{qr}");
+		public Part Barrel { get; set; } = new Part(true, $"{qr}");
+		public Part Chair { get; set; } = new Part(true, $"{qr}");
+		public Part Door { get; set; } = new Part(true, $"{qr}");
+		public Part EchoChamber { get; set; } = new Part(true, $"{qr}");
+		public Part FruitPress { get; set; } = new Part(true, $"{qr}");
+		public Part Omok { get; set; } = new Part(true, $"{qr}");
+		public Part WoodenPath { get; set; } = new Part(true, $"{qr}");
+		public Part SignPost { get; set; } = new Part(true, $"{qr}");
+		public Part SticksLayer { get; set; } = new Part(true, $"{qr}");
 
 
 
@@ -126,6 +136,7 @@ namespace PlaceEveryItem.List
 		public Part TorchHolder { get; set; } = new Part(false, $"{qr},{mp}");		
 		public Part TroughLarge { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part TroughSmall { get; set; } = new Part(false, $"{qr},{mp}");
+		public Part Painting { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part FlowerPot { get; set; } = new Part(true, $"{qr},{mp}"); // Not used as pile currently
 
 
