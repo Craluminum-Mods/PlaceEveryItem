@@ -19,7 +19,7 @@
       }
     ],
     "file": "itemtypes/resource/papyrustops.json",
-    "condition": { "when": "PlacePapyrusTopsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedTopsEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -45,13 +45,13 @@
       }
     },
     "file": "itemtypes/resource/papyrustops.json",
-    "condition": { "when": "PlacePapyrusTopsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedTopsEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/papyrustops.json",
-    "condition": { "when": "PlacePapyrusTopsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedTopsEnabled", "isValue": "true" }
   }
 ]

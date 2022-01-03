@@ -19,7 +19,7 @@
       }
     ],
     "file": "itemtypes/resource/catttailtops.json",
-    "condition": { "when": "PlaceCattailTopsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedTopsEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -40,13 +40,13 @@
       }
     },
     "file": "itemtypes/resource/catttailtops.json",
-    "condition": { "when": "PlaceCattailTopsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedTopsEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/catttailtops.json",
-    "condition": { "when": "PlaceCattailTopsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedTopsEnabled", "isValue": "true" }
   }
 ]

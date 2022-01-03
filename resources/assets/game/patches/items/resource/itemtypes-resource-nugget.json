@@ -19,13 +19,13 @@
       }
     ],
     "file": "itemtypes/resource/nugget.json",
-    "condition": { "when": "PlaceNuggetEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceNuggetBitEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/nugget.json",
-    "condition": { "when": "PlaceNuggetEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceNuggetBitEnabled", "isValue": "true" }
   }
 ]

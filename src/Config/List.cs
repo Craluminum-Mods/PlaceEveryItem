@@ -46,16 +46,16 @@ namespace PlaceEveryItem.List
 		public Part ScytheHead { get; set; } = new Part(true, $"{qr}");
 		public Part ShovelHead { get; set; } = new Part(true, $"{qr}");
 		public Part SpearHead { get; set; } = new Part(true, $"{qr}");
-
+		public Part HelveHammerHead { get; set; } = new Part(true, $"{qr}");
 		public Part Bowstave { get; set; } = new Part(true, $"{sc}");
-		public Part HelveHammerHead { get; set; } = new Part(true, $"{qr}");		
+		//TODO:Combine items above into Toolheads
 		public Part PounderCap { get; set; } = new Part(true, $"{qr}");
-		public Part PulverizerToggle { get; set; } = new Part(true, $"{qr}");		
+		public Part PulverizerToggle { get; set; } = new Part(true, $"{qr}");
 
 		// Other
 		public Part Bandage { get; set; } = new Part(true, $"{qr}");
 		public Part Bullets { get; set; } = new Part(true, $"{qr}");
-		public Part CattailTops { get; set; } = new Part(true, $"{qr}");
+		public Part ReedTops { get; set; } = new Part(true, $"{qr} (cattail, papyrus)");
 		public Part DryGrass { get; set; } = new Part(true, $"{qr}");
 		public Part Fat { get; set; } = new Part(true, $"{qr}");
 		public Part Feather { get; set; } = new Part(true, $"{qr}");
@@ -64,13 +64,11 @@ namespace PlaceEveryItem.List
 		public Part Hide { get; set; } = new Part(true, $"{qr}");
 		public Part LargeGearSection { get; set; } = new Part(true, $"{qr}");
 		public Part Leather { get; set; } = new Part(true, $"{qr}");
-		public Part Metalbit { get; set; } = new Part(true, $"{qr}");
-		public Part Nugget { get; set; } = new Part(true, $"{qr}");
+		public Part NuggetBit { get; set; } = new Part(true, $"{qr} (metal bits, nuggets)");
 		public Part OreBlastingBomb { get; set; } = new Part(true, $"{qr}");
 		public Part OreChunk { get; set; } = new Part(true, $"{qr} ({allt}graded/ungraded/crystalized)");
 		public Part Padlock { get; set; } = new Part(true, $"{qr}");
 		public Part Paper { get; set; } = new Part(true, $"{qr}");
-		public Part PapyrusTops { get; set; } = new Part(true, $"{qr}");
 		public Part Quartz { get; set; } = new Part(true, $"{qr} (amethyst, clear, rose, smoky)");
 		public Part Quiver { get; set; } = new Part(true, $"{sc}");
 		public Part Resin { get; set; } = new Part(true, $"{qr}");

@@ -19,13 +19,13 @@
       }
     ],
     "file": "itemtypes/resource/metalbit.json",
-    "condition": { "when": "PlaceMetalbitEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceNuggetBitEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/metalbit.json",
-    "condition": { "when": "PlaceMetalbitEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceNuggetBitEnabled", "isValue": "true" }
   }
 ]
