@@ -29,29 +29,28 @@ namespace PlaceEveryItem.List
 		public Part Insect { get; set; } = new Part(true, $"{qr}");
 		public Part Legume { get; set; } = new Part(true, $"{qr} (All)");
 		public Part Meat { get; set; } = new Part(true, $"{qr} (bushmeat, redmeat, poultry)");
-		public Part PickledLegume { get; set; } = new Part(true, $"{qr} (All)");
-		public Part PickledVegetable { get; set; } = new Part(true, $"{qr} (All)");
+		public Part PickledFood { get; set; } = new Part(true, $"{qr}");
 		public Part PressedMash { get; set; } = new Part(true, $"{qr}");
-		public Part RawCassava { get; set; } = new Part(true, $"{qr}");
-		public Part Vegetable { get; set; } = new Part(true, $"{qr} (All)");
+		public Part Vegetable { get; set; } = new Part(true, $"{qr} (All, including raw cassava)");
 
 		// Toolheads
 		public Part ArrowHead { get; set; } = new Part(true, $"{qr}");
 		public Part AxeHead { get; set; } = new Part(true, $"{qr}");
-		public Part Bowstave { get; set; } = new Part(true, $"{sc}");
 		public Part HammerHead { get; set; } = new Part(true, $"{qr}");
-		public Part HelveHammerHead { get; set; } = new Part(true, $"{qr}");
 		public Part HoeHead { get; set; } = new Part(true, $"{qr}");
 		public Part KnifeBlade { get; set; } = new Part(true, $"{qr}");
 		public Part LongbladeHead { get; set; } = new Part(true, $"{qr}");
 		public Part PickaxeHead { get; set; } = new Part(true, $"{qr}");
-		public Part PounderCap { get; set; } = new Part(true, $"{qr}");
 		public Part PropickHead { get; set; } = new Part(true, $"{qr}");
-		public Part PulverizerToggle { get; set; } = new Part(true, $"{qr}");
 		public Part SawBlade { get; set; } = new Part(true, $"{qr}");
 		public Part ScytheHead { get; set; } = new Part(true, $"{qr}");
 		public Part ShovelHead { get; set; } = new Part(true, $"{qr}");
 		public Part SpearHead { get; set; } = new Part(true, $"{qr}");
+
+		public Part Bowstave { get; set; } = new Part(true, $"{sc}");
+		public Part HelveHammerHead { get; set; } = new Part(true, $"{qr}");		
+		public Part PounderCap { get; set; } = new Part(true, $"{qr}");
+		public Part PulverizerToggle { get; set; } = new Part(true, $"{qr}");		
 
 		// Other
 		public Part Bandage { get; set; } = new Part(true, $"{qr}");
@@ -98,7 +97,12 @@ namespace PlaceEveryItem.List
 		public Part Quern { get; set; } = new Part(true, $"{qr}");
 		public Part Mechanics { get; set; } = new Part(true, $"{qr} (All except axle and angled gear)");
 		public Part Chest { get; set; } = new Part(true, $"{qr} (All)");
-		public Part Table { get; set; } = new Part(true, $"{qr} (All)");
+		public Part Table { get; set; } = new Part(true, $"{qr}");
+		public Part ReedBasket { get; set; } = new Part(true, $"{qr}");
+		public Part StoneCoffinBoth { get; set; } = new Part(true, $"{qr}");
+		public Part Crystal { get; set; } = new Part(true, $"{qr} (All)");
+		public Part MoldRack { get; set; } = new Part(true, $"{qr}");
+		public Part Shelf { get; set; } = new Part(true, $"{qr}");
 
 
 
