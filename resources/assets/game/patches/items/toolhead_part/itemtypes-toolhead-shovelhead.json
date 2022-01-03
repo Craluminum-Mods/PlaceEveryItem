@@ -19,7 +19,7 @@
       }
     ],
     "file": "itemtypes/toolhead/shovelhead.json",
-    "condition": { "when": "PlaceShovelHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -65,13 +65,13 @@
       }
     },
     "file": "itemtypes/toolhead/shovelhead.json",
-    "condition": { "when": "PlaceShovelHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/toolhead/shovelhead.json",
-    "condition": { "when": "PlaceShovelHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   }
 ]

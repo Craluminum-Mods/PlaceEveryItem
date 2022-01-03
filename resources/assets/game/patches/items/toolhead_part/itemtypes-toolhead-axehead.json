@@ -19,7 +19,7 @@
       }
     ],
     "file": "itemtypes/toolhead/axehead.json",
-    "condition": { "when": "PlaceAxeHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -77,13 +77,13 @@
       }
     },
     "file": "itemtypes/toolhead/axehead.json",
-    "condition": { "when": "PlaceAxeHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/toolhead/axehead.json",
-    "condition": { "when": "PlaceAxeHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   }
 ]

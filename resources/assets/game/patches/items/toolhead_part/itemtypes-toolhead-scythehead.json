@@ -19,7 +19,7 @@
       }
     ],
     "file": "itemtypes/toolhead/scythehead.json",
-    "condition": { "when": "PlaceScytheHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -45,13 +45,13 @@
       }
     },
     "file": "itemtypes/toolhead/scythehead.json",
-    "condition": { "when": "PlaceScytheHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/toolhead/scythehead.json",
-    "condition": { "when": "PlaceScytheHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   }
 ]

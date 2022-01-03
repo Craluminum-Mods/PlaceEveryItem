@@ -19,7 +19,7 @@
       }
     ],
     "file": "itemtypes/toolhead/longblade.json",
-    "condition": { "when": "PlaceLongbladeHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   },  
   {
     "op": "add",
@@ -45,13 +45,13 @@
       }
     },
     "file": "itemtypes/toolhead/longblade.json",
-    "condition": { "when": "PlaceLongbladeHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/toolhead/longblade.json",
-    "condition": { "when": "PlaceLongbladeHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   }
 ]

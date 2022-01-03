@@ -34,22 +34,8 @@ namespace PlaceEveryItem.List
 		public Part Vegetable { get; set; } = new Part(true, $"{qr} (All, including raw cassava)");
 
 		// Toolheads
-		public Part ArrowHead { get; set; } = new Part(true, $"{qr}");
-		public Part AxeHead { get; set; } = new Part(true, $"{qr}");
-		public Part HammerHead { get; set; } = new Part(true, $"{qr}");
-		public Part HoeHead { get; set; } = new Part(true, $"{qr}");
-		public Part KnifeBlade { get; set; } = new Part(true, $"{qr}");
-		public Part LongbladeHead { get; set; } = new Part(true, $"{qr}");
-		public Part PickaxeHead { get; set; } = new Part(true, $"{qr}");
-		public Part PropickHead { get; set; } = new Part(true, $"{qr}");
-		public Part SawBlade { get; set; } = new Part(true, $"{qr}");
-		public Part ScytheHead { get; set; } = new Part(true, $"{qr}");
-		public Part ShovelHead { get; set; } = new Part(true, $"{qr}");
-		public Part SpearHead { get; set; } = new Part(true, $"{qr}");
-		public Part HelveHammerHead { get; set; } = new Part(true, $"{qr}");
+		public Part Toolheads { get; set; } = new Part(true, $"{qr} (all except pounder cap, pulv.toggle, bowstave)");
 		public Part Bowstave { get; set; } = new Part(true, $"{sc}");
-		//TODO:Combine items above into Toolheads
-		// public Part Toolheads { get; set; } = new Part(true, $"{qr} (all except pounder cap and pulv.toggle)");
 		public Part PounderCap { get; set; } = new Part(true, $"{qr}");
 		public Part PulverizerToggle { get; set; } = new Part(true, $"{qr}");
 

@@ -19,7 +19,7 @@
       }
     ],
     "file": "itemtypes/toolhead/prospectingpickhead.json",
-    "condition": { "when": "PlacePropickHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -39,13 +39,13 @@
       }
     },
     "file": "itemtypes/toolhead/prospectingpickhead.json",
-    "condition": { "when": "PlacePropickHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/toolhead/prospectingpickhead.json",
-    "condition": { "when": "PlacePropickHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   }
 ]

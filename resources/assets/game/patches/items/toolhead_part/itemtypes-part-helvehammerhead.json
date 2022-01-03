@@ -19,18 +19,13 @@
       }
     ],
     "file": "itemtypes/part/helvehammerhead.json",
-    "condition": { "when": "PlaceHelveHammerHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/attributes",
     "value": {
       "groundStorageTransform": {
-        "translation": {
-          "x": 0,
-          "y": 0,
-          "z": 0
-        },
         "rotation": {
           "x": 0,
           "y": 45,
@@ -45,13 +40,13 @@
       }
     },
     "file": "itemtypes/part/helvehammerhead.json",
-    "condition": { "when": "PlaceHelveHammerHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/part/helvehammerhead.json",
-    "condition": { "when": "PlaceHelveHammerHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   }
 ]

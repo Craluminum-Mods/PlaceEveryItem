@@ -19,7 +19,7 @@
       }
     ],
     "file": "itemtypes/toolhead/arrowhead.json",
-    "condition": { "when": "PlaceArrowHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -34,13 +34,13 @@
       }
     },
     "file": "itemtypes/toolhead/arrowhead.json",
-    "condition": { "when": "PlaceArrowHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/toolhead/arrowhead.json",
-    "condition": { "when": "PlaceArrowHeadEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
   }
 ]
