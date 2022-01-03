@@ -96,12 +96,9 @@ namespace PlaceEveryItem.List
 		public Part DisplayCase { get; set; } = new Part(true, $"{qr}");
 		public Part StorageVessel { get; set; } = new Part(true, $"{qr}");
 		public Part Quern { get; set; } = new Part(true, $"{qr}");
-		public Part Bellows { get; set; } = new Part(true, $"{qr}");
+		public Part Mechanics { get; set; } = new Part(true, $"{qr} (All except axle and angled gear)");
 		public Part Chest { get; set; } = new Part(true, $"{qr} (All)");
 		public Part Table { get; set; } = new Part(true, $"{qr} (All)");
-
-
-
 
 
 
