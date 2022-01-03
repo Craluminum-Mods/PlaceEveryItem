@@ -47,7 +47,6 @@
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/flaxfibers.json",
-    "condition": { "when": "PlaceFlaxFibersEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "morepiles", "invert": true }]
+    "condition": { "when": "PlaceFlaxFibersEnabled", "isValue": "true" }
   }
 ]

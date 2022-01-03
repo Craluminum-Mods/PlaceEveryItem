@@ -42,7 +42,6 @@
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/metalscale.json",
-    "condition": { "when": "PlaceMetalScalesEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "morepiles", "invert": true }]
+    "condition": { "when": "PlaceMetalScalesEnabled", "isValue": "true" }
   }
 ]

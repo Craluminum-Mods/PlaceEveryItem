@@ -45,7 +45,6 @@
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/beeswax.json",
-    "condition": { "when": "PlaceBeeswaxEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "morepiles", "invert": true }]
+    "condition": { "when": "PlaceBeeswaxEnabled", "isValue": "true" }
   }
 ]

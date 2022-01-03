@@ -45,7 +45,6 @@
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/cloth.json",
-    "condition": { "when": "PlaceClothEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "morepiles", "invert": true }]
+    "condition": { "when": "PlaceClothEnabled", "isValue": "true" }
   }
 ]

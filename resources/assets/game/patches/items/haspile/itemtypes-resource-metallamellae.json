@@ -42,7 +42,6 @@
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/metallamellae.json",
-    "condition": { "when": "PlaceMetalLamellaeEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "morepiles", "invert": true }]
+    "condition": { "when": "PlaceMetalLamellaeEnabled", "isValue": "true" }
   }
 ]

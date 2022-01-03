@@ -47,7 +47,6 @@
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/sail.json",
-    "condition": { "when": "PlaceSailEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "morepiles", "invert": true }]
+    "condition": { "when": "PlaceSailEnabled", "isValue": "true" }
   }
 ]

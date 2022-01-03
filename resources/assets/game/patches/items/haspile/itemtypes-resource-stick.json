@@ -47,7 +47,6 @@
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/stick.json",
-    "condition": { "when": "PlaceStickEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "morepiles", "invert": true }]
+    "condition": { "when": "PlaceStickEnabled", "isValue": "true" }
   }
 ]

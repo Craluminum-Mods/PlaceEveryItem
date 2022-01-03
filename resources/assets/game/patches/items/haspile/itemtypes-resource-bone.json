@@ -49,7 +49,6 @@
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/bone.json",
-    "condition": { "when": "PlaceBoneEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "morepiles", "invert": true }]
+    "condition": { "when": "PlaceBoneEnabled", "isValue": "true" }
   }
 ]

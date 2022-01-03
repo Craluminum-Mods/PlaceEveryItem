@@ -52,7 +52,6 @@
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/chutesection.json",
-    "condition": { "when": "PlaceChuteSectionEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "morepiles", "invert": true }]
+    "condition": { "when": "PlaceChuteSectionEnabled", "isValue": "true" }
   }
 ]

@@ -26,7 +26,6 @@
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/ironbloom.json",
-    "condition": { "when": "PlaceIronBloomEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "morepiles", "invert": true }]
+    "condition": { "when": "PlaceIronBloomEnabled", "isValue": "true" }
   }
 ]

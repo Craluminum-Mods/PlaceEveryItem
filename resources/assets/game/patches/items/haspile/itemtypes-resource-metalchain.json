@@ -45,7 +45,6 @@
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/metalchain.json",
-    "condition": { "when": "PlaceMetalChainEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "morepiles", "invert": true }]
+    "condition": { "when": "PlaceMetalChainEnabled", "isValue": "true" }
   }
 ]

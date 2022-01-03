@@ -37,7 +37,6 @@
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/honeycomb.json",
-    "condition": { "when": "PlaceHoneycombEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "morepiles", "invert": true }]
+    "condition": { "when": "PlaceHoneycombEnabled", "isValue": "true" }
   }
 ]

@@ -47,7 +47,6 @@
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/bandage.json",
-    "condition": { "when": "PlaceBandageEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "morepiles", "invert": true }]
+    "condition": { "when": "PlaceBandageEnabled", "isValue": "true" }
   }
 ]

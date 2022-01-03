@@ -45,7 +45,6 @@
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/tool/arrow.json",
-    "condition": { "when": "PlaceArrowEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "morepiles", "invert": true }]
+    "condition": { "when": "PlaceArrowEnabled", "isValue": "true" }
   }
 ]

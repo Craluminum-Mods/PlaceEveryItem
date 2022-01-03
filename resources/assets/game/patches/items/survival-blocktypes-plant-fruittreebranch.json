@@ -18,33 +18,31 @@
         }
       }
     ],
-    "file": "itemtypes/resource/flaxtwine.json",
-    "condition": { "when": "PlaceFlaxTwineEnabled", "isValue": "true" }
+    "file": "blocktypes/plant/fruittreebranch.json",
+    "condition": { "when": "PlaceFruitTreeBranchEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/attributes/groundStorageTransform",
     "value": {
+      "translation": {
+        "x": 0.09,
+        "y": 0.04,
+        "z": -0.09
+      },
       "rotation": {
-        "x": 0,
-        "y": 45,
-        "z": 0
+        "x": 90,
+        "y": 0,
+        "z": 45
       },
       "origin": {
         "x": 0.5,
         "y": 0,
         "z": 0.5
       },
-      "scale": 0.85
+      "scale": 0.7
     },
-    "file": "itemtypes/resource/flaxtwine.json",
-    "condition": { "when": "PlaceFlaxTwineEnabled", "isValue": "true" }
-  },
-  {
-    "op": "add",
-    "path": "/creativeinventory/groundstorable",
-    "value": ["*"],
-    "file": "itemtypes/resource/flaxtwine.json",
-    "condition": { "when": "PlaceFlaxTwineEnabled", "isValue": "true" }
+    "file": "blocktypes/plant/fruittreebranch.json",
+    "condition": { "when": "PlaceFruitTreeBranchEnabled", "isValue": "true" }
   }
 ]

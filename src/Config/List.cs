@@ -81,6 +81,18 @@ namespace PlaceEveryItem.List
 		public Part SewingKit { get; set; } = new Part(true, $"{qr}");
 		public Part SolderBar { get; set; } = new Part(true, $"{qr}");
 		public Part TreeSeed { get; set; } = new Part(true, $"{qr}");
+		public Part ReedRoots { get; set; } = new Part(true, $"{qr}");
+		public Part MetalPartsAndScraps { get; set; } = new Part(true, $"{qr}");
+		public Part SeaShell { get; set; } = new Part(true, $"{qr}");
+		public Part OilLamp { get; set; } = new Part(true, $"{qr}");
+		public Part FruitTreeBranch { get; set; } = new Part(true, $"{qr}");
+		public Part Torch { get; set; } = new Part(true, $"{qr}");
+		public Part Beenade { get; set; } = new Part(true, $"{qr}");
+		public Part Candle { get; set; } = new Part(true, $"{qr}");
+
+
+
+
 
 		// Has pile in More Piles 1.2.0+
 		public Part AngledGear { get; set; } = new Part(false, $"{qr},{mp}");
@@ -101,6 +113,13 @@ namespace PlaceEveryItem.List
 		public Part Poultice { get; set; } = new Part(true, $"{qr},{mp}"); // Not used as pile currently
 		public Part Sail { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Stick { get; set; } = new Part(false, $"{qr},{mp}");
+		public Part TorchHolder { get; set; } = new Part(false, $"{qr},{mp}");		
+		public Part TroughLarge { get; set; } = new Part(false, $"{qr},{mp}");
+		public Part TroughSmall { get; set; } = new Part(false, $"{qr},{mp}");
+
+
+
+
 
 		private static readonly PropertyInfo[] propertyInfos = typeof(PlaceEveryItemConfig).GetProperties()
 			.Where(propertyInfo => propertyInfo.PropertyType == typeof(Part)).ToArray();

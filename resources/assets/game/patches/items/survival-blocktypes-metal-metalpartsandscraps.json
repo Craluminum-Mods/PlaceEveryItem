@@ -1,0 +1,94 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes",
+    "value": {
+      "groundStorageTransformByType": {
+        "*-scraps": {
+          "translation": {
+            "x": 0.017,
+            "y": 0,
+            "z": -0.017
+          },
+          "rotation": {
+            "x": 0,
+            "y": 30,
+            "z": 0
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0,
+            "z": 0.5
+          },
+          "scale": 0.75
+        },
+        "*-parts": {
+          "translation": {
+            "x": -0.015,
+            "y": -0.04,
+            "z": 0.015
+          },
+          "rotation": {
+            "x": 0,
+            "y": 45,
+            "z": -19
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0,
+            "z": 0.5
+          }
+        }
+      }
+    },
+    "file": "blocktypes/metal/metalpartsandscraps.json",
+    "condition": { "when": "PlaceMetalPartsAndScrapsEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/behaviorsByType/*-parts/-",
+    "value": {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "Quadrants",
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.3125,
+          "z2": 1
+        }
+      }
+    },
+    "file": "blocktypes/metal/metalpartsandscraps.json",
+    "condition": { "when": "PlaceMetalPartsAndScrapsEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/behaviorsByType/*-scraps/-",
+    "value": {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "Quadrants",
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.125,
+          "z2": 1
+        }
+      }
+    },
+    "file": "blocktypes/metal/metalpartsandscraps.json",
+    "condition": { "when": "PlaceMetalPartsAndScrapsEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "blocktypes/metal/metalpartsandscraps.json",
+    "condition": { "when": "PlaceMetalPartsAndScrapsEnabled", "isValue": "true" }
+  }
+]
