@@ -46,7 +46,7 @@
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
-    "value": ["*"],
+    "value": ["*-north"],
     "file": "blocktypes/mechanics/helvehammerbase.json",
     "condition": { "when": "PlaceMechanicsEnabled", "isValue": "true" }
   }

@@ -43,7 +43,7 @@
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
-    "value": ["*"],
+    "value": ["*-head-north"],
     "file": "blocktypes/wood/bed.json",
     "condition": { "when": "PlaceBedEnabled", "isValue": "true" }
   }

@@ -41,7 +41,7 @@
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
-    "value": ["*"],
+    "value": ["*-ns"],
     "file": "blocktypes/wood/fruitpress.json",
     "condition": { "when": "PlaceFruitPressEnabled", "isValue": "true" }
   }

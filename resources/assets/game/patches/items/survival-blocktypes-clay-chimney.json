@@ -41,7 +41,7 @@
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
-    "value": ["*"],
+    "value": ["*-ns"],
     "file": "blocktypes/clay/chimney.json",
     "condition": { "when": "PlaceChimneyEnabled", "isValue": "true" }
   }

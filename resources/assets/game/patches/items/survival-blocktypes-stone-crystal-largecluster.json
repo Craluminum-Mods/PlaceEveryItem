@@ -41,7 +41,7 @@
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
-    "value": ["*"],
+    "value": ["*-up"],
     "file": "blocktypes/stone/crystal-largecluster.json",
     "condition": { "when": "PlaceCrystalEnabled", "isValue": "true" }
   }

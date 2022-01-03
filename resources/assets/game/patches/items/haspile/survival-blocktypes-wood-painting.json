@@ -46,7 +46,7 @@
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
-    "value": ["*"],
+    "value": ["*-north"],
     "file": "blocktypes/wood/painting.json",
     "condition": { "when": "PlacePaintingEnabled", "isValue": "true" }
   }

@@ -46,7 +46,7 @@
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
-    "value": ["*"],
+    "value": ["door-{material}-north-down-closed-left"],
     "file": "blocktypes/wood/door.json",
     "condition": { "when": "PlaceDoorEnabled", "isValue": "true" }
   }

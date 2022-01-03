@@ -46,7 +46,7 @@
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
-    "value": ["*"],
+    "value": ["*-ns"],
     "file": "blocktypes/wood/path.json",
     "condition": { "when": "PlaceWoodenPathEnabled", "isValue": "true" }
   }

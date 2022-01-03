@@ -48,7 +48,7 @@
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
-    "value": ["*"],
+    "value": ["*-north"],
     "file": "blocktypes/clay/bloomerybase.json",
     "condition": { "when": "PlaceBloomeryPartsEnabled", "isValue": "true" }
   }

@@ -40,7 +40,7 @@
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
-    "value": ["*"],
+    "value": ["*=up"],
     "file": "blocktypes/stone/crystal-small.json",
     "condition": { "when": "PlaceCrystalEnabled", "isValue": "true" }
   }

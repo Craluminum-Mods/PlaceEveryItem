@@ -46,7 +46,7 @@
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
-    "value": ["*"],
+    "value": ["*-west"],
     "file": "blocktypes/metal/verticalboiler.json",
     "condition": { "when": "PlaceDistillerEnabled", "isValue": "true" }
   }

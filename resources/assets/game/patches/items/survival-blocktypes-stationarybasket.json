@@ -36,7 +36,7 @@
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
-    "value": ["*"],
+    "value": ["*-east"],
     "file": "blocktypes/stationarybasket.json",
     "condition": { "when": "PlaceBasketEnabled", "isValue": "true" }
   }

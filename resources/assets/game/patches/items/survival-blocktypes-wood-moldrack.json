@@ -48,7 +48,7 @@
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
-    "value": ["*"],
+    "value": ["*-east"],
     "file": "blocktypes/wood/moldrack.json",
     "condition": { "when": "PlaceMoldRackEnabled", "isValue": "true" }
   }

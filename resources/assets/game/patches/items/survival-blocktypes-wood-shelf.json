@@ -48,7 +48,7 @@
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
-    "value": ["*"],
+    "value": ["*-east"],
     "file": "blocktypes/wood/shelf.json",
     "condition": { "when": "PlaceShelfEnabled", "isValue": "true" }
   }

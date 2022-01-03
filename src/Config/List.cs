@@ -49,6 +49,7 @@ namespace PlaceEveryItem.List
 		public Part HelveHammerHead { get; set; } = new Part(true, $"{qr}");
 		public Part Bowstave { get; set; } = new Part(true, $"{sc}");
 		//TODO:Combine items above into Toolheads
+		// public Part Toolheads { get; set; } = new Part(true, $"{qr} (all except pounder cap and pulv.toggle)");
 		public Part PounderCap { get; set; } = new Part(true, $"{qr}");
 		public Part PulverizerToggle { get; set; } = new Part(true, $"{qr}");
 
