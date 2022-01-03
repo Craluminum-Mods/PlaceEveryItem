@@ -34,72 +34,75 @@ namespace PlaceEveryItem.List
 		public Part Vegetable { get; set; } = new Part(true, $"{qr} (All, including raw cassava)");
 
 		// Toolheads
-		public Part Toolheads { get; set; } = new Part(true, $"{qr} (all except pounder cap, pulv.toggle, bowstave)");
-		public Part Bowstave { get; set; } = new Part(true, $"{sc}");
+		public Part Bowstave { get; set; } = new Part(true, $"{qr}");
 		public Part PounderCap { get; set; } = new Part(true, $"{qr}");
 		public Part PulverizerToggle { get; set; } = new Part(true, $"{qr}");
+		public Part Toolheads { get; set; } = new Part(true, $"{qr} (all except pounder cap, pulv.toggle, bowstave)");
 
 		// Other
+		public Part AnvilEtc { get; set; } = new Part(true, $"{qr} (including anvil parts)");
 		public Part Bandage { get; set; } = new Part(true, $"{qr}");
+		public Part Barrel { get; set; } = new Part(true, $"{qr}");
+		public Part Bed { get; set; } = new Part(true, $"{qr}");
+		public Part Beenade { get; set; } = new Part(true, $"{qr}");
+		public Part BloomeryParts { get; set; } = new Part(true, $"{qr} (base, chimney)");
 		public Part Bullets { get; set; } = new Part(true, $"{qr}");
-		public Part ReedTops { get; set; } = new Part(true, $"{qr} (cattail, papyrus)");
+		public Part Candle { get; set; } = new Part(true, $"{qr}");
+		public Part Chair { get; set; } = new Part(true, $"{qr}");
+		public Part Chandelier { get; set; } = new Part(true, $"{qr}");
+		public Part Chest { get; set; } = new Part(true, $"{qr} (All)");
+		public Part Chimney { get; set; } = new Part(true, $"{qr}");
+		public Part ChutesEtc { get; set; } = new Part(true, $"{qr} (including archimedes screw)");
+		public Part Crystal { get; set; } = new Part(true, $"{qr} (All)");
+		public Part DisplayCase { get; set; } = new Part(true, $"{qr}");
+		public Part Distiller { get; set; } = new Part(true, $"{qr} (condenser, boiler)");
+		public Part Door { get; set; } = new Part(true, $"{qr} (wooden, rough, iron, coke oven)");
 		public Part DryGrass { get; set; } = new Part(true, $"{qr}");
+		public Part EchoChamber { get; set; } = new Part(true, $"{qr}");
 		public Part Fat { get; set; } = new Part(true, $"{qr}");
 		public Part Feather { get; set; } = new Part(true, $"{qr}");
+		public Part FruitPress { get; set; } = new Part(true, $"{qr}");
+		public Part FruitTreeBranch { get; set; } = new Part(true, $"{qr}");
 		public Part Gear { get; set; } = new Part(true, $"{qr} (rusty, temporal)");
 		public Part GemRough { get; set; } = new Part(true, $"{qr}");
 		public Part Hide { get; set; } = new Part(true, $"{qr}");
+		public Part Hopper { get; set; } = new Part(true, $"{qr}");
 		public Part LargeGearSection { get; set; } = new Part(true, $"{qr}");
 		public Part Leather { get; set; } = new Part(true, $"{qr}");
+		public Part Mechanics { get; set; } = new Part(true, $"{qr} (All except axle and angled gear)");
+		public Part MetalBlock { get; set; } = new Part(true, $"{qr}");
+		public Part MetalPartsAndScraps { get; set; } = new Part(true, $"{qr}");
+		public Part MoldRack { get; set; } = new Part(true, $"{qr}");
 		public Part NuggetBit { get; set; } = new Part(true, $"{qr} (metal bits, nuggets)");
+		public Part OilLamp { get; set; } = new Part(true, $"{qr}");
+		public Part Omok { get; set; } = new Part(true, $"{qr}");
 		public Part OreBlastingBomb { get; set; } = new Part(true, $"{qr}");
 		public Part OreChunk { get; set; } = new Part(true, $"{qr} ({allt}graded/ungraded/crystalized)");
 		public Part Padlock { get; set; } = new Part(true, $"{qr}");
 		public Part Paper { get; set; } = new Part(true, $"{qr}");
+		public Part Planter { get; set; } = new Part(true, $"{qr}");
 		public Part Quartz { get; set; } = new Part(true, $"{qr} (amethyst, clear, rose, smoky)");
+		public Part Quern { get; set; } = new Part(true, $"{qr}");
 		public Part Quiver { get; set; } = new Part(true, $"{sc}");
+		public Part ReedBasket { get; set; } = new Part(true, $"{qr}");
+		public Part ReedRoots { get; set; } = new Part(true, $"{qr}");
+		public Part ReedTops { get; set; } = new Part(true, $"{qr} (cattail, papyrus)");
 		public Part Resin { get; set; } = new Part(true, $"{qr}");
 		public Part ResonanceArchive { get; set; } = new Part(true, $"{qr}");
 		public Part Rot { get; set; } = new Part(true, $"{qr}");
+		public Part SeaShell { get; set; } = new Part(true, $"{qr}");
 		public Part Seeds { get; set; } = new Part(true, $"{qr}");
 		public Part SewingKit { get; set; } = new Part(true, $"{qr}");
-		public Part SolderBar { get; set; } = new Part(true, $"{qr}");
-		public Part TreeSeed { get; set; } = new Part(true, $"{qr}");
-		public Part ReedRoots { get; set; } = new Part(true, $"{qr}");
-		public Part MetalPartsAndScraps { get; set; } = new Part(true, $"{qr}");
-		public Part SeaShell { get; set; } = new Part(true, $"{qr}");
-		public Part OilLamp { get; set; } = new Part(true, $"{qr}");
-		public Part FruitTreeBranch { get; set; } = new Part(true, $"{qr}");
-		public Part Torch { get; set; } = new Part(true, $"{qr}");
-		public Part Beenade { get; set; } = new Part(true, $"{qr}");
-		public Part Candle { get; set; } = new Part(true, $"{qr}");
-		public Part Planter { get; set; } = new Part(true, $"{qr}");
-		public Part Distiller { get; set; } = new Part(true, $"{qr} (condenser, boiler)");
-		public Part BloomeryParts { get; set; } = new Part(true, $"{qr} (base, chimney)");
-		public Part Chimney { get; set; } = new Part(true, $"{qr}");
-		public Part DisplayCase { get; set; } = new Part(true, $"{qr}");
-		public Part StorageVessel { get; set; } = new Part(true, $"{qr}");
-		public Part Quern { get; set; } = new Part(true, $"{qr}");
-		public Part Mechanics { get; set; } = new Part(true, $"{qr} (All except axle and angled gear)");
-		public Part Chest { get; set; } = new Part(true, $"{qr} (All)");
-		public Part Table { get; set; } = new Part(true, $"{qr}");
-		public Part ReedBasket { get; set; } = new Part(true, $"{qr}");
-		public Part StoneCoffinBoth { get; set; } = new Part(true, $"{qr}");
-		public Part Crystal { get; set; } = new Part(true, $"{qr} (All)");
-		public Part MoldRack { get; set; } = new Part(true, $"{qr}");
 		public Part Shelf { get; set; } = new Part(true, $"{qr}");
-		public Part Bed { get; set; } = new Part(true, $"{qr}");
-		public Part Barrel { get; set; } = new Part(true, $"{qr}");
-		public Part Chair { get; set; } = new Part(true, $"{qr}");
-		public Part Door { get; set; } = new Part(true, $"{qr}");
-		public Part EchoChamber { get; set; } = new Part(true, $"{qr}");
-		public Part FruitPress { get; set; } = new Part(true, $"{qr}");
-		public Part Omok { get; set; } = new Part(true, $"{qr}");
-		public Part WoodenPath { get; set; } = new Part(true, $"{qr}");
 		public Part SignPost { get; set; } = new Part(true, $"{qr}");
+		public Part SolderBar { get; set; } = new Part(true, $"{qr}");
 		public Part SticksLayer { get; set; } = new Part(true, $"{qr}");
-
-
+		public Part StoneCoffinBoth { get; set; } = new Part(true, $"{qr}");
+		public Part StorageVessel { get; set; } = new Part(true, $"{qr}");
+		public Part Table { get; set; } = new Part(true, $"{qr}");
+		public Part Torch { get; set; } = new Part(true, $"{qr}");
+		public Part TreeSeed { get; set; } = new Part(true, $"{qr}");
+		public Part WoodenPath { get; set; } = new Part(true, $"{qr}");
 
 		// Has pile in More Piles 1.2.0+
 		public Part AngledGear { get; set; } = new Part(false, $"{qr},{mp}");
@@ -112,19 +115,19 @@ namespace PlaceEveryItem.List
 		public Part Cloth { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part FlaxFibers { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part FlaxTwine { get; set; } = new Part(false, $"{qr},{mp}");
+		public Part FlowerPot { get; set; } = new Part(true, $"{qr},{mp}"); // Not used as pile currently
 		public Part Honeycomb { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part IronBloom { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part MetalChain { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part MetalLamellae { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part MetalScales { get; set; } = new Part(false, $"{qr},{mp}");
+		public Part Painting { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Poultice { get; set; } = new Part(true, $"{qr},{mp}"); // Not used as pile currently
 		public Part Sail { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Stick { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part TorchHolder { get; set; } = new Part(false, $"{qr},{mp}");		
 		public Part TroughLarge { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part TroughSmall { get; set; } = new Part(false, $"{qr},{mp}");
-		public Part Painting { get; set; } = new Part(false, $"{qr},{mp}");
-		public Part FlowerPot { get; set; } = new Part(true, $"{qr},{mp}"); // Not used as pile currently
 
 
 

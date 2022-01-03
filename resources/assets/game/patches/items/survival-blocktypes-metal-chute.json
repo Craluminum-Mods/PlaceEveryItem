@@ -1,0 +1,68 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/groundStorageTransformByType",
+    "value": {
+      "*-elbow-*": {
+        "translation": {
+          "x": -0.04,
+          "y": 0.06,
+          "z": -0.18
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0,
+          "z": 0.5
+        },
+        "scale": 0.7
+      },
+      "*-3way-*": {
+        "translation": {
+          "x": -0.033,
+          "y": -0.06,
+          "z": 0.03
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0,
+          "z": 0.5
+        },
+        "scale": 0.65
+      }
+    },
+    "file": "blocktypes/metal/chute.json",
+    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/behaviors/-",
+    "value": {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "Quadrants",
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.125,
+          "z2": 1
+        }
+      }
+    },
+    "file": "blocktypes/metal/chute.json",
+    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*-down-east"],
+    "file": "blocktypes/metal/chute.json",
+    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" }
+  }
+]
