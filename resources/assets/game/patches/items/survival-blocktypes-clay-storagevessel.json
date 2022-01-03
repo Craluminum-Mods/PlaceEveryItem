@@ -1,0 +1,39 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/groundStorageTransformByType",
+    "value": {
+      "*-raw": {},
+      "*": {
+        "origin": {
+          "x": 0.5,
+          "y": 0,
+          "z": 0.5
+        },
+        "scale": 0.7
+      }
+    },
+    "file": "blocktypes/clay/storagevessel.json",
+    "condition": { "when": "PlaceStorageVesselEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/behaviorsByType/*/-",
+    "value": {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "Quadrants",
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.125,
+          "z2": 1
+        }
+      }
+    },
+    "file": "blocktypes/clay/storagevessel.json",
+    "condition": { "when": "PlaceStorageVesselEnabled", "isValue": "true" }
+  }
+]

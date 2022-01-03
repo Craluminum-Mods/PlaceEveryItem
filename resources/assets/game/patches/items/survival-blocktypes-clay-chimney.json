@@ -3,28 +3,24 @@
     "op": "add",
     "path": "/attributes/groundStorageTransform",
     "value": {
-      "translation": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
       "rotation": {
         "x": 0,
-        "y": 0,
+        "y": 24,
         "z": 0
       },
       "origin": {
         "x": 0.5,
         "y": 0,
         "z": 0.5
-      }
+      },
+      "scale": 0.7
     },
-    "file": "blocktypes/clay/oillamp.json",
-    "condition": { "when": "PlaceOilLampEnabled", "isValue": "true" }
+    "file": "blocktypes/clay/chimney.json",
+    "condition": { "when": "PlaceChimneyEnabled", "isValue": "true" }
   },
   {
     "op": "add",
-    "path": "/behaviorsByType/*-up/-",
+    "path": "/behaviors/-",
     "value": {
       "name": "GroundStorable",
       "properties": {
@@ -39,14 +35,14 @@
         }
       }
     },
-    "file": "blocktypes/clay/oillamp.json",
-    "condition": { "when": "PlaceOilLampEnabled", "isValue": "true" }
+    "file": "blocktypes/clay/chimney.json",
+    "condition": { "when": "PlaceChimneyEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
-    "value": ["*-up"],
-    "file": "blocktypes/clay/oillamp.json",
-    "condition": { "when": "PlaceOilLampEnabled", "isValue": "true" }
+    "value": ["*"],
+    "file": "blocktypes/clay/chimney.json",
+    "condition": { "when": "PlaceChimneyEnabled", "isValue": "true" }
   }
 ]

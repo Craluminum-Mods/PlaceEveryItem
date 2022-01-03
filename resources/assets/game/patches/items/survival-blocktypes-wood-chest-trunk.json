@@ -4,27 +4,28 @@
     "path": "/attributes/groundStorageTransform",
     "value": {
       "translation": {
-        "x": 0,
+        "x": -0.06,
         "y": 0,
-        "z": 0
+        "z": -0.055
       },
       "rotation": {
         "x": 0,
-        "y": 0,
+        "y": 45,
         "z": 0
       },
       "origin": {
         "x": 0.5,
         "y": 0,
         "z": 0.5
-      }
+      },
+      "scale": 0.5
     },
-    "file": "blocktypes/clay/oillamp.json",
-    "condition": { "when": "PlaceOilLampEnabled", "isValue": "true" }
+    "file": "blocktypes/wood/chest-trunk.json",
+    "condition": { "when": "PlaceChestEnabled", "isValue": "true" }
   },
   {
     "op": "add",
-    "path": "/behaviorsByType/*-up/-",
+    "path": "/behaviors/-",
     "value": {
       "name": "GroundStorable",
       "properties": {
@@ -39,14 +40,14 @@
         }
       }
     },
-    "file": "blocktypes/clay/oillamp.json",
-    "condition": { "when": "PlaceOilLampEnabled", "isValue": "true" }
+    "file": "blocktypes/wood/chest-trunk.json",
+    "condition": { "when": "PlaceChestEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
-    "value": ["*-up"],
-    "file": "blocktypes/clay/oillamp.json",
-    "condition": { "when": "PlaceOilLampEnabled", "isValue": "true" }
+    "value": ["*"],
+    "file": "blocktypes/wood/chest-trunk.json",
+    "condition": { "when": "PlaceChestEnabled", "isValue": "true" }
   }
 ]

@@ -1,0 +1,54 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/groundStorageTransformByType",
+    "value": {
+      "@.*(?!raw)": {
+        "translation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0,
+          "z": 0.5
+        }
+      }
+    },
+    "file": "blocktypes/clay/flowerpot.json",
+    "condition": { "when": "PlaceFlowerPotEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/behaviorsByType/*/-",
+    "value": {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "Quadrants",
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.125,
+          "z2": 1
+        }
+      }
+    },
+    "file": "blocktypes/clay/flowerpot.json",
+    "condition": { "when": "PlaceFlowerPotEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "blocktypes/clay/flowerpot.json",
+    "condition": { "when": "PlaceFlowerPotEnabled", "isValue": "true" }
+  }
+]

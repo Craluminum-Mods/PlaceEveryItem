@@ -12,28 +12,28 @@ namespace PlaceEveryItem.List
 	public class PlaceEveryItemConfig : ModSystem, IEnumerable<KeyValuePair<string, Part>>
 	{
 		public static PlaceEveryItemConfig Loaded { get; set; } = new PlaceEveryItemConfig();
-		private const string mp = " (More Piles has a pile for it)";
+		private const string mp = " (check morepiles)";
 		private const string allt = "All types of ";
-		private const string sc = "SingleCenter";
-		private const string hv = "Halves";
-		private const string qr = "Quadrants";
+		private const string sc = "1";
+		private const string hv = "2";
+		private const string qr = "4";
 
 		// Foods
-		public Part Bread { get; set; } = new Part(true, $"{qr} ({allt}bread)");
+		public Part Bread { get; set; } = new Part(true, $"{qr} (All)");
 		public Part Butter { get; set; } = new Part(true, $"{qr}");
-		public Part Dough { get; set; } = new Part(true, $"{qr} ({allt}dough)");
+		public Part Dough { get; set; } = new Part(true, $"{qr} (All)");
 		public Part Egg { get; set; } = new Part(true, $"{qr}");
-		public Part Flour { get; set; } = new Part(true, $"{qr} ({allt}flour)");
-		public Part Fruit { get; set; } = new Part(true, $"{qr} (All fruits)");
-		public Part Grain { get; set; } = new Part(true, $"{qr} ({allt}grain)");
+		public Part Flour { get; set; } = new Part(true, $"{qr} (All)");
+		public Part Fruit { get; set; } = new Part(true, $"{qr} (All)");
+		public Part Grain { get; set; } = new Part(true, $"{qr} (All)");
 		public Part Insect { get; set; } = new Part(true, $"{qr}");
-		public Part Legume { get; set; } = new Part(true, $"{qr} (All legumes)");
+		public Part Legume { get; set; } = new Part(true, $"{qr} (All)");
 		public Part Meat { get; set; } = new Part(true, $"{qr} (bushmeat, redmeat, poultry)");
-		public Part PickledLegume { get; set; } = new Part(true, $"{qr} (All pickled legumes)");
-		public Part PickledVegetable { get; set; } = new Part(true, $"{qr} (All pickled vegetables)");
+		public Part PickledLegume { get; set; } = new Part(true, $"{qr} (All)");
+		public Part PickledVegetable { get; set; } = new Part(true, $"{qr} (All)");
 		public Part PressedMash { get; set; } = new Part(true, $"{qr}");
 		public Part RawCassava { get; set; } = new Part(true, $"{qr}");
-		public Part Vegetable { get; set; } = new Part(true, $"{qr} (All vegetables)");
+		public Part Vegetable { get; set; } = new Part(true, $"{qr} (All)");
 
 		// Toolheads
 		public Part ArrowHead { get; set; } = new Part(true, $"{qr}");
@@ -50,7 +50,7 @@ namespace PlaceEveryItem.List
 		public Part PulverizerToggle { get; set; } = new Part(true, $"{qr}");
 		public Part SawBlade { get; set; } = new Part(true, $"{qr}");
 		public Part ScytheHead { get; set; } = new Part(true, $"{qr}");
-		public Part ShovelHead { get; set; } = new Part(true, $"{qr} for metal, {qr} for stone");
+		public Part ShovelHead { get; set; } = new Part(true, $"{qr}");
 		public Part SpearHead { get; set; } = new Part(true, $"{qr}");
 
 		// Other
@@ -68,7 +68,7 @@ namespace PlaceEveryItem.List
 		public Part Metalbit { get; set; } = new Part(true, $"{qr}");
 		public Part Nugget { get; set; } = new Part(true, $"{qr}");
 		public Part OreBlastingBomb { get; set; } = new Part(true, $"{qr}");
-		public Part OreChunk { get; set; } = new Part(true, $"{qr} ({allt}graded/ungraded/crystalized ore chunks)");
+		public Part OreChunk { get; set; } = new Part(true, $"{qr} ({allt}graded/ungraded/crystalized)");
 		public Part Padlock { get; set; } = new Part(true, $"{qr}");
 		public Part Paper { get; set; } = new Part(true, $"{qr}");
 		public Part PapyrusTops { get; set; } = new Part(true, $"{qr}");
@@ -89,6 +89,17 @@ namespace PlaceEveryItem.List
 		public Part Torch { get; set; } = new Part(true, $"{qr}");
 		public Part Beenade { get; set; } = new Part(true, $"{qr}");
 		public Part Candle { get; set; } = new Part(true, $"{qr}");
+		public Part Planter { get; set; } = new Part(true, $"{qr}");
+		public Part Distiller { get; set; } = new Part(true, $"{qr} (condenser, boiler)");
+		public Part BloomeryParts { get; set; } = new Part(true, $"{qr} (base, chimney)");
+		public Part Chimney { get; set; } = new Part(true, $"{qr}");
+		public Part DisplayCase { get; set; } = new Part(true, $"{qr}");
+		public Part StorageVessel { get; set; } = new Part(true, $"{qr}");
+		public Part Quern { get; set; } = new Part(true, $"{qr}");
+		public Part Bellows { get; set; } = new Part(true, $"{qr}");
+		public Part Chest { get; set; } = new Part(true, $"{qr} (All)");
+		public Part Table { get; set; } = new Part(true, $"{qr} (All)");
+
 
 
 
@@ -116,7 +127,7 @@ namespace PlaceEveryItem.List
 		public Part TorchHolder { get; set; } = new Part(false, $"{qr},{mp}");		
 		public Part TroughLarge { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part TroughSmall { get; set; } = new Part(false, $"{qr},{mp}");
-
+		public Part FlowerPot { get; set; } = new Part(true, $"{qr},{mp}"); // Not used as pile currently
 
 
 

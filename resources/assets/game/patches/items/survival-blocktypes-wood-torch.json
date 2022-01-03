@@ -47,7 +47,7 @@
   },
   {
     "op": "add",
-    "path": "/behaviorsbyType/*-lit-*/1",
+    "path": "/behaviorsbyType/*-lit-*/-",
     "value": {
       "name": "GroundStorable",
       "properties": {

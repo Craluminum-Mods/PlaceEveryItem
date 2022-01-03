@@ -39,12 +39,5 @@
     },
     "file": "itemtypes/tool/bullets.json",
     "condition": { "when": "PlaceBulletsEnabled", "isValue": "true" }
-  },
-  {
-    "op": "add",
-    "path": "/creativeinventory/groundstorable",
-    "value": ["*"],
-    "file": "itemtypes/tool/bullets.json",
-    "condition": { "when": "PlaceBulletsEnabled", "isValue": "true" }
   }
 ]

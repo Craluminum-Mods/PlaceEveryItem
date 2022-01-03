@@ -17,14 +17,15 @@
         "x": 0.5,
         "y": 0,
         "z": 0.5
-      }
+      },
+      "scale": 0.6
     },
-    "file": "blocktypes/clay/oillamp.json",
-    "condition": { "when": "PlaceOilLampEnabled", "isValue": "true" }
+    "file": "blocktypes/stone/quern.json",
+    "condition": { "when": "PlaceQuernEnabled", "isValue": "true" }
   },
   {
     "op": "add",
-    "path": "/behaviorsByType/*-up/-",
+    "path": "/behaviors/-",
     "value": {
       "name": "GroundStorable",
       "properties": {
@@ -39,14 +40,14 @@
         }
       }
     },
-    "file": "blocktypes/clay/oillamp.json",
-    "condition": { "when": "PlaceOilLampEnabled", "isValue": "true" }
+    "file": "blocktypes/stone/quern.json",
+    "condition": { "when": "PlaceQuernEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
-    "value": ["*-up"],
-    "file": "blocktypes/clay/oillamp.json",
-    "condition": { "when": "PlaceOilLampEnabled", "isValue": "true" }
+    "value": ["*"],
+    "file": "blocktypes/stone/quern.json",
+    "condition": { "when": "PlaceQuernEnabled", "isValue": "true" }
   }
 ]
