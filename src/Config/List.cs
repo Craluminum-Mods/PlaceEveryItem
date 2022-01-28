@@ -19,6 +19,7 @@ namespace PlaceEveryItem.List
 		private const string qr = "4";
 
 		// Foods
+		public Part Food { get; set; } = new Part(true, $"{qr} (Anything that is edible and can rot)");
 		public Part Bread { get; set; } = new Part(true, $"{qr} (All)");
 		public Part Butter { get; set; } = new Part(true, $"{qr}");
 		public Part Dough { get; set; } = new Part(true, $"{qr} (All)");
