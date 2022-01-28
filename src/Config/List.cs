@@ -12,15 +12,17 @@ namespace PlaceEveryItem.List
 	public class PlaceEveryItemConfig : ModSystem, IEnumerable<KeyValuePair<string, Part>>
 	{
 		public static PlaceEveryItemConfig Loaded { get; set; } = new PlaceEveryItemConfig();
-		private const string mp = " (check morepiles)";
 		private const string allt = "All types of ";
-		private const string sc = "1";
-		private const string hv = "2";
-		private const string qr = "4";
 		private const string foodlist = "bread, butter, dough, egg, flour, fruits, grains, insects, legumes, meat, pickled, mash, vegetable";
+		private const string hv = "2";
+		private const string mp = " (check morepiles)";
+		private const string qr = "4";
+		private const string sc = "1";
 
 		// Foods
+		public Part Fat { get; set; } = new Part(true, $"{qr}");
 		public Part Food { get; set; } = new Part(true, $"{qr} ({foodlist})");
+		public Part ReedRoots { get; set; } = new Part(true, $"{qr}");
 		// public Part Bread { get; set; } = new Part(true, $"{qr} (All)");
 		// public Part Butter { get; set; } = new Part(true, $"{qr}");
 		// public Part Dough { get; set; } = new Part(true, $"{qr} (All)");
@@ -61,7 +63,6 @@ namespace PlaceEveryItem.List
 		public Part Door { get; set; } = new Part(true, $"{qr} (wooden, rough, iron, coke oven)");
 		public Part DryGrass { get; set; } = new Part(true, $"{qr}");
 		public Part EchoChamber { get; set; } = new Part(true, $"{qr}");
-		public Part Fat { get; set; } = new Part(true, $"{qr}");
 		public Part Feather { get; set; } = new Part(true, $"{qr}");
 		public Part FruitPress { get; set; } = new Part(true, $"{qr}");
 		public Part FruitTreeBranch { get; set; } = new Part(true, $"{qr}");
@@ -87,7 +88,6 @@ namespace PlaceEveryItem.List
 		public Part Quern { get; set; } = new Part(true, $"{qr}");
 		public Part Quiver { get; set; } = new Part(true, $"{sc}");
 		public Part ReedBasket { get; set; } = new Part(true, $"{qr}");
-		public Part ReedRoots { get; set; } = new Part(true, $"{qr}");
 		public Part ReedTops { get; set; } = new Part(true, $"{qr} (cattail, papyrus)");
 		public Part Resin { get; set; } = new Part(true, $"{qr}");
 		public Part ResonanceArchive { get; set; } = new Part(true, $"{qr}");
@@ -127,12 +127,9 @@ namespace PlaceEveryItem.List
 		public Part Poultice { get; set; } = new Part(true, $"{qr},{mp}"); // Not used as pile currently
 		public Part Sail { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Stick { get; set; } = new Part(false, $"{qr},{mp}");
-		public Part TorchHolder { get; set; } = new Part(false, $"{qr},{mp}");		
+		public Part TorchHolder { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part TroughLarge { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part TroughSmall { get; set; } = new Part(false, $"{qr},{mp}");
-
-
-
 
 		private static readonly PropertyInfo[] propertyInfos = typeof(PlaceEveryItemConfig).GetProperties()
 			.Where(propertyInfo => propertyInfo.PropertyType == typeof(Part)).ToArray();
