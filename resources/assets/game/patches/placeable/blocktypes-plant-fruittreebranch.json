@@ -44,5 +44,12 @@
     },
     "file": "blocktypes/plant/fruittreebranch.json",
     "condition": { "when": "PlaceFruitTreeBranchEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventoryStacksByType/*-branch/0/tabs/-",
+    "value": "groundstorable",
+    "file": "blocktypes/plant/fruittreebranch.json",
+    "condition": { "when": "PlaceChestEnabled", "isValue": "true" }
   }
 ]
