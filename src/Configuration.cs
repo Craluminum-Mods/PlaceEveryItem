@@ -10,7 +10,7 @@ using PlaceEveryItem.List;
 
 namespace PlaceEveryItem
 {
-  public class Core : ModSystem
+  public class Configuration : ModSystem
 	{
     public override void StartPre(ICoreAPI api)
 		{
