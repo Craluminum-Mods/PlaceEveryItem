@@ -11,7 +11,7 @@
       }
     ],
     "file": "itemtypes/food/vegetable.json",
-    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -25,7 +25,7 @@
       "scale": 0.85
     },
     "file": "itemtypes/food/vegetable.json",
-    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -38,7 +38,7 @@
       }
     },
     "file": "itemtypes/food/vegetable.json",
-    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -64,7 +64,7 @@
       }
     },
     "file": "itemtypes/food/vegetable.json",
-    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -90,13 +90,13 @@
       }
     },
     "file": "itemtypes/food/vegetable.json",
-    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/food/vegetable.json",
-    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   }
 ]

@@ -11,7 +11,7 @@
       }
     ],
     "file": "itemtypes/food/rawcassava.json",
-    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -29,13 +29,13 @@
       }
     },
     "file": "itemtypes/food/rawcassava.json",
-    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/food/rawcassava.json",
-    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   }
 ]

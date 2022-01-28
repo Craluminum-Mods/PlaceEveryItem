@@ -19,13 +19,13 @@
       }
     ],
     "file": "itemtypes/food/flour.json",
-    "condition": { "when": "PlaceFlourEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/food/flour.json",
-    "condition": { "when": "PlaceFlourEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   }
 ]

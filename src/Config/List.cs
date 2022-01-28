@@ -17,22 +17,23 @@ namespace PlaceEveryItem.List
 		private const string sc = "1";
 		private const string hv = "2";
 		private const string qr = "4";
+		private const string foodlist = "bread, butter, dough, egg, flour, fruits, grains, insects, legumes, meat, pickled, mash, vegetable";
 
 		// Foods
-		public Part Food { get; set; } = new Part(true, $"{qr} (Anything that is edible and can rot)");
-		public Part Bread { get; set; } = new Part(true, $"{qr} (All)");
-		public Part Butter { get; set; } = new Part(true, $"{qr}");
-		public Part Dough { get; set; } = new Part(true, $"{qr} (All)");
-		public Part Egg { get; set; } = new Part(true, $"{qr}");
-		public Part Flour { get; set; } = new Part(true, $"{qr} (All)");
-		public Part Fruit { get; set; } = new Part(true, $"{qr} (All)");
-		public Part Grain { get; set; } = new Part(true, $"{qr} (All)");
-		public Part Insect { get; set; } = new Part(true, $"{qr}");
-		public Part Legume { get; set; } = new Part(true, $"{qr} (All)");
-		public Part Meat { get; set; } = new Part(true, $"{qr} (bushmeat, redmeat, poultry)");
-		public Part PickledFood { get; set; } = new Part(true, $"{qr}");
-		public Part PressedMash { get; set; } = new Part(true, $"{qr}");
-		public Part Vegetable { get; set; } = new Part(true, $"{qr} (All, including raw cassava)");
+		public Part Food { get; set; } = new Part(true, $"{qr} ({foodlist})");
+		// public Part Bread { get; set; } = new Part(true, $"{qr} (All)");
+		// public Part Butter { get; set; } = new Part(true, $"{qr}");
+		// public Part Dough { get; set; } = new Part(true, $"{qr} (All)");
+		// public Part Egg { get; set; } = new Part(true, $"{qr}");
+		// public Part Flour { get; set; } = new Part(true, $"{qr} (All)");
+		// public Part Fruit { get; set; } = new Part(true, $"{qr} (All)");
+		// public Part Grain { get; set; } = new Part(true, $"{qr} (All)");
+		// public Part Insect { get; set; } = new Part(true, $"{qr}");
+		// public Part Legume { get; set; } = new Part(true, $"{qr} (All)");
+		// public Part Meat { get; set; } = new Part(true, $"{qr} (bushmeat, redmeat, poultry)");
+		// public Part PickledFood { get; set; } = new Part(true, $"{qr}");
+		// public Part PressedMash { get; set; } = new Part(true, $"{qr}");
+		// public Part Vegetable { get; set; } = new Part(true, $"{qr} (All, including raw cassava)");
 
 		// Toolheads
 		public Part Bowstave { get; set; } = new Part(true, $"{qr}");

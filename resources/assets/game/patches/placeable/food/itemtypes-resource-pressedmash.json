@@ -19,7 +19,7 @@
       }
     ],
     "file": "itemtypes/resource/pressedmash.json",
-    "condition": { "when": "PlacePressedMashEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -32,13 +32,13 @@
       }
     },
     "file": "itemtypes/resource/pressedmash.json",
-    "condition": { "when": "PlacePressedMashEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/resource/pressedmash.json",
-    "condition": { "when": "PlacePressedMashEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   }
 ]

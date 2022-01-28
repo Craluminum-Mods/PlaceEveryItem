@@ -12,7 +12,7 @@
       }
     ],
     "file": "itemtypes/food/bambooshoot.json",
-    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -26,13 +26,13 @@
       }
     },
     "file": "itemtypes/food/bambooshoot.json",
-    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/food/bambooshoot.json",
-    "condition": { "when": "PlaceVegetableEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   }
 ]

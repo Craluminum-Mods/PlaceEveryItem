@@ -19,7 +19,7 @@
       }
     ],
     "file": "itemtypes/food/bushmeat.json",
-    "condition": { "when": "PlaceMeatEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -32,13 +32,13 @@
       }
     },
     "file": "itemtypes/food/bushmeat.json",
-    "condition": { "when": "PlaceMeatEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/food/bushmeat.json",
-    "condition": { "when": "PlaceMeatEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   }
 ]

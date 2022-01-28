@@ -11,7 +11,7 @@
       }
     ],
     "file": "itemtypes/food/pickledvegetable.json",
-    "condition": { "when": "PlacePickledFoodEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -74,13 +74,13 @@
       }
     },
     "file": "itemtypes/food/pickledvegetable.json",
-    "condition": { "when": "PlacePickledFoodEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "itemtypes/food/pickledvegetable.json",
-    "condition": { "when": "PlacePickledFoodEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
   }
 ]
