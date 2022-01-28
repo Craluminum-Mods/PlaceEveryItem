@@ -108,7 +108,7 @@ namespace PlaceEveryItem.List
 
 		// Has pile in More Piles 1.2.0+
 		public Part AngledGear { get; set; } = new Part(false, $"{qr},{mp}");
-		public Part Arrow { get; set; } = new Part(false, $"{qr} (any arrow, even modded ones),{mp}");
+		public Part Arrow { get; set; } = new Part(false, $"{qr} (even modded ones),{mp}");
 		public Part Axle { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part BambooStakes { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Beeswax { get; set; } = new Part(false, $"{qr},{mp}");
