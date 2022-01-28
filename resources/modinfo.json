@@ -2,13 +2,13 @@
   "type": "code",
   "name": "Place Every Item",
   "modid": "pei",
-  "version": "1.2.0",
+  "version": "1.2.1",
 
   "description": "Adds the ability to place almost any item and block on the ground",
   "website": "https://github.com/Craluminum2413/PlaceEveryItem",
   "authors": [ "Craluminum2413" ],
 
   "dependencies": {
-  "game": "1.16.0-pre.1"
+  "game": "1.16.0"
   }
 }
