@@ -45,8 +45,8 @@
   },
   {
     "op": "add",
-    "path": "/creativeinventory/groundstorable",
-    "value": ["*-north"],
+    "path": "/creativeinventoryStacksByType/*-east/0/tabs/-",
+    "value": "groundstorable",
     "file": "blocktypes/wood/chest.json",
     "condition": { "when": "PlaceChestEnabled", "isValue": "true" }
   }

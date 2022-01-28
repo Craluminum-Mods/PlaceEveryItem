@@ -33,10 +33,11 @@
     "file": "blocktypes/wood/chest-labeled.json",
     "condition": { "when": "PlaceChestEnabled", "isValue": "true" }
   },
+
   {
     "op": "add",
-    "path": "/creativeinventory/groundstorable",
-    "value": ["*-north"],
+    "path": "/creativeinventoryStacksByType/*-east/0/tabs/-",
+    "value": "groundstorable",
     "file": "blocktypes/wood/chest-labeled.json",
     "condition": { "when": "PlaceChestEnabled", "isValue": "true" }
   }

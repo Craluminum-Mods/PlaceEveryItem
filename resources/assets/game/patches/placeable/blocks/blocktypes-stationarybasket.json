@@ -11,7 +11,7 @@
       "scale": 0.7
     },
     "file": "blocktypes/stationarybasket.json",
-    "condition": { "when": "PlaceBasketEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedBasketEnabled", "isValue": "true" }
   },
   {
     "op": "add",
@@ -31,13 +31,13 @@
       }
     },
     "file": "blocktypes/stationarybasket.json",
-    "condition": { "when": "PlaceBasketEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedBasketEnabled", "isValue": "true" }
   },
   {
     "op": "add",
-    "path": "/creativeinventory/groundstorable",
-    "value": ["*-east"],
+    "path": "/creativeinventoryStacksByType/*-east/0/tabs/-",
+    "value": "groundstorable",
     "file": "blocktypes/stationarybasket.json",
-    "condition": { "when": "PlaceBasketEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedBasketEnabled", "isValue": "true" }
   }
 ]

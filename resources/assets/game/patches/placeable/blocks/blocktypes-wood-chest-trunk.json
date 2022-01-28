@@ -3,21 +3,9 @@
     "op": "add",
     "path": "/attributes/groundStorageTransform",
     "value": {
-      "translation": {
-        "x": -0.06,
-        "y": 0,
-        "z": -0.055
-      },
-      "rotation": {
-        "x": 0,
-        "y": 45,
-        "z": 0
-      },
-      "origin": {
-        "x": 0.5,
-        "y": 0,
-        "z": 0.5
-      },
+      "translation": { "x": -0.06, "y": 0, "z": 0.06 },
+      "rotation": { "x": 0, "y": 45, "z": 0 },
+      "origin": { "x": 0.5, "y": 0, "z": 0.5 },
       "scale": 0.5
     },
     "file": "blocktypes/wood/chest-trunk.json",
@@ -45,8 +33,8 @@
   },
   {
     "op": "add",
-    "path": "/creativeinventory/groundstorable",
-    "value": ["*-north"],
+    "path": "/creativeinventoryStacksByType/*-east/0/tabs/-",
+    "value": "groundstorable",
     "file": "blocktypes/wood/chest-trunk.json",
     "condition": { "when": "PlaceChestEnabled", "isValue": "true" }
   }

@@ -35,5 +35,12 @@
     },
     "file": "blocktypes/clay/storagevessel.json",
     "condition": { "when": "PlaceStorageVesselEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventoryStacksByType/*/0/tabs/-",
+    "value": "groundstorable",
+    "file": "blocktypes/clay/storagevessel.json",
+    "condition": { "when": "PlaceStorageVesselEnabled", "isValue": "true" }
   }
 ]
