@@ -1,0 +1,51 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants",
+          "collisionBox": {
+            "x1": 0,
+            "y1": 0,
+            "z1": 0,
+            "x2": 1,
+            "y2": 0.1061,
+            "z2": 1
+          }
+        }
+      }
+    ],
+    "file": "game:itemtypes/toolhead/prospectingpickhead.json",
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributes",
+    "value": {
+      "groundStorageTransform": {
+        "rotation": {
+          "x": 0,
+          "y": 45,
+          "z": 0
+        },
+        "origin": {
+          "x": 0.85,
+          "y": 0,
+          "z": 1
+        }
+      }
+    },
+    "file": "game:itemtypes/toolhead/prospectingpickhead.json",
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "game:itemtypes/toolhead/prospectingpickhead.json",
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants"
+        }
+      }
+    ],
+    "file": "game:itemtypes/food/vegetable.json",
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/*-cabbage/groundStorageTransform",
+    "value": {
+      "origin": {
+        "x": 0.5,
+        "y": 0,
+        "z": 0.5
+      },
+      "scale": 0.85
+    },
+    "file": "game:itemtypes/food/vegetable.json",
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/*-cassava/groundStorageTransform",
+    "value": {
+      "rotation": {
+        "x": 0,
+        "y": 23,
+        "z": 0
+      }
+    },
+    "file": "game:itemtypes/food/vegetable.json",
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/*-cookedcattailroot",
+    "value": {
+      "groundStorageTransform": {
+        "translation": {
+          "x": 0.19,
+          "y": 0.03,
+          "z": -0.04
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 90
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0,
+          "z": 0.5
+        },
+        "scale": 0.9
+      }
+    },
+    "file": "game:itemtypes/food/vegetable.json",
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributesByType/*-cookedpapyrusroot",
+    "value": {
+      "groundStorageTransform": {
+        "translation": {
+          "x": 0.16,
+          "y": 0,
+          "z": -0.16
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 45
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.05,
+          "z": 0.5
+        },
+        "scale": 0.9
+      }
+    },
+    "file": "game:itemtypes/food/vegetable.json",
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "game:itemtypes/food/vegetable.json",
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+  }
+]

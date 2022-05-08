@@ -1,0 +1,41 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants"
+        }
+      }
+    ],
+    "file": "game:itemtypes/food/rawcassava.json",
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributes/groundStorageTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": 0.001,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 23,
+        "z": 0
+      }
+    },
+    "file": "game:itemtypes/food/rawcassava.json",
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "game:itemtypes/food/rawcassava.json",
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+  }
+]

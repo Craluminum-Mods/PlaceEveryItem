@@ -1,0 +1,86 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants"
+        }
+      }
+    ],
+    "file": "game:itemtypes/food/pickledvegetable.json",
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributes/groundStorageTransformByType",
+    "value": {
+      "*-bellpepper": {
+        "translation": {
+          "x": 0.03,
+          "y": 0,
+          "z": -0.01
+        },
+        "origin": {
+          "x": 0.2,
+          "y": 0,
+          "z": 0.2
+        },
+        "scale": 0.9
+      },
+      "*-cabbage": {
+        "origin": {
+          "x": 0.5,
+          "y": 0,
+          "z": 0.5
+        },
+        "scale": 0.8
+      },
+      "@.*-(carrot|parsnip)": {
+        "translation": {
+          "x": 0.055,
+          "y": 0,
+          "z": -0.055
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 45
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.057,
+          "z": 0.5
+        }
+      },
+      "*-turnip": {
+        "translation": {
+          "x": 0.035,
+          "y": 0,
+          "z": -0.035
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 45
+        },
+        "origin": {
+          "x": 0.5,
+          "y": 0.1,
+          "z": 0.5
+        }
+      }
+    },
+    "file": "game:itemtypes/food/pickledvegetable.json",
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "game:itemtypes/food/pickledvegetable.json",
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+  }
+]

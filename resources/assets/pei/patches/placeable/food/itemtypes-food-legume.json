@@ -1,0 +1,39 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants"
+        }
+      }
+    ],
+    "file": "game:itemtypes/food/legume.json",
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/attributes/groundStorageTransformByType",
+    "value": {
+      "*-peanut": {
+        "origin": {
+          "x": 0.5,
+          "y": 0,
+          "z": 0.5
+        },
+        "scale": 0.75
+      }
+    },
+    "file": "game:itemtypes/food/legume.json",
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "game:itemtypes/food/legume.json",
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+  }
+]

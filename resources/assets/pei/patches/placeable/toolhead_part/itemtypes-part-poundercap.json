@@ -1,0 +1,23 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants"
+        }
+      }
+    ],
+    "file": "game:itemtypes/part/poundercap.json",
+    "condition": { "when": "PlacePounderCapEnabled", "isValue": "true" }
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "game:itemtypes/part/poundercap.json",
+    "condition": { "when": "PlacePounderCapEnabled", "isValue": "true" }
+  }
+]
