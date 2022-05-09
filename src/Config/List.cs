@@ -51,6 +51,7 @@ namespace PlaceEveryItem.List
 		public Part DryGrass { get; set; } = new Part(true, $"{qr}");
 		public Part EchoChamber { get; set; } = new Part(true, $"{qr}");
 		public Part Feather { get; set; } = new Part(true, $"{qr}");
+		public Part FlowerPot { get; set; } = new Part(true, $"{qr}");
 		public Part FruitPress { get; set; } = new Part(true, $"{qr}");
 		public Part FruitTreeBranch { get; set; } = new Part(true, $"{qr}");
 		public Part Gear { get; set; } = new Part(true, $"{qr} (rusty, temporal)");
@@ -72,6 +73,7 @@ namespace PlaceEveryItem.List
 		public Part Padlock { get; set; } = new Part(true, $"{qr}");
 		public Part Paper { get; set; } = new Part(true, $"{qr}");
 		public Part Planter { get; set; } = new Part(true, $"{qr}");
+		public Part Poultice { get; set; } = new Part(true, $"{qr}");
 		public Part Quartz { get; set; } = new Part(true, $"{qr} (amethyst, clear, rose, smoky)");
 		public Part Quern { get; set; } = new Part(true, $"{qr}");
 		public Part Quiver { get; set; } = new Part(true, $"{sc}");
@@ -94,7 +96,7 @@ namespace PlaceEveryItem.List
 		public Part TreeSeed { get; set; } = new Part(true, $"{qr}");
 		public Part WoodenPath { get; set; } = new Part(true, $"{qr}");
 
-		// Has pile in More Piles 1.2.0+
+		// Has pile in More Piles 1.2.1+
 		public Part AngledGear { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Arrow { get; set; } = new Part(false, $"{qr} (even modded ones),{mp}");
 		public Part Axle { get; set; } = new Part(false, $"{qr},{mp}");
@@ -105,14 +107,11 @@ namespace PlaceEveryItem.List
 		public Part Cloth { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part FlaxFibers { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part FlaxTwine { get; set; } = new Part(false, $"{qr},{mp}");
-		public Part FlowerPot { get; set; } = new Part(true, $"{qr},{mp}"); // Not used as pile currently
-		public Part Honeycomb { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part IronBloom { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part MetalChain { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part MetalLamellae { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part MetalScales { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Painting { get; set; } = new Part(false, $"{qr},{mp}");
-		public Part Poultice { get; set; } = new Part(true, $"{qr},{mp}"); // Not used as pile currently
 		public Part Sail { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part Stick { get; set; } = new Part(false, $"{qr},{mp}");
 		public Part TorchHolder { get; set; } = new Part(false, $"{qr},{mp}");
