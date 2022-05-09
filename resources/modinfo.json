@@ -1,10 +1,11 @@
 {
   "type": "code",
-  "name": "Place Every Item",
   "modid": "pei",
+  "name": "Place Every Item",
   "version": "1.2.2",
   "authors": ["Craluminum2413"],
   "dependencies": {
-    "game": "1.16.0"
+    "game": "1.16.0",
+    "aaamakeitcompatible": "0.0.0"
   }
 }
