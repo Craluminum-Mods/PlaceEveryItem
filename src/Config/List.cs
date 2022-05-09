@@ -56,6 +56,7 @@ namespace PlaceEveryItem.List
 		public Part Gear { get; set; } = new Part(true, $"{qr} (rusty, temporal)");
 		public Part GemRough { get; set; } = new Part(true, $"{qr}");
 		public Part Hide { get; set; } = new Part(true, $"{qr}");
+		public Part Honeycomb { get; set; } = new Part(true, $"{qr}");
 		public Part Hopper { get; set; } = new Part(true, $"{qr}");
 		public Part LargeGearSection { get; set; } = new Part(true, $"{qr}");
 		public Part Leather { get; set; } = new Part(true, $"{qr}");
