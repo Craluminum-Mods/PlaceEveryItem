@@ -17,13 +17,15 @@
       }
     },
     "file": "game:itemtypes/food/flour.json",
-    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" },
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/food/flour.json",
-    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" },
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
   }
 ]

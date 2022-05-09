@@ -17,7 +17,8 @@
       }
     },
     "file": "game:itemtypes/bandage.json",
-    "condition": { "when": "PlaceBandageEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBandageEnabled", "isValue": "true" },
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
   },
   {
     "op": "add",
@@ -37,7 +38,8 @@
       }
     },
     "file": "game:itemtypes/bandage.json",
-    "condition": { "when": "PlaceBandageEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBandageEnabled", "isValue": "true" },
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
   },
   {
     "op": "add",
@@ -58,13 +60,15 @@
       }
     },
     "file": "game:itemtypes/bandage.json",
-    "condition": { "when": "PlaceBandageEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBandageEnabled", "isValue": "true" },
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/bandage.json",
-    "condition": { "when": "PlaceBandageEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBandageEnabled", "isValue": "true" },
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
   }
 ]
