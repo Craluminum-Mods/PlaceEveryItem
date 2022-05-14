@@ -2,7 +2,7 @@
   "type": "code",
   "modid": "pei",
   "name": "Place Every Item",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "authors": ["Craluminum2413"],
   "dependencies": {
     "game": "1.16.0"
