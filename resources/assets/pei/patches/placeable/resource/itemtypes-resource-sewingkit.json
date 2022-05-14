@@ -11,13 +11,15 @@
       }
     ],
     "file": "game:itemtypes/resource/sewingkit.json",
-    "condition": { "when": "PlaceSewingKitEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceSewingKitEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/sewingkit.json",
-    "condition": { "when": "PlaceSewingKitEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceSewingKitEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

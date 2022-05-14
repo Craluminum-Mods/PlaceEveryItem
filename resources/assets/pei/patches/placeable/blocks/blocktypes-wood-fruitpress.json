@@ -16,7 +16,8 @@
       "scale": 0.55
     },
     "file": "game:blocktypes/wood/fruitpress.json",
-    "condition": { "when": "PlaceFruitPressEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFruitPressEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -36,13 +37,15 @@
       }
     },
     "file": "game:blocktypes/wood/fruitpress.json",
-    "condition": { "when": "PlaceFruitPressEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFruitPressEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-ns"],
     "file": "game:blocktypes/wood/fruitpress.json",
-    "condition": { "when": "PlaceFruitPressEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFruitPressEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

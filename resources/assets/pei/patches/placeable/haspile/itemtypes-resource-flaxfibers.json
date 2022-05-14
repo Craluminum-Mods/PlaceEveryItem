@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:itemtypes/resource/flaxfibers.json",
-    "condition": { "when": "PlaceFlaxFibersEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFlaxFibersEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -40,13 +41,15 @@
       }
     },
     "file": "game:itemtypes/resource/flaxfibers.json",
-    "condition": { "when": "PlaceFlaxFibersEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFlaxFibersEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/flaxfibers.json",
-    "condition": { "when": "PlaceFlaxFibersEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFlaxFibersEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

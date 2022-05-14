@@ -23,7 +23,8 @@
       }
     },
     "file": "game:blocktypes/metal/torchholder.json",
-    "condition": { "when": "PlaceTorchHolderEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTorchHolderEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -43,13 +44,15 @@
       }
     },
     "file": "game:blocktypes/metal/torchholder.json",
-    "condition": { "when": "PlaceTorchHolderEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTorchHolderEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-empty-north"],
     "file": "game:blocktypes/metal/torchholder.json",
-    "condition": { "when": "PlaceTorchHolderEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTorchHolderEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

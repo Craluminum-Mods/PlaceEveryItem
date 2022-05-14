@@ -2,22 +2,25 @@
   {
     "op": "add",
     "path": "/behaviors",
-    "value": [{
-      "name": "GroundStorable",
-      "properties": {
-        "layout": "Quadrants",
-        "collisionBox": {
-          "x1": 0,
-          "y1": 0,
-          "z1": 0,
-          "x2": 1,
-          "y2": 0.1875,
-          "z2": 1
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants",
+          "collisionBox": {
+            "x1": 0,
+            "y1": 0,
+            "z1": 0,
+            "x2": 1,
+            "y2": 0.1875,
+            "z2": 1
+          }
         }
-      }}
+      }
     ],
     "file": "game:blocktypes/mechanics/angledgears.json",
-    "condition": { "when": "PlaceAngledGearEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceAngledGearEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -43,13 +46,15 @@
       }
     },
     "file": "game:blocktypes/mechanics/angledgears.json",
-    "condition": { "when": "PlaceAngledGearEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceAngledGearEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-s"],
     "file": "game:blocktypes/mechanics/angledgears.json",
-    "condition": { "when": "PlaceAngledGearEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceAngledGearEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

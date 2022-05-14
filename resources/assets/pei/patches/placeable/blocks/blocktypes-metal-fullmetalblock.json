@@ -13,7 +13,8 @@
       }
     },
     "file": "game:blocktypes/metal/fullmetalblock.json",
-    "condition": { "when": "PlaceMetalBlockEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMetalBlockEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -35,13 +36,15 @@
       }
     ],
     "file": "game:blocktypes/metal/fullmetalblock.json",
-    "condition": { "when": "PlaceMetalBlockEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMetalBlockEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:blocktypes/metal/fullmetalblock.json",
-    "condition": { "when": "PlaceMetalBlockEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMetalBlockEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

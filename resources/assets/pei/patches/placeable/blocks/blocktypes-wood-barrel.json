@@ -11,7 +11,8 @@
       "scale": 0.65
     },
     "file": "game:blocktypes/wood/barrel.json",
-    "condition": { "when": "PlaceBarrelEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBarrelEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -31,13 +32,15 @@
       }
     },
     "file": "game:blocktypes/wood/barrel.json",
-    "condition": { "when": "PlaceBarrelEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBarrelEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:blocktypes/wood/barrel.json",
-    "condition": { "when": "PlaceBarrelEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBarrelEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

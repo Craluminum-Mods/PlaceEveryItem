@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:itemtypes/resource/papyrustops.json",
-    "condition": { "when": "PlaceReedTopsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedTopsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -45,13 +46,15 @@
       }
     },
     "file": "game:itemtypes/resource/papyrustops.json",
-    "condition": { "when": "PlaceReedTopsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedTopsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/papyrustops.json",
-    "condition": { "when": "PlaceReedTopsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedTopsEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

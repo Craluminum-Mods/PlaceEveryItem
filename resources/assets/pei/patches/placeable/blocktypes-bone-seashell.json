@@ -10,7 +10,8 @@
       }
     },
     "file": "game:blocktypes/bone/seashell.json",
-    "condition": { "when": "PlaceSeaShellEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceSeaShellEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -30,13 +31,15 @@
       }
     },
     "file": "game:blocktypes/bone/seashell.json",
-    "condition": { "when": "PlaceSeaShellEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceSeaShellEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:blocktypes/bone/seashell.json",
-    "condition": { "when": "PlaceSeaShellEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceSeaShellEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

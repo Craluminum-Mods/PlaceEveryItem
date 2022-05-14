@@ -18,7 +18,8 @@
     },
     "file": "game:itemtypes/bandage.json",
     "condition": { "when": "PlaceBandageEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }],
+    "side": "server"
   },
   {
     "op": "add",
@@ -39,7 +40,8 @@
     },
     "file": "game:itemtypes/bandage.json",
     "condition": { "when": "PlaceBandageEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }],
+    "side": "server"
   },
   {
     "op": "add",
@@ -61,7 +63,8 @@
     },
     "file": "game:itemtypes/bandage.json",
     "condition": { "when": "PlaceBandageEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }],
+    "side": "server"
   },
   {
     "op": "add",
@@ -69,6 +72,7 @@
     "value": ["*"],
     "file": "game:itemtypes/bandage.json",
     "condition": { "when": "PlaceBandageEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }],
+    "side": "server"
   }
 ]

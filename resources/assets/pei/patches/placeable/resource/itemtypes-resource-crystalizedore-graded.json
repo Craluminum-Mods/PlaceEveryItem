@@ -11,7 +11,8 @@
       }
     ],
     "file": "game:itemtypes/resource/crystalizedore-graded.json",
-    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -34,13 +35,15 @@
       }
     },
     "file": "game:itemtypes/resource/crystalizedore-graded.json",
-    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/crystalizedore-graded.json",
-    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

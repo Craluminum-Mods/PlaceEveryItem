@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:itemtypes/resource/chutesection.json",
-    "condition": { "when": "PlaceChuteSectionEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChuteSectionEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -45,13 +46,15 @@
       }
     },
     "file": "game:itemtypes/resource/chutesection.json",
-    "condition": { "when": "PlaceChuteSectionEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChuteSectionEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/chutesection.json",
-    "condition": { "when": "PlaceChuteSectionEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChuteSectionEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

@@ -21,7 +21,8 @@
       "scale": 0.6
     },
     "file": "game:blocktypes/metal/chute-straight.json",
-    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -41,13 +42,15 @@
       }
     },
     "file": "game:blocktypes/metal/chute-straight.json",
-    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-ns"],
     "file": "game:blocktypes/metal/chute-straight.json",
-    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

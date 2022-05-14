@@ -36,7 +36,8 @@
       }
     },
     "file": "game:blocktypes/metal/chute.json",
-    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -56,13 +57,15 @@
       }
     },
     "file": "game:blocktypes/metal/chute.json",
-    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-down-east"],
     "file": "game:blocktypes/metal/chute.json",
-    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

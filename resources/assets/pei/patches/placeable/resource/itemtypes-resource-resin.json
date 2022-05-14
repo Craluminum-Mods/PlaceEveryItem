@@ -19,13 +19,15 @@
       }
     ],
     "file": "game:itemtypes/resource/resin.json",
-    "condition": { "when": "PlaceResinEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceResinEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/resin.json",
-    "condition": { "when": "PlaceResinEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceResinEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

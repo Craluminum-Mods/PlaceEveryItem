@@ -23,7 +23,8 @@
       }
     },
     "file": "game:blocktypes/wood/signpost.json",
-    "condition": { "when": "PlaceSignPostEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceSignPostEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -45,13 +46,15 @@
       }
     ],
     "file": "game:blocktypes/wood/signpost.json",
-    "condition": { "when": "PlaceSignPostEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceSignPostEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:blocktypes/wood/signpost.json",
-    "condition": { "when": "PlaceSignPostEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceSignPostEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

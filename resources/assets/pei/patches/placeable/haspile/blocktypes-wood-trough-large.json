@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:blocktypes/wood/trough-large.json",
-    "condition": { "when": "PlaceTroughLargeEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTroughLargeEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -43,13 +44,15 @@
       "scale": 0.6
     },
     "file": "game:blocktypes/wood/trough-large.json",
-    "condition": { "when": "PlaceTroughLargeEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTroughLargeEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-head-north"],
     "file": "game:blocktypes/wood/trough-large.json",
-    "condition": { "when": "PlaceTroughLargeEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTroughLargeEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

@@ -21,7 +21,8 @@
       "scale": 0.8
     },
     "file": "game:blocktypes/wood/torch.json",
-    "condition": { "when": "PlaceTorchEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTorchEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -43,7 +44,8 @@
       }
     ],
     "file": "game:blocktypes/wood/torch.json",
-    "condition": { "when": "PlaceTorchEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTorchEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -63,13 +65,15 @@
       }
     },
     "file": "game:blocktypes/wood/torch.json",
-    "condition": { "when": "PlaceTorchEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTorchEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-up"],
     "file": "game:blocktypes/wood/torch.json",
-    "condition": { "when": "PlaceTorchEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTorchEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

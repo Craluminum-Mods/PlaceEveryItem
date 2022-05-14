@@ -17,7 +17,8 @@
       }
     },
     "file": "game:itemtypes/resource/metalscale.json",
-    "condition": { "when": "PlaceMetalScalesEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMetalScalesEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -33,13 +34,15 @@
       }
     },
     "file": "game:itemtypes/resource/metalscale.json",
-    "condition": { "when": "PlaceMetalScalesEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMetalScalesEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/metalscale.json",
-    "condition": { "when": "PlaceMetalScalesEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMetalScalesEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

@@ -23,7 +23,8 @@
       }
     },
     "file": "game:blocktypes/mechanics/largegear3m.json",
-    "condition": { "when": "PlaceMechanicsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMechanicsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -45,13 +46,15 @@
       }
     ],
     "file": "game:blocktypes/mechanics/largegear3m.json",
-    "condition": { "when": "PlaceMechanicsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMechanicsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:blocktypes/mechanics/largegear3m.json",
-    "condition": { "when": "PlaceMechanicsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMechanicsEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

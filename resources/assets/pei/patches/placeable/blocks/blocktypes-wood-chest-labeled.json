@@ -11,7 +11,8 @@
       "scale": 0.7
     },
     "file": "game:blocktypes/wood/chest-labeled.json",
-    "condition": { "when": "PlaceChestEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChestEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -31,7 +32,8 @@
       }
     },
     "file": "game:blocktypes/wood/chest-labeled.json",
-    "condition": { "when": "PlaceChestEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChestEnabled", "isValue": "true" },
+    "side": "server"
   },
 
   {
@@ -39,6 +41,7 @@
     "path": "/creativeinventoryStacksByType/*-east/0/tabs/-",
     "value": "groundstorable",
     "file": "game:blocktypes/wood/chest-labeled.json",
-    "condition": { "when": "PlaceChestEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChestEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

@@ -21,7 +21,8 @@
       "scale": 0.7
     },
     "file": "game:blocktypes/wood/echochamber.json",
-    "condition": { "when": "PlaceEchoChamberEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceEchoChamberEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -41,13 +42,15 @@
       }
     },
     "file": "game:blocktypes/wood/echochamber.json",
-    "condition": { "when": "PlaceEchoChamberEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceEchoChamberEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-north"],
     "file": "game:blocktypes/wood/echochamber.json",
-    "condition": { "when": "PlaceEchoChamberEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceEchoChamberEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

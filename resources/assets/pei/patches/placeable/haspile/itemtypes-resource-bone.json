@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:itemtypes/resource/bone.json",
-    "condition": { "when": "PlaceBoneEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBoneEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -42,13 +43,15 @@
       }
     },
     "file": "game:itemtypes/resource/bone.json",
-    "condition": { "when": "PlaceBoneEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBoneEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/bone.json",
-    "condition": { "when": "PlaceBoneEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBoneEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

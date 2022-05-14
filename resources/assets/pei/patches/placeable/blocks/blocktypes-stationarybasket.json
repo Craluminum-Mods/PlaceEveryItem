@@ -11,7 +11,8 @@
       "scale": 0.7
     },
     "file": "game:blocktypes/stationarybasket.json",
-    "condition": { "when": "PlaceReedBasketEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedBasketEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -31,13 +32,15 @@
       }
     },
     "file": "game:blocktypes/stationarybasket.json",
-    "condition": { "when": "PlaceReedBasketEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedBasketEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventoryStacksByType/*-east/0/tabs/-",
     "value": "groundstorable",
     "file": "game:blocktypes/stationarybasket.json",
-    "condition": { "when": "PlaceReedBasketEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedBasketEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

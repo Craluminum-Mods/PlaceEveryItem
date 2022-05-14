@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:itemtypes/tool/padlock.json",
-    "condition": { "when": "PlacePadlockEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePadlockEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -45,13 +46,15 @@
       }
     },
     "file": "game:itemtypes/tool/padlock.json",
-    "condition": { "when": "PlacePadlockEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePadlockEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/tool/padlock.json",
-    "condition": { "when": "PlacePadlockEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePadlockEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

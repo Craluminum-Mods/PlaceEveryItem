@@ -17,7 +17,8 @@
       }
     },
     "file": "game:blocktypes/cloth/oreblastingbomb.json",
-    "condition": { "when": "PlaceOreBlastingBombEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceOreBlastingBombEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -42,13 +43,15 @@
       }
     },
     "file": "game:blocktypes/cloth/oreblastingbomb.json",
-    "condition": { "when": "PlaceOreBlastingBombEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceOreBlastingBombEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:blocktypes/cloth/oreblastingbomb.json",
-    "condition": { "when": "PlaceOreBlastingBombEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceOreBlastingBombEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

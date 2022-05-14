@@ -23,7 +23,8 @@
       }
     },
     "file": "game:blocktypes/clay/bloomerychimney.json",
-    "condition": { "when": "PlaceBloomeryPartsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBloomeryPartsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -43,13 +44,15 @@
       }
     },
     "file": "game:blocktypes/clay/bloomerychimney.json",
-    "condition": { "when": "PlaceBloomeryPartsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBloomeryPartsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:blocktypes/clay/bloomerychimney.json",
-    "condition": { "when": "PlaceBloomeryPartsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBloomeryPartsEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

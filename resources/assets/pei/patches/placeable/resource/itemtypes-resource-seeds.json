@@ -19,13 +19,15 @@
       }
     ],
     "file": "game:itemtypes/resource/seeds.json",
-    "condition": { "when": "PlaceSeedsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceSeedsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/seeds.json",
-    "condition": { "when": "PlaceSeedsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceSeedsEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

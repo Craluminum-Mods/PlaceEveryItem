@@ -21,7 +21,8 @@
       "scale": 0.6
     },
     "file": "game:blocktypes/wood/table.json",
-    "condition": { "when": "PlaceTableEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTableEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -41,13 +42,15 @@
       }
     },
     "file": "game:blocktypes/wood/table.json",
-    "condition": { "when": "PlaceTableEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTableEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:blocktypes/wood/table.json",
-    "condition": { "when": "PlaceTableEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTableEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

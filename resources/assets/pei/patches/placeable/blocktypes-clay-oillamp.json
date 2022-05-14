@@ -20,7 +20,8 @@
       }
     },
     "file": "game:blocktypes/clay/oillamp.json",
-    "condition": { "when": "PlaceOilLampEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceOilLampEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -40,13 +41,15 @@
       }
     },
     "file": "game:blocktypes/clay/oillamp.json",
-    "condition": { "when": "PlaceOilLampEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceOilLampEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-up"],
     "file": "game:blocktypes/clay/oillamp.json",
-    "condition": { "when": "PlaceOilLampEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceOilLampEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

@@ -21,7 +21,8 @@
       "scale": 0.7
     },
     "file": "game:blocktypes/wood/trough-small.json",
-    "condition": { "when": "PlaceTroughSmallEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTroughSmallEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -41,13 +42,15 @@
       }
     },
     "file": "game:blocktypes/wood/trough-small.json",
-    "condition": { "when": "PlaceTroughSmallEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTroughSmallEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-ns"],
     "file": "game:blocktypes/wood/trough-small.json",
-    "condition": { "when": "PlaceTroughSmallEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTroughSmallEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

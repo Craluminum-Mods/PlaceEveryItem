@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:itemtypes/resource/metallamellae.json",
-    "condition": { "when": "PlaceMetalLamellaeEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMetalLamellaeEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -35,13 +36,15 @@
       }
     },
     "file": "game:itemtypes/resource/metallamellae.json",
-    "condition": { "when": "PlaceMetalLamellaeEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMetalLamellaeEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/metallamellae.json",
-    "condition": { "when": "PlaceMetalLamellaeEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMetalLamellaeEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

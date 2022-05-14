@@ -16,7 +16,8 @@
       "scale": 0.7
     },
     "file": "game:blocktypes/metal/anvilpart.json",
-    "condition": { "when": "PlaceAnvilEtcEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceAnvilEtcEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -36,13 +37,15 @@
       }
     },
     "file": "game:blocktypes/metal/anvilpart.json",
-    "condition": { "when": "PlaceAnvilEtcEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceAnvilEtcEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:blocktypes/metal/anvilpart.json",
-    "condition": { "when": "PlaceAnvilEtcEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceAnvilEtcEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

@@ -13,7 +13,8 @@
       }
     },
     "file": "game:blocktypes/wood/chair.json",
-    "condition": { "when": "PlaceChairEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChairEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -33,13 +34,15 @@
       }
     },
     "file": "game:blocktypes/wood/chair.json",
-    "condition": { "when": "PlaceChairEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChairEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:blocktypes/wood/chair.json",
-    "condition": { "when": "PlaceChairEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChairEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

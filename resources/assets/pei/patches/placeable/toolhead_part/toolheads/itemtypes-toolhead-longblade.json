@@ -19,8 +19,9 @@
       }
     ],
     "file": "game:itemtypes/toolhead/longblade.json",
-    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
-  },  
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" },
+    "side": "server"
+  },
   {
     "op": "add",
     "path": "/attributes",
@@ -45,13 +46,15 @@
       }
     },
     "file": "game:itemtypes/toolhead/longblade.json",
-    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/toolhead/longblade.json",
-    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

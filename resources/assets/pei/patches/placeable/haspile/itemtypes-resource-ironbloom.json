@@ -19,13 +19,15 @@
       }
     ],
     "file": "game:itemtypes/resource/ironbloom.json",
-    "condition": { "when": "PlaceIronBloomEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceIronBloomEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/ironbloom.json",
-    "condition": { "when": "PlaceIronBloomEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceIronBloomEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

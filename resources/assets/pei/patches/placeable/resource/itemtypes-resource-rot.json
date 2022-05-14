@@ -19,13 +19,15 @@
       }
     ],
     "file": "game:itemtypes/resource/rot.json",
-    "condition": { "when": "PlaceRotEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceRotEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/rot.json",
-    "condition": { "when": "PlaceRotEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceRotEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

@@ -15,7 +15,8 @@
       }
     },
     "file": "game:blocktypes/stone/crystal-small.json",
-    "condition": { "when": "PlaceCrystalEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceCrystalEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -35,13 +36,15 @@
       }
     },
     "file": "game:blocktypes/stone/crystal-small.json",
-    "condition": { "when": "PlaceCrystalEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceCrystalEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*=up"],
     "file": "game:blocktypes/stone/crystal-small.json",
-    "condition": { "when": "PlaceCrystalEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceCrystalEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

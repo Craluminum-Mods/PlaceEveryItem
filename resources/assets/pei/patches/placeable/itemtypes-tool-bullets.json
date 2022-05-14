@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:itemtypes/tool/bullets.json",
-    "condition": { "when": "PlaceBulletsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBulletsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -38,6 +39,7 @@
       "scale": 0.75
     },
     "file": "game:itemtypes/tool/bullets.json",
-    "condition": { "when": "PlaceBulletsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBulletsEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

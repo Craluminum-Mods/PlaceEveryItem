@@ -21,7 +21,8 @@
       "scale": 0.6
     },
     "file": "game:blocktypes/stone/cementationfurnace/stonecoffin.json",
-    "condition": { "when": "PlaceStoneCoffinBothEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceStoneCoffinBothEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -41,13 +42,15 @@
       }
     },
     "file": "game:blocktypes/stone/cementationfurnace/stonecoffin.json",
-    "condition": { "when": "PlaceStoneCoffinBothEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceStoneCoffinBothEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-north"],
     "file": "game:blocktypes/stone/cementationfurnace/stonecoffin.json",
-    "condition": { "when": "PlaceStoneCoffinBothEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceStoneCoffinBothEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

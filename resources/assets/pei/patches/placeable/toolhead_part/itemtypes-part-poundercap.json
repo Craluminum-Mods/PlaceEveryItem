@@ -11,13 +11,15 @@
       }
     ],
     "file": "game:itemtypes/part/poundercap.json",
-    "condition": { "when": "PlacePounderCapEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePounderCapEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/part/poundercap.json",
-    "condition": { "when": "PlacePounderCapEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePounderCapEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

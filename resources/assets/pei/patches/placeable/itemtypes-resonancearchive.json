@@ -19,13 +19,15 @@
       }
     ],
     "file": "game:itemtypes/resonancearchive.json",
-    "condition": { "when": "PlaceResonanceArchiveEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceResonanceArchiveEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resonancearchive.json",
-    "condition": { "when": "PlaceResonanceArchiveEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceResonanceArchiveEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

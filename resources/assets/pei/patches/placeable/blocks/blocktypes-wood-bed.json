@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:blocktypes/wood/bed.json",
-    "condition": { "when": "PlaceBedEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBedEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -38,13 +39,15 @@
       "scale": 0.55
     },
     "file": "game:blocktypes/wood/bed.json",
-    "condition": { "when": "PlaceBedEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBedEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-head-north"],
     "file": "game:blocktypes/wood/bed.json",
-    "condition": { "when": "PlaceBedEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBedEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

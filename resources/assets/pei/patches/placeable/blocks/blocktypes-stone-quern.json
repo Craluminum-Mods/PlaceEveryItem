@@ -21,7 +21,8 @@
       "scale": 0.6
     },
     "file": "game:blocktypes/stone/quern.json",
-    "condition": { "when": "PlaceQuernEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceQuernEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -41,13 +42,15 @@
       }
     },
     "file": "game:blocktypes/stone/quern.json",
-    "condition": { "when": "PlaceQuernEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceQuernEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:blocktypes/stone/quern.json",
-    "condition": { "when": "PlaceQuernEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceQuernEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

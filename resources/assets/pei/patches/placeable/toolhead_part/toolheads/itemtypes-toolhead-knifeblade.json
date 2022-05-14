@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:itemtypes/toolhead/knifeblade.json",
-    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -65,13 +66,15 @@
       }
     },
     "file": "game:itemtypes/toolhead/knifeblade.json",
-    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/toolhead/knifeblade.json",
-    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceToolheadsEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

@@ -23,7 +23,8 @@
       }
     },
     "file": "game:itemtypes/resource/paper.json",
-    "condition": { "when": "PlacePaperEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePaperEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -45,13 +46,15 @@
       }
     ],
     "file": "game:itemtypes/resource/paper.json",
-    "condition": { "when": "PlacePaperEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePaperEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/paper.json",
-    "condition": { "when": "PlacePaperEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePaperEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

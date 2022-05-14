@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:itemtypes/resource/drygrass.json",
-    "condition": { "when": "PlaceDryGrassEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceDryGrassEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -38,13 +39,15 @@
       "scale": 0.7
     },
     "file": "game:itemtypes/resource/drygrass.json",
-    "condition": { "when": "PlaceDryGrassEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceDryGrassEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/drygrass.json",
-    "condition": { "when": "PlaceDryGrassEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceDryGrassEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

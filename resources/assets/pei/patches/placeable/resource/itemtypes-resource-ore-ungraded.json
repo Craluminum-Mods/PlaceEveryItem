@@ -19,13 +19,15 @@
       }
     ],
     "file": "game:itemtypes/resource/ore-ungraded.json",
-    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/ore-ungraded.json",
-    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceOreChunkEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

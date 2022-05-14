@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:itemtypes/resource/beenade.json",
-    "condition": { "when": "PlaceBeenadeEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBeenadeEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -32,13 +33,15 @@
       }
     },
     "file": "game:itemtypes/resource/beenade.json",
-    "condition": { "when": "PlaceBeenadeEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBeenadeEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/beenade.json",
-    "condition": { "when": "PlaceBeenadeEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBeenadeEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

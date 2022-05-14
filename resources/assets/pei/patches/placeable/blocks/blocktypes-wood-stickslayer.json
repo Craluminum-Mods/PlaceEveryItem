@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:blocktypes/wood/stickslayer.json",
-    "condition": { "when": "PlaceSticksLayerEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceSticksLayerEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -38,13 +39,15 @@
       "scale": 0.6
     },
     "file": "game:blocktypes/wood/stickslayer.json",
-    "condition": { "when": "PlaceSticksLayerEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceSticksLayerEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:blocktypes/wood/signpost.json",
-    "condition": { "when": "PlaceSticksLayerEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceSticksLayerEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

@@ -21,7 +21,8 @@
       "scale": 0.6
     },
     "file": "game:blocktypes/wood/painting.json",
-    "condition": { "when": "PlacePaintingEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePaintingEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -41,13 +42,15 @@
       }
     },
     "file": "game:blocktypes/wood/painting.json",
-    "condition": { "when": "PlacePaintingEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePaintingEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-north"],
     "file": "game:blocktypes/wood/painting.json",
-    "condition": { "when": "PlacePaintingEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePaintingEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

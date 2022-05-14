@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:itemtypes/food/bread.json",
-    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -34,13 +35,15 @@
       }
     },
     "file": "game:itemtypes/food/bread.json",
-    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/food/bread.json",
-    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

@@ -16,7 +16,8 @@
       "scale": 0.6
     },
     "file": "game:blocktypes/stone/crystal-largecluster.json",
-    "condition": { "when": "PlaceCrystalEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceCrystalEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -36,13 +37,15 @@
       }
     },
     "file": "game:blocktypes/stone/crystal-largecluster.json",
-    "condition": { "when": "PlaceCrystalEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceCrystalEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-up"],
     "file": "game:blocktypes/stone/crystal-largecluster.json",
-    "condition": { "when": "PlaceCrystalEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceCrystalEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

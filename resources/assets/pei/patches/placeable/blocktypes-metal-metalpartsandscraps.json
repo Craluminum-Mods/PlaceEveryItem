@@ -42,7 +42,8 @@
       }
     },
     "file": "game:blocktypes/metal/metalpartsandscraps.json",
-    "condition": { "when": "PlaceMetalPartsAndScrapsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMetalPartsAndScrapsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -62,7 +63,8 @@
       }
     },
     "file": "game:blocktypes/metal/metalpartsandscraps.json",
-    "condition": { "when": "PlaceMetalPartsAndScrapsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMetalPartsAndScrapsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -82,13 +84,15 @@
       }
     },
     "file": "game:blocktypes/metal/metalpartsandscraps.json",
-    "condition": { "when": "PlaceMetalPartsAndScrapsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMetalPartsAndScrapsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:blocktypes/metal/metalpartsandscraps.json",
-    "condition": { "when": "PlaceMetalPartsAndScrapsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMetalPartsAndScrapsEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

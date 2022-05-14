@@ -18,7 +18,8 @@
     },
     "file": "game:itemtypes/food/flour.json",
     "condition": { "when": "PlaceFoodEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }],
+    "side": "server"
   },
   {
     "op": "add",
@@ -26,6 +27,7 @@
     "value": ["*"],
     "file": "game:itemtypes/food/flour.json",
     "condition": { "when": "PlaceFoodEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }],
+    "side": "server"
   }
 ]

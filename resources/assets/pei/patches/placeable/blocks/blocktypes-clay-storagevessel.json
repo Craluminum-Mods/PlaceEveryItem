@@ -14,7 +14,8 @@
       }
     },
     "file": "game:blocktypes/clay/storagevessel.json",
-    "condition": { "when": "PlaceStorageVesselEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceStorageVesselEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -34,13 +35,15 @@
       }
     },
     "file": "game:blocktypes/clay/storagevessel.json",
-    "condition": { "when": "PlaceStorageVesselEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceStorageVesselEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventoryStacksByType/*/0/tabs/-",
     "value": "groundstorable",
     "file": "game:blocktypes/clay/storagevessel.json",
-    "condition": { "when": "PlaceStorageVesselEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceStorageVesselEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

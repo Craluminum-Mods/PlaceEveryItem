@@ -19,13 +19,15 @@
       }
     ],
     "file": "game:itemtypes/bag/quiver.json",
-    "condition": { "when": "PlaceQuiverEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceQuiverEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/bag/quiver.json",
-    "condition": { "when": "PlaceQuiverEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceQuiverEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

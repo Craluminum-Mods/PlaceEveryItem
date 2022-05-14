@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:itemtypes/resource/largegearsection.json",
-    "condition": { "when": "PlaceLargeGearSectionEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceLargeGearSectionEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -40,13 +41,15 @@
       }
     },
     "file": "game:itemtypes/resource/largegearsection.json",
-    "condition": { "when": "PlaceLargeGearSectionEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceLargeGearSectionEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/largegearsection.json",
-    "condition": { "when": "PlaceLargeGearSectionEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceLargeGearSectionEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

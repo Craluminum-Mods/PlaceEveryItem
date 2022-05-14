@@ -11,7 +11,8 @@
       }
     ],
     "file": "game:itemtypes/resource/honeycomb.json",
-    "condition": { "when": "PlaceHoneycombEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceHoneycombEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -30,13 +31,15 @@
       "scale": 0.65
     },
     "file": "game:itemtypes/resource/honeycomb.json",
-    "condition": { "when": "PlaceHoneycombEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceHoneycombEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/honeycomb.json",
-    "condition": { "when": "PlaceHoneycombEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceHoneycombEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

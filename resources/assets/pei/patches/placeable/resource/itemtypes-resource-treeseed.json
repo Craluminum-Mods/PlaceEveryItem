@@ -11,7 +11,8 @@
       }
     ],
     "file": "game:itemtypes/resource/treeseed.json",
-    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -30,7 +31,8 @@
       "scale": 0.9
     },
     "file": "game:itemtypes/resource/treeseed.json",
-    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -49,7 +51,8 @@
       "scale": 0.9
     },
     "file": "game:itemtypes/resource/treeseed.json",
-    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -69,7 +72,8 @@
       }
     },
     "file": "game:itemtypes/resource/treeseed.json",
-    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -94,13 +98,15 @@
       }
     },
     "file": "game:itemtypes/resource/treeseed.json",
-    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/treeseed.json",
-    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

@@ -23,7 +23,8 @@
       }
     },
     "file": "game:blocktypes/clay/planter.json",
-    "condition": { "when": "PlacePlanterEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePlanterEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -43,13 +44,15 @@
       }
     },
     "file": "game:blocktypes/clay/planter.json",
-    "condition": { "when": "PlacePlanterEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePlanterEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:blocktypes/clay/planter.json",
-    "condition": { "when": "PlacePlanterEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePlanterEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

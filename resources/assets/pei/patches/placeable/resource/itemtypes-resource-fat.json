@@ -18,7 +18,8 @@
     },
     "file": "game:itemtypes/resource/fat.json",
     "condition": { "when": "PlaceFatEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }],
+    "side": "server"
   },
   {
     "op": "add",
@@ -45,7 +46,8 @@
     },
     "file": "game:itemtypes/resource/fat.json",
     "condition": { "when": "PlaceFatEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }],
+    "side": "server"
   },
   {
     "op": "add",
@@ -53,6 +55,7 @@
     "value": ["*"],
     "file": "game:itemtypes/resource/fat.json",
     "condition": { "when": "PlaceFatEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }],
+    "side": "server"
   }
 ]

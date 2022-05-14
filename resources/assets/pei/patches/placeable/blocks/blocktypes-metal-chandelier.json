@@ -23,7 +23,8 @@
       }
     },
     "file": "game:blocktypes/metal/chandelier.json",
-    "condition": { "when": "PlaceChandelierEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChandelierEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -43,13 +44,15 @@
       }
     },
     "file": "game:blocktypes/metal/chandelier.json",
-    "condition": { "when": "PlaceChandelierEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChandelierEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-candle0", "*-candle8"],
     "file": "game:blocktypes/metal/chandelier.json",
-    "condition": { "when": "PlaceChandelierEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChandelierEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

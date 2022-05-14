@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:itemtypes/poultice.json",
-    "condition": { "when": "PlacePoulticeEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePoulticeEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -38,7 +39,8 @@
       "scale": 0.77
     },
     "file": "game:itemtypes/poultice.json",
-    "condition": { "when": "PlacePoulticeEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePoulticeEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -57,7 +59,8 @@
       "scale": 0.77
     },
     "file": "game:itemtypes/poultice.json",
-    "condition": { "when": "PlacePoulticeEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePoulticeEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -76,7 +79,8 @@
       "scale": 0.8
     },
     "file": "game:itemtypes/poultice.json",
-    "condition": { "when": "PlacePoulticeEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePoulticeEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -95,13 +99,15 @@
       "scale": 0.8
     },
     "file": "game:itemtypes/poultice.json",
-    "condition": { "when": "PlacePoulticeEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePoulticeEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/poultice.json",
-    "condition": { "when": "PlacePoulticeEnabled", "isValue": "true" }
+    "condition": { "when": "PlacePoulticeEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

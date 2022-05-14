@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:itemtypes/resource/catttailroot.json",
-    "condition": { "when": "PlaceReedRootsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedRootsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -43,13 +44,15 @@
       "scale": 0.75
     },
     "file": "game:itemtypes/resource/catttailroot.json",
-    "condition": { "when": "PlaceReedRootsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedRootsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/catttailroot.json",
-    "condition": { "when": "PlaceReedRootsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceReedRootsEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

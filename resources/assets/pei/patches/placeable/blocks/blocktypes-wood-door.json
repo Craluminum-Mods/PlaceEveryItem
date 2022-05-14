@@ -21,7 +21,8 @@
       "scale": 0.65
     },
     "file": "game:blocktypes/wood/door.json",
-    "condition": { "when": "PlaceDoorEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceDoorEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -41,13 +42,15 @@
       }
     },
     "file": "game:blocktypes/wood/door.json",
-    "condition": { "when": "PlaceDoorEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceDoorEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["door-{material}-north-down-closed-left"],
     "file": "game:blocktypes/wood/door.json",
-    "condition": { "when": "PlaceDoorEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceDoorEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

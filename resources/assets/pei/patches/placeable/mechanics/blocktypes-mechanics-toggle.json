@@ -21,7 +21,8 @@
       "scale": 0.7
     },
     "file": "game:blocktypes/mechanics/toggle.json",
-    "condition": { "when": "PlaceMechanicsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMechanicsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -41,13 +42,15 @@
       }
     },
     "file": "game:blocktypes/mechanics/toggle.json",
-    "condition": { "when": "PlaceMechanicsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMechanicsEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-ns"],
     "file": "game:blocktypes/mechanics/toggle.json",
-    "condition": { "when": "PlaceMechanicsEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMechanicsEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

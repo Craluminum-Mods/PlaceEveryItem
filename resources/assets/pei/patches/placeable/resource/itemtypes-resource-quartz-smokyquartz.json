@@ -19,13 +19,15 @@
       }
     ],
     "file": "game:itemtypes/resource/quartz/smokyquartz.json",
-    "condition": { "when": "PlaceQuartzEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceQuartzEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/quartz/smokyquartz.json",
-    "condition": { "when": "PlaceQuartzEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceQuartzEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

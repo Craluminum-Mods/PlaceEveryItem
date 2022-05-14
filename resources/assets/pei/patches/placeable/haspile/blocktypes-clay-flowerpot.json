@@ -22,7 +22,8 @@
       }
     },
     "file": "game:blocktypes/clay/flowerpot.json",
-    "condition": { "when": "PlaceFlowerPotEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFlowerPotEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -42,13 +43,15 @@
       }
     },
     "file": "game:blocktypes/clay/flowerpot.json",
-    "condition": { "when": "PlaceFlowerPotEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFlowerPotEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:blocktypes/clay/flowerpot.json",
-    "condition": { "when": "PlaceFlowerPotEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFlowerPotEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

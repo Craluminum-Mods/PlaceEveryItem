@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:blocktypes/plant/fruittreebranch.json",
-    "condition": { "when": "PlaceFruitTreeBranchEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFruitTreeBranchEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -43,13 +44,15 @@
       "scale": 0.7
     },
     "file": "game:blocktypes/plant/fruittreebranch.json",
-    "condition": { "when": "PlaceFruitTreeBranchEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFruitTreeBranchEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventoryStacksByType/*-branch/0/tabs/-",
     "value": "groundstorable",
     "file": "game:blocktypes/plant/fruittreebranch.json",
-    "condition": { "when": "PlaceChestEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChestEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

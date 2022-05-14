@@ -18,7 +18,8 @@
       }
     },
     "file": "game:blocktypes/wood/omoktabletop.json",
-    "condition": { "when": "PlaceOmokEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceOmokEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -38,13 +39,15 @@
       }
     },
     "file": "game:blocktypes/wood/omoktabletop.json",
-    "condition": { "when": "PlaceOmokEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceOmokEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:blocktypes/wood/omoktabletop.json",
-    "condition": { "when": "PlaceOmokEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceOmokEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

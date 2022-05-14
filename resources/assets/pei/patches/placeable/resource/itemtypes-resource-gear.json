@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:itemtypes/resource/gear.json",
-    "condition": { "when": "PlaceGearEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceGearEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -44,7 +45,8 @@
       }
     },
     "file": "game:itemtypes/resource/gear.json",
-    "condition": { "when": "PlaceGearEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceGearEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -67,13 +69,15 @@
       }
     },
     "file": "game:itemtypes/resource/gear.json",
-    "condition": { "when": "PlaceGearEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceGearEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/gear.json",
-    "condition": { "when": "PlaceGearEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceGearEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

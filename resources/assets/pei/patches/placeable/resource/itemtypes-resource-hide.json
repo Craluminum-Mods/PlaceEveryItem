@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:itemtypes/resource/hide.json",
-    "condition": { "when": "PlaceHideEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceHideEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -42,13 +43,15 @@
     ],
     "file": "game:itemtypes/resource/hide.json",
     "condition": { "when": "PlaceHideEnabled", "isValue": "true" },
-    "dependsOn": [{ "modid": "ancienttools" }]
+    "dependsOn": [{ "modid": "ancienttools" }],
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/hide.json",
-    "condition": { "when": "PlaceHideEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceHideEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

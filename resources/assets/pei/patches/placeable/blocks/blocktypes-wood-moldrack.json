@@ -23,7 +23,8 @@
       }
     },
     "file": "game:blocktypes/wood/moldrack.json",
-    "condition": { "when": "PlaceMoldRackEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMoldRackEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -43,13 +44,15 @@
       }
     },
     "file": "game:blocktypes/wood/moldrack.json",
-    "condition": { "when": "PlaceMoldRackEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMoldRackEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-east"],
     "file": "game:blocktypes/wood/moldrack.json",
-    "condition": { "when": "PlaceMoldRackEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMoldRackEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

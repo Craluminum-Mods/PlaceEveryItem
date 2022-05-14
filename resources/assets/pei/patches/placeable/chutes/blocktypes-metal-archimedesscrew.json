@@ -21,7 +21,8 @@
       "scale": 0.65
     },
     "file": "game:blocktypes/metal/archimedesscrew.json",
-    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -41,13 +42,15 @@
       }
     },
     "file": "game:blocktypes/metal/archimedesscrew.json",
-    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-straight", "*-ported-north"],
     "file": "game:blocktypes/metal/archimedesscrew.json",
-    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceChutesEtcEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

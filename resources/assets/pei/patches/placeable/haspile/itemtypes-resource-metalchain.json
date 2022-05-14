@@ -19,7 +19,8 @@
       }
     ],
     "file": "game:itemtypes/resource/metalchain.json",
-    "condition": { "when": "PlaceMetalChainEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMetalChainEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -38,13 +39,15 @@
       "scale": 0.7
     },
     "file": "game:itemtypes/resource/metalchain.json",
-    "condition": { "when": "PlaceMetalChainEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMetalChainEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/metalchain.json",
-    "condition": { "when": "PlaceMetalChainEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceMetalChainEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

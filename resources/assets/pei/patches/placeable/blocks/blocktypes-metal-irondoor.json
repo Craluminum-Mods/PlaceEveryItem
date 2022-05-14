@@ -21,7 +21,8 @@
       "scale": 0.65
     },
     "file": "game:blocktypes/metal/irondoor.json",
-    "condition": { "when": "PlaceDoorEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceDoorEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -41,13 +42,15 @@
       }
     },
     "file": "game:blocktypes/metal/irondoor.json",
-    "condition": { "when": "PlaceDoorEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceDoorEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["irondoor-north-down-closed-left"],
     "file": "game:blocktypes/metal/irondoor.json",
-    "condition": { "when": "PlaceDoorEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceDoorEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

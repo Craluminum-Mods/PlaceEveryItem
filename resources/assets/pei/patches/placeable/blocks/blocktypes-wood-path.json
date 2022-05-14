@@ -21,7 +21,8 @@
       "scale": 0.6
     },
     "file": "game:blocktypes/wood/path.json",
-    "condition": { "when": "PlaceWoodenPathEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceWoodenPathEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
@@ -41,13 +42,15 @@
       }
     },
     "file": "game:blocktypes/wood/path.json",
-    "condition": { "when": "PlaceWoodenPathEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceWoodenPathEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*-ns"],
     "file": "game:blocktypes/wood/path.json",
-    "condition": { "when": "PlaceWoodenPathEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceWoodenPathEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

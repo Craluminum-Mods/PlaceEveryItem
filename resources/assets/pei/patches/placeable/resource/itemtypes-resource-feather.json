@@ -19,13 +19,15 @@
       }
     ],
     "file": "game:itemtypes/resource/feather.json",
-    "condition": { "when": "PlaceFeatherEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFeatherEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/feather.json",
-    "condition": { "when": "PlaceFeatherEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFeatherEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

@@ -19,13 +19,15 @@
       }
     ],
     "file": "game:itemtypes/resource/metalbit.json",
-    "condition": { "when": "PlaceNuggetBitEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceNuggetBitEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/metalbit.json",
-    "condition": { "when": "PlaceNuggetBitEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceNuggetBitEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]

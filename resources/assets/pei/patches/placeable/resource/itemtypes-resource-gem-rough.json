@@ -19,13 +19,15 @@
       }
     ],
     "file": "game:itemtypes/resource/gem-rough.json",
-    "condition": { "when": "PlaceGemRoughEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceGemRoughEnabled", "isValue": "true" },
+    "side": "server"
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/gem-rough.json",
-    "condition": { "when": "PlaceGemRoughEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceGemRoughEnabled", "isValue": "true" },
+    "side": "server"
   }
 ]
