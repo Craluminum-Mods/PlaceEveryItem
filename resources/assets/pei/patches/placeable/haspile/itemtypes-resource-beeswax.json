@@ -1,8 +1,8 @@
 [
   {
     "op": "add",
-    "path": "/behaviors",
-    "value": [
+    "path": "/behaviors/-",
+    "value": 
       {
         "name": "GroundStorable",
         "properties": {
@@ -17,9 +17,10 @@
           }
         }
       }
-    ],
+    ,
     "file": "game:itemtypes/resource/beeswax.json",
-    "condition": { "when": "PlaceBeeswaxEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBeeswaxEnabled", "isValue": "true" },
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
   },
   {
     "op": "add",
@@ -38,13 +39,15 @@
       "scale": 0.7
     },
     "file": "game:itemtypes/resource/beeswax.json",
-    "condition": { "when": "PlaceBeeswaxEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBeeswaxEnabled", "isValue": "true" },
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/beeswax.json",
-    "condition": { "when": "PlaceBeeswaxEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceBeeswaxEnabled", "isValue": "true" },
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
   }
 ]

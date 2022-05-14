@@ -1,25 +1,24 @@
 [
   {
     "op": "add",
-    "path": "/behaviors",
-    "value": [
-      {
-        "name": "GroundStorable",
-        "properties": {
-          "layout": "Quadrants",
-          "collisionBox": {
-            "x1": 0,
-            "y1": 0,
-            "z1": 0,
-            "x2": 1,
-            "y2": 0.1313,
-            "z2": 1
-          }
+    "path": "/behaviors/0",
+    "value": {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "Quadrants",
+        "collisionBox": {
+          "x1": 0,
+          "y1": 0,
+          "z1": 0,
+          "x2": 1,
+          "y2": 0.1313,
+          "z2": 1
         }
       }
-    ],
+    },
     "file": "game:itemtypes/resource/fat.json",
-    "condition": { "when": "PlaceFatEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFatEnabled", "isValue": "true" },
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
   },
   {
     "op": "add",
@@ -45,13 +44,15 @@
       }
     },
     "file": "game:itemtypes/resource/fat.json",
-    "condition": { "when": "PlaceFatEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFatEnabled", "isValue": "true" },
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
   },
   {
     "op": "add",
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/fat.json",
-    "condition": { "when": "PlaceFatEnabled", "isValue": "true" }
+    "condition": { "when": "PlaceFatEnabled", "isValue": "true" },
+    "dependsOn": [{ "modid": "aaamakeitcompatible" }]
   }
 ]
