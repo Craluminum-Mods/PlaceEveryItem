@@ -1,0 +1,74 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes",
+    "value": {
+      "groundStorageTransformByType": {
+        "*-acorn-*": {
+          "translation": { "x": -0.185, "y": -0.645, "z": 0.175 },
+          "rotation": { "x": 0, "y": 45, "z": -32 }
+        },
+        "*-cypress-*": {
+          "translation": { "x": -0.095, "y": -0.725, "z": 0.095 },
+          "rotation": { "x": 0, "y": 45, "z": -15 }
+        },
+        "@.*-(merchant|golden|gem)-.*": {
+          "translation": { "x": -0.24, "y": -0.57, "z": 0.225 },
+          "rotation": { "x": 0, "y": 45, "z": -45 }
+        },
+        "*-noble-necklace": {
+          "translation": { "x": -0.2, "y": -0.61, "z": 0.185 },
+          "rotation": { "x": 0, "y": 45, "z": -35 }
+        },
+        "*-amulet": {
+          "translation": { "x": -0.14, "y": -0.7, "z": 0.125 },
+          "rotation": { "x": 0, "y": 45, "z": -22 }
+        },
+        "*-fancy-royal-*": {
+          "translation": { "x": -0.24, "y": -0.57, "z": 0.225 },
+          "rotation": { "x": 0, "y": 45, "z": -45 }
+        },
+        "*-copper-torc": {
+          "translation": { "x": -0.08, "y": -0.74, "z": 0.07 },
+          "rotation": { "x": 0, "y": 45, "z": -10 }
+        },
+        "*-forlorn-*": {
+          "translation": { "x": -0.26, "y": -0.53, "z": 0.245 },
+          "rotation": { "x": 0, "y": 45, "z": -55 }
+        },
+        "*-pearl-*": {
+          "translation": { "x": -0.2, "y": -0.63, "z": 0.185 },
+          "rotation": { "x": 0, "y": 45, "z": -36 }
+        },
+        "*": {
+          "translation": { "x": -0.14, "y": -0.7, "z": 0.125 },
+          "rotation": { "x": 0, "y": 45, "z": -22 }
+        }
+      }
+    },
+    "file": "game:itemtypes/wearable/neck.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants",
+          "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.125, "z2": 1 }
+        }
+      }
+    ],
+    "file": "game:itemtypes/wearable/neck.json",
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "game:itemtypes/wearable/neck.json",
+    "side": "server"
+  }
+]

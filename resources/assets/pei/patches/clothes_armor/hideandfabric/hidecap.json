@@ -1,0 +1,39 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/groundStorageTransformByType",
+    "value": {
+      "*": {
+        "translation": { "x": 0, "y": -0.72, "z": 0 },
+        "rotation": { "x": 0, "y": 45, "z": 0 }
+      }
+    },
+    "file": "hideandfabric:itemtypes/wearable/head/hidecap.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "hideandfabric" }]
+  },
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "SingleCenter",
+          "collisionBox": { "x1": 0.25, "y1": 0, "z1": 0.25, "x2": 0.75, "y2": 0.5, "z2": 0.75 }
+        }
+      }
+    ],
+    "file": "hideandfabric:itemtypes/wearable/head/hidecap.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "hideandfabric" }]
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "hideandfabric:itemtypes/wearable/head/hidecap.json",
+    "side": "server",
+    "dependsOn": [{ "modid": "hideandfabric" }]
+  }
+]
