@@ -41,7 +41,6 @@ namespace PlaceEveryItem.Configuration
       api.World.Config.SetBool("PlaceGemRoughEnabled", config.GemRough);
       api.World.Config.SetBool("PlaceHideEnabled", config.Hide);
       api.World.Config.SetBool("PlaceHoneycombEnabled", config.Honeycomb);
-      api.World.Config.SetBool("PlaceLargeGearSectionEnabled", config.LargeGearSection);
       api.World.Config.SetBool("PlaceLeatherEnabled", config.Leather);
       api.World.Config.SetBool("PlaceMetalPartsAndScrapsEnabled", config.MetalPartsAndScraps);
       api.World.Config.SetBool("PlaceNuggetMetalBitsEnabled", config.NuggetMetalBits);
@@ -52,7 +51,6 @@ namespace PlaceEveryItem.Configuration
       api.World.Config.SetBool("PlacePaperEnabled", config.Paper);
       api.World.Config.SetBool("PlacePerishableFoodEnabled", config.PerishableFood);
       api.World.Config.SetBool("PlacePoulticeEnabled", config.Poultice);
-      api.World.Config.SetBool("PlacePounderCapEnabled", config.PounderCap);
       api.World.Config.SetBool("PlaceQuartzEnabled", config.Quartz);
       api.World.Config.SetBool("PlaceReedRootsEnabled", config.ReedRoots);
       api.World.Config.SetBool("PlaceReedTopsEnabled", config.ReedTops);

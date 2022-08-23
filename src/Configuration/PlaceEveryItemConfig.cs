@@ -15,7 +15,6 @@ namespace PlaceEveryItem.Configuration
     public bool GemRough = true;
     public bool Hide = true;
     public bool Honeycomb = true;
-    public bool LargeGearSection = true;
     public bool Leather = true;
     public bool MetalPartsAndScraps = true;
     public bool NuggetMetalBits = true;
@@ -27,7 +26,6 @@ namespace PlaceEveryItem.Configuration
     public readonly string PerishableFoodComment = "bread, butter, dough, egg, flour, fruits, grains, insects, legumes, meat, pickled, mash, vegetable";
     public bool PerishableFood = true;
     public bool Poultice = true;
-    public bool PounderCap = true;
     public bool Quartz = true;
     public bool ReedRoots = true;
     public bool ReedTops = true;
@@ -79,10 +77,9 @@ namespace PlaceEveryItem.Configuration
       GemRough = previousConfig.GemRough;
       Hide = previousConfig.Hide;
       Honeycomb = previousConfig.Honeycomb;
-      LargeGearSection = previousConfig.LargeGearSection;
-      Leather = previousConfig.LargeGearSection;
-      MetalPartsAndScraps = previousConfig.LargeGearSection;
-      NuggetMetalBits = previousConfig.LargeGearSection;
+      Leather = previousConfig.Leather;
+      MetalPartsAndScraps = previousConfig.MetalPartsAndScraps;
+      NuggetMetalBits = previousConfig.NuggetMetalBits;
       OilLamp = previousConfig.OilLamp;
       OreBlastingBomb = previousConfig.OreBlastingBomb;
       OreChunk = previousConfig.OreChunk;
@@ -91,7 +88,6 @@ namespace PlaceEveryItem.Configuration
       PerishableFood = previousConfig.PerishableFood;
       PerishableFoodComment = previousConfig.PerishableFoodComment;
       Poultice = previousConfig.Poultice;
-      PounderCap = previousConfig.PounderCap;
       Quartz = previousConfig.Quartz;
       ReedRoots = previousConfig.ReedRoots;
       ReedTops = previousConfig.ReedTops;
