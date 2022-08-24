@@ -11,7 +11,7 @@
       }
     ],
     "file": "game:itemtypes/food/vegetable.json",
-    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" },
+    "condition": { "when": "PlacePerishableFoodEnabled", "isValue": "true" },
     "side": "server"
   },
   {
@@ -26,7 +26,7 @@
       "scale": 0.85
     },
     "file": "game:itemtypes/food/vegetable.json",
-    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" },
+    "condition": { "when": "PlacePerishableFoodEnabled", "isValue": "true" },
     "side": "server"
   },
   {
@@ -40,7 +40,7 @@
       }
     },
     "file": "game:itemtypes/food/vegetable.json",
-    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" },
+    "condition": { "when": "PlacePerishableFoodEnabled", "isValue": "true" },
     "side": "server"
   },
   {
@@ -67,7 +67,7 @@
       }
     },
     "file": "game:itemtypes/food/vegetable.json",
-    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" },
+    "condition": { "when": "PlacePerishableFoodEnabled", "isValue": "true" },
     "side": "server"
   },
   {
@@ -94,7 +94,7 @@
       }
     },
     "file": "game:itemtypes/food/vegetable.json",
-    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" },
+    "condition": { "when": "PlacePerishableFoodEnabled", "isValue": "true" },
     "side": "server"
   },
   {
@@ -102,7 +102,7 @@
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/food/vegetable.json",
-    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" },
+    "condition": { "when": "PlacePerishableFoodEnabled", "isValue": "true" },
     "side": "server"
   }
 ]

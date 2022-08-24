@@ -19,7 +19,7 @@
       }
     ],
     "file": "game:itemtypes/food/bushmeat.json",
-    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" },
+    "condition": { "when": "PlacePerishableFoodEnabled", "isValue": "true" },
     "side": "server"
   },
   {
@@ -33,7 +33,7 @@
       }
     },
     "file": "game:itemtypes/food/bushmeat.json",
-    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" },
+    "condition": { "when": "PlacePerishableFoodEnabled", "isValue": "true" },
     "side": "server"
   },
   {
@@ -41,7 +41,7 @@
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/food/bushmeat.json",
-    "condition": { "when": "PlaceFoodEnabled", "isValue": "true" },
+    "condition": { "when": "PlacePerishableFoodEnabled", "isValue": "true" },
     "side": "server"
   }
 ]

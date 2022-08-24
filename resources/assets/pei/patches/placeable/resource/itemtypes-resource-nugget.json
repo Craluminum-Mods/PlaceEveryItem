@@ -19,7 +19,7 @@
       }
     ],
     "file": "game:itemtypes/resource/nugget.json",
-    "condition": { "when": "PlaceNuggetBitEnabled", "isValue": "true" },
+    "condition": { "when": "PlaceNuggetMetalBitsEnabled", "isValue": "true" },
     "side": "server"
   },
   {
@@ -27,7 +27,7 @@
     "path": "/creativeinventory/groundstorable",
     "value": ["*"],
     "file": "game:itemtypes/resource/nugget.json",
-    "condition": { "when": "PlaceNuggetBitEnabled", "isValue": "true" },
+    "condition": { "when": "PlaceNuggetMetalBitsEnabled", "isValue": "true" },
     "side": "server"
   }
 ]
