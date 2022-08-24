@@ -16,84 +16,50 @@
   },
   {
     "op": "add",
-    "path": "/attributesByType/*-crimsonkingmaple/groundStorageTransform",
+    "path": "/attributes",
     "value": {
-      "rotation": {
-        "x": 90,
-        "y": 0,
-        "z": 45
-      },
-      "origin": {
-        "x": 0.5,
-        "y": 0.08,
-        "z": 0.5
-      },
-      "scale": 0.9
-    },
-    "file": "game:itemtypes/resource/treeseed.json",
-    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" },
-    "side": "server"
-  },
-  {
-    "op": "add",
-    "path": "/attributesByType/*-maple/groundStorageTransform",
-    "value": {
-      "rotation": {
-        "x": 90,
-        "y": 0,
-        "z": 45
-      },
-      "origin": {
-        "x": 0.5,
-        "y": 0.08,
-        "z": 0.5
-      },
-      "scale": 0.9
-    },
-    "file": "game:itemtypes/resource/treeseed.json",
-    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" },
-    "side": "server"
-  },
-  {
-    "op": "add",
-    "path": "/attributesByType/@.*-(larch|redwood|pine|darkpine)",
-    "value": {
-      "groundStorageTransform": {
-        "rotation": {
-          "x": 0,
-          "y": 45,
-          "z": -90
+      "groundStorageTransformByType": {
+        "@.*-(crimsonkingmaple|maple)": {
+          "rotation": {
+            "x": 90,
+            "y": 0,
+            "z": 45
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0.08,
+            "z": 0.5
+          },
+          "scale": 0.9
         },
-        "origin": {
-          "x": 0.5,
-          "y": 0.08,
-          "z": 0.5
-        }
-      }
-    },
-    "file": "game:itemtypes/resource/treeseed.json",
-    "condition": { "when": "PlaceTreeSeedEnabled", "isValue": "true" },
-    "side": "server"
-  },
-  {
-    "op": "add",
-    "path": "/attributesByType/*-ebony",
-    "value": {
-      "groundStorageTransform": {
-        "translation": {
-          "x": 0,
-          "y": 0,
-          "z": -0.05
+        "@.*-(larch|redwood|pine|darkpine)": {
+          "rotation": {
+            "x": 0,
+            "y": 45,
+            "z": -90
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0.08,
+            "z": 0.5
+          }
         },
-        "rotation": {
-          "x": 0,
-          "y": 45,
-          "z": -90
-        },
-        "origin": {
-          "x": 0.5,
-          "y": 0.08,
-          "z": 0.5
+        "*-ebony": {
+          "translation": {
+            "x": 0,
+            "y": 0,
+            "z": -0.05
+          },
+          "rotation": {
+            "x": 0,
+            "y": 45,
+            "z": -90
+          },
+          "origin": {
+            "x": 0.5,
+            "y": 0.08,
+            "z": 0.5
+          }
         }
       }
     },
