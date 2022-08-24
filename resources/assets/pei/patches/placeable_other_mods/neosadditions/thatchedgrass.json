@@ -1,0 +1,18 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [{ "name": "GroundStorable", "properties": { "layout": "Quadrants" } }],
+    "file": "neosadditions:itemtypes/thatchedgrass.json",
+    "dependsOn": [{ "modid": "neosadditions" }],
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "neosadditions:itemtypes/thatchedgrass.json",
+    "dependsOn": [{ "modid": "neosadditions" }],
+    "side": "server"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [{ "name": "GroundStorable", "properties": { "layout": "Quadrants" } }],
+    "file": "bettercrates:itemtypes/upgrades.json",
+    "dependsOn": [{ "modid": "bettercrates" }],
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "bettercrates:itemtypes/upgrades.json",
+    "dependsOn": [{ "modid": "bettercrates" }],
+    "side": "server"
+  }
+]

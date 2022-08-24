@@ -1,0 +1,31 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes",
+    "value": {
+      "groundStorageTransform": {
+        "translation": { "x": 0.1, "y": -0.18, "z": 0 },
+        "scale": 0.65
+      }
+    },
+    "file": "theneighbours:itemtypes/ampeltail.json",
+    "dependsOn": [{ "modid": "theneighbours" }],
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [{ "name": "GroundStorable", "properties": { "layout": "Quadrants" } }],
+    "file": "theneighbours:itemtypes/ampeltail.json",
+    "dependsOn": [{ "modid": "theneighbours" }],
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "theneighbours:itemtypes/ampeltail.json",
+    "dependsOn": [{ "modid": "theneighbours" }],
+    "side": "server"
+  }
+]

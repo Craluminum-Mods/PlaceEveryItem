@@ -1,0 +1,18 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [{ "name": "GroundStorable", "properties": { "layout": "Quadrants" } }],
+    "file": "necessaries:itemtypes/sharpener.json",
+    "dependsOn": [{ "modid": "necessaries" }],
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "necessaries:itemtypes/sharpener.json",
+    "dependsOn": [{ "modid": "necessaries" }],
+    "side": "server"
+  }
+]

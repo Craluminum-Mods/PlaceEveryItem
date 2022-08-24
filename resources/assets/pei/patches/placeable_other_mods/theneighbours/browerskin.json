@@ -1,0 +1,18 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [{ "name": "GroundStorable", "properties": { "layout": "Quadrants" } }],
+    "file": "theneighbours:itemtypes/browerskin.json",
+    "dependsOn": [{ "modid": "theneighbours" }],
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "theneighbours:itemtypes/browerskin.json",
+    "dependsOn": [{ "modid": "theneighbours" }],
+    "side": "server"
+  }
+]

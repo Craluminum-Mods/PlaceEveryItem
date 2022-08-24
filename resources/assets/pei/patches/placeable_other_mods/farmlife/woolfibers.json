@@ -1,0 +1,35 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes",
+    "value": {
+      "groundStorageTransform": {
+        "origin": {
+          "x": 0.5,
+          "y": 0,
+          "z": 0.5
+        },
+        "scale": 0.55
+      }
+    },
+    "file": "farmlife:itemtypes/woolfibers.json",
+    "dependsOn": [{ "modid": "farmlife" }],
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [{ "name": "GroundStorable", "properties": { "layout": "Quadrants" } }],
+    "file": "farmlife:itemtypes/woolfibers.json",
+    "dependsOn": [{ "modid": "farmlife" }],
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "farmlife:itemtypes/woolfibers.json",
+    "dependsOn": [{ "modid": "farmlife" }],
+    "side": "server"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [{ "name": "GroundStorable", "properties": { "layout": "Quadrants" } }],
+    "file": "temporalhack:itemtypes/unitygear.json",
+    "dependsOn": [{ "modid": "temporalhack" }],
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "temporalhack:itemtypes/unitygear.json",
+    "dependsOn": [{ "modid": "temporalhack" }],
+    "side": "server"
+  }
+]

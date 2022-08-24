@@ -1,0 +1,18 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [{ "name": "GroundStorable", "properties": { "layout": "Quadrants" } }],
+    "file": "acorns:itemtypes/resource/acorns-shelled.json",
+    "dependsOn": [{ "modid": "acorns" }],
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "acorns:itemtypes/resource/acorns-shelled.json",
+    "dependsOn": [{ "modid": "acorns" }],
+    "side": "server"
+  }
+]

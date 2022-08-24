@@ -1,0 +1,18 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [{ "name": "GroundStorable", "properties": { "layout": "SingleCenter" } }],
+    "file": "linenbackpack:itemtypes/bag/ultrabackpack.json",
+    "dependsOn": [{ "modid": "linenbackpack" }],
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "linenbackpack:itemtypes/bag/ultrabackpack.json",
+    "dependsOn": [{ "modid": "linenbackpack" }],
+    "side": "server"
+  }
+]

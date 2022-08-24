@@ -1,0 +1,26 @@
+[
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "Quadrants",
+          "collisionBox": { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.125, "z2": 1 }
+        }
+      }
+    ],
+    "file": "locustmod:itemtypes/resource/filament.json",
+    "dependsOn": [{ "modid": "locustmod" }],
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "locustmod:itemtypes/resource/filament.json",
+    "dependsOn": [{ "modid": "locustmod" }],
+    "side": "server"
+  }
+]

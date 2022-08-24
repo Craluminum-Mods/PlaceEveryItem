@@ -1,0 +1,29 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/groundStorageTransform",
+    "value": {
+      "translation": { "x": 0, "y": -0.35, "z": 0 },
+      "scale": 0.3
+    },
+    "file": "captureanimals:itemtypes/cage.json",
+    "dependsOn": [{ "modid": "captureanimals" }],
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [{ "name": "GroundStorable", "properties": { "layout": "Quadrants" } }],
+    "file": "captureanimals:itemtypes/cage.json",
+    "dependsOn": [{ "modid": "captureanimals" }],
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "captureanimals:itemtypes/cage.json",
+    "dependsOn": [{ "modid": "captureanimals" }],
+    "side": "server"
+  }
+]

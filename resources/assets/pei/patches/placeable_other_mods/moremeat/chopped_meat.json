@@ -1,0 +1,32 @@
+[
+  {
+    "op": "add",
+    "path": "/attributes/groundStorageTransform",
+    "value": {
+      "translation": {
+        "x": 0,
+        "y": -0.2,
+        "z": 0.12
+      }
+    },
+    "file": "moremeat:itemtypes/food/chopped_meat.json",
+    "dependsOn": [{ "modid": "moremeat" }],
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/behaviors",
+    "value": [{ "name": "GroundStorable", "properties": { "layout": "Quadrants" } }],
+    "file": "moremeat:itemtypes/food/chopped_meat.json",
+    "dependsOn": [{ "modid": "moremeat" }],
+    "side": "server"
+  },
+  {
+    "op": "add",
+    "path": "/creativeinventory/groundstorable",
+    "value": ["*"],
+    "file": "moremeat:itemtypes/food/chopped_meat.json",
+    "dependsOn": [{ "modid": "moremeat" }],
+    "side": "server"
+  }
+]
