@@ -1,5 +1,6 @@
 {
   "type": "code",
+  "side": "server",
   "modid": "pei",
   "name": "Place Every Item",
   "version": "1.3.0",
