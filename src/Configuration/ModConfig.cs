@@ -77,12 +77,9 @@ namespace PlaceEveryItem.Configuration
       api.World.Config.SetBool("PlaceMetalChainEnabled", config.MetalChain);
       api.World.Config.SetBool("PlaceMetalLamellaeEnabled", config.MetalLamellae);
       api.World.Config.SetBool("PlaceMetalScalesEnabled", config.MetalScales);
-      api.World.Config.SetBool("PlacePaintingEnabled", config.Painting);
       api.World.Config.SetBool("PlaceSailEnabled", config.Sail);
       api.World.Config.SetBool("PlaceStickEnabled", config.Stick);
       api.World.Config.SetBool("PlaceTorchHolderEnabled", config.TorchHolder);
-      api.World.Config.SetBool("PlaceTroughLargeEnabled", config.TroughLarge);
-      api.World.Config.SetBool("PlaceTroughSmallEnabled", config.TroughSmall);
     }
     private static PlaceEveryItemConfig LoadConfig(ICoreAPI api) =>
       api.LoadModConfig<PlaceEveryItemConfig>(jsonConfig);
