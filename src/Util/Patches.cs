@@ -103,7 +103,7 @@ public static class Patches
 
             api.ApplyTransforms(obj);
 
-            if (!config.AllBlocks) continue;
+            if (!config.AllBlocks || obj is not Block) continue;
 
             obj.AppendBehavior(blockStorageProps);
             obj.ApplyCreativeInventoryTab();
