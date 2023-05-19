@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using PlaceEveryItem.Configuration;
 using Vintagestory.API.Common;
 using Vintagestory.API.MathTools;
 using Vintagestory.GameContent;
@@ -17,107 +18,96 @@ public static class Patches
     private static readonly Cuboidf defaultSelectionBox = new(0, 0, 0, 1, 0.125f, 1);
     private static readonly Cuboidf defaultCollisionBox = new(0, 0, 0, 0, 0, 0);
 
-    public static void AppendBehaviors(
-        this ICoreAPI api,
-        bool AllBlocks,
-        Dictionary<string, bool> singleCenter,
-        Dictionary<string, bool> halves,
-        Dictionary<string, DataWallHalves> wallHalves,
-        Dictionary<string, bool> quadrants)
+    private static readonly GroundStorageProperties singleProps = new()
     {
-        foreach (var obj in api.World.Collectibles)
+        Layout = EnumGroundStorageLayout.SingleCenter,
+        SelectionBox = defaultSelectionBox,
+        CollisionBox = defaultCollisionBox
+    };
+
+    private static readonly GroundStorageProperties halvesProps = new()
+    {
+        Layout = EnumGroundStorageLayout.Halves,
+        SelectionBox = defaultSelectionBox,
+        CollisionBox = defaultCollisionBox
+    };
+
+    private static readonly GroundStorageProperties quadrantProps = new()
+    {
+        Layout = EnumGroundStorageLayout.Quadrants,
+        SelectionBox = defaultSelectionBox,
+        CollisionBox = defaultCollisionBox
+    };
+
+    private static readonly GroundStorageProperties blockStorageProps = new()
+    {
+        Layout = EnumGroundStorageLayout.Quadrants,
+        SelectionBox = defaultSelectionBox,
+        CollisionBox = defaultCollisionBox
+    };
+
+    private static GroundStorageProperties GetWallHalvesProps(KeyValuePair<string, DataWallHalves> val) => new()
+    {
+        Layout = EnumGroundStorageLayout.WallHalves,
+        SprintKey = val.Value.SprintKey,
+        WallOffY = val.Value.WallOffY,
+        SelectionBox = defaultSelectionBox,
+        CollisionBox = defaultCollisionBox
+    };
+
+    public static void AppendBehaviors(this ICoreAPI api, PlaceEveryItemConfig config)
+    {
+        for (int i = 0; i < api.World.Collectibles.Count; i++)
         {
+            var obj = api.World.Collectibles[i];
             if (obj.Code == null) continue;
             if (obj.Id == 0) continue;
             if (obj.IsGroundStorable()) continue;
 
-            foreach (var single in singleCenter)
+            foreach (var single in config.SingleCenter)
             {
-                if (single.Key != null && single.Value && obj.WildcardRegexMatch(single.Key) && !obj.IsGroundStorable())
+                if (single.Key != null && single.Value && obj.WildcardRegexMatch(single.Key))
                 {
-                    var singleProps = new GroundStorageProperties()
-                    {
-                        Layout = EnumGroundStorageLayout.SingleCenter,
-                        SelectionBox = defaultSelectionBox,
-                        CollisionBox = defaultCollisionBox
-                    };
-
                     obj.AppendBehavior(singleProps);
                     obj.ApplyCreativeInventoryTab();
+                    break;
                 }
             }
-            foreach (var halve in halves)
+            foreach (var halve in config.Halves)
             {
-                if (halve.Key != null && halve.Value && obj.WildcardRegexMatch(halve.Key) && !obj.IsGroundStorable())
+                if (halve.Key != null && halve.Value && obj.WildcardRegexMatch(halve.Key))
                 {
-                    var halvesProps = new GroundStorageProperties()
-                    {
-                        Layout = EnumGroundStorageLayout.Halves,
-                        SelectionBox = defaultSelectionBox,
-                        CollisionBox = defaultCollisionBox
-                    };
-
                     obj.AppendBehavior(halvesProps);
                     obj.ApplyCreativeInventoryTab();
+                    break;
                 }
             }
-            foreach (var halve in wallHalves)
+            foreach (var halve in config.WallHalves)
             {
-                if (halve.Key != null && halve.Value?.Enabled == true && obj.WildcardRegexMatch(halve.Key) && !obj.IsGroundStorable())
+                if (halve.Key != null && halve.Value?.Enabled == true && obj.WildcardRegexMatch(halve.Key))
                 {
-                    var wallHalvesProps = new GroundStorageProperties()
-                    {
-                        Layout = EnumGroundStorageLayout.WallHalves,
-                        SprintKey = halve.Value.SprintKey,
-                        WallOffY = halve.Value.WallOffY,
-                        SelectionBox = defaultSelectionBox,
-                        CollisionBox = defaultCollisionBox
-                    };
-
-                    obj.AppendBehavior(wallHalvesProps);
+                    obj.AppendBehavior(GetWallHalvesProps(halve));
                     obj.ApplyCreativeInventoryTab();
+                    break;
                 }
             }
-            foreach (var quadrant in quadrants)
+            foreach (var quadrant in config.Quadrants)
             {
-                if (quadrant.Key != null && quadrant.Value && obj.WildcardRegexMatch(quadrant.Key) && !obj.IsGroundStorable())
+                if (quadrant.Key != null && quadrant.Value && obj.WildcardRegexMatch(quadrant.Key))
                 {
-                    var quadrantProps = new GroundStorageProperties()
-                    {
-                        Layout = EnumGroundStorageLayout.Quadrants,
-                        SelectionBox = defaultSelectionBox,
-                        CollisionBox = defaultCollisionBox
-                    };
-
                     obj.AppendBehavior(quadrantProps);
                     obj.ApplyCreativeInventoryTab();
+                    break;
                 }
             }
 
             api.ApplyTransforms(obj);
-        }
 
-        if (AllBlocks)
-        {
-            foreach (var block in api.World.Blocks)
-            {
-                if (block.Code == null) continue;
-                if (block.Id == 0) continue;
+            if (!config.AllBlocks) continue;
 
-                if (!block.IsGroundStorable())
-                {
-                    var gsprops = new GroundStorageProperties()
-                    {
-                        Layout = EnumGroundStorageLayout.Quadrants,
-                        SelectionBox = defaultSelectionBox,
-                        CollisionBox = defaultCollisionBox
-                    };
-
-                    block.AppendBehavior(gsprops);
-                    block.ApplyCreativeInventoryTab();
-                    block.ApplyBlockTransform();
-                }
-            }
+            obj.AppendBehavior(blockStorageProps);
+            obj.ApplyCreativeInventoryTab();
+            (obj as Block)?.ApplyBlockTransform();
         }
     }
 }

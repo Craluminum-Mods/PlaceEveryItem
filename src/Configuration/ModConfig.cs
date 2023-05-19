@@ -29,7 +29,7 @@ namespace PlaceEveryItem.Configuration
                 config = LoadConfig(api);
             }
 
-            api.AppendBehaviors(config.AllBlocks, config.SingleCenter, config.Halves, config.WallHalves, config.Quadrants);
+            api.AppendBehaviors(config);
         }
 
         private static PlaceEveryItemConfig LoadConfig(ICoreAPI api) => api.LoadModConfig<PlaceEveryItemConfig>(jsonConfig);

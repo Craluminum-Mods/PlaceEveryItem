@@ -3,7 +3,6 @@ using Vintagestory.API.Common;
 using Vintagestory.API.Datastructures;
 using Vintagestory.API.Util;
 using Vintagestory.GameContent;
-using System.Linq;
 
 namespace PlaceEveryItem
 {
@@ -41,9 +40,14 @@ namespace PlaceEveryItem
 
         public static void ApplyTransforms(this ICoreAPI api, CollectibleObject obj)
         {
-            foreach (var item in api.ModLoader.GetModSystem<PlaceEveryItem>().transformations!.Where(item => obj.WildcardRegexMatch(item.Key)))
+            var transformations = api.ModLoader.GetModSystem<PlaceEveryItem>().transformations;
+
+            foreach (var item in transformations)
             {
-                obj.ApplyTransform(item.Value);
+                if (obj.WildcardRegexMatch(item.Key))
+                {
+                    obj.ApplyTransform(item.Value);
+                }
             }
         }
 
