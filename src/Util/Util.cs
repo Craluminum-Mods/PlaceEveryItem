@@ -68,11 +68,21 @@ namespace PlaceEveryItem
             ApplyTransform(block, tf);
         }
 
-        public static GroundStorageProperties GetProps(this EnumGroundStorageLayout layout, DataWallHalves val = null)
+        public static GroundStorageProperties GetProps(this EnumGroundStorageLayout layout)
         {
             return new()
             {
                 Layout = layout,
+                SelectionBox = new(0, 0, 0, 1, 0.125f, 1),
+                CollisionBox = new(0, 0, 0, 0, 0, 0)
+            };
+        }
+
+        public static GroundStorageProperties GetProps(this CompactProps val)
+        {
+            return new()
+            {
+                Layout = val.Layout,
                 SprintKey = val?.SprintKey ?? default,
                 WallOffY = val?.WallOffY ?? default,
                 SelectionBox = new(0, 0, 0, 1, 0.125f, 1),
