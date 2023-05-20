@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace PlaceEveryItem
 {
-    public class PlaceEveryItem : ModSystem
+    public class Core : ModSystem
     {
         public Dictionary<string, ModelTransform> transformations = new();
 

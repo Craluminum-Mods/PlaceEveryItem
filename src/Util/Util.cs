@@ -43,7 +43,7 @@ namespace PlaceEveryItem
 
         public static void ApplyTransforms(this ICoreAPI api, CollectibleObject obj)
         {
-            var transformations = api.ModLoader.GetModSystem<PlaceEveryItem>().transformations;
+            var transformations = api.ModLoader.GetModSystem<Core>().transformations;
 
             foreach (var item in transformations)
             {
