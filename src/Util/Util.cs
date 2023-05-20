@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using Newtonsoft.Json.Linq;
 using Vintagestory.API.Common;
 using Vintagestory.API.Datastructures;
@@ -18,6 +19,8 @@ namespace PlaceEveryItem
         }
 
         public static bool IsGroundStorable(this CollectibleObject obj) => obj.HasBehavior<CollectibleBehaviorGroundStorable>();
+
+        public static bool IsMatched(this CollectibleObject obj, string key) => !string.IsNullOrEmpty(key) && obj.WildcardRegexMatch(key);
 
         public static bool WildcardRegexMatch(this CollectibleObject obj, string key) => WildcardUtil.Match(new AssetLocation(key), obj.Code);
 

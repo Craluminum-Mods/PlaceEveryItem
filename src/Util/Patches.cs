@@ -57,57 +57,77 @@ public static class Patches
 
     public static void AppendBehaviors(this ICoreAPI api, PlaceEveryItemConfig config)
     {
-        for (int i = 0; i < api.World.Collectibles.Count; i++)
+        foreach (var obj in api.World.Collectibles)
         {
-            var obj = api.World.Collectibles[i];
-            if (obj.Code == null) continue;
-            if (obj.Id == 0) continue;
-            if (obj.IsGroundStorable()) continue;
+            bool matchedSingle = false;
+            bool matchedHalves = false;
+            bool matchedWallHalves = false;
+            bool matchedQuadrants = false;
+
+            if (obj.Code == null || obj.Id == 0 || obj.IsGroundStorable())
+                continue;
 
             foreach (var single in config.SingleCenter)
             {
-                if (single.Key != null && single.Value && obj.WildcardRegexMatch(single.Key))
+                if (single.Value && obj.IsMatched(single.Key))
                 {
                     obj.AppendBehavior(singleProps);
                     obj.ApplyCreativeInventoryTab();
+                    api.ApplyTransforms(obj);
+                    matchedSingle = true;
                     break;
                 }
             }
+
+            if (matchedSingle) continue;
+
             foreach (var halve in config.Halves)
             {
-                if (halve.Key != null && halve.Value && obj.WildcardRegexMatch(halve.Key))
+                if (halve.Value && obj.IsMatched(halve.Key))
                 {
                     obj.AppendBehavior(halvesProps);
                     obj.ApplyCreativeInventoryTab();
+                    api.ApplyTransforms(obj);
+                    matchedHalves = true;
                     break;
                 }
             }
+
+            if (matchedHalves) continue;
+
             foreach (var halve in config.WallHalves)
             {
-                if (halve.Key != null && halve.Value?.Enabled == true && obj.WildcardRegexMatch(halve.Key))
+                if (halve.Value?.Enabled == true && obj.IsMatched(halve.Key))
                 {
                     obj.AppendBehavior(GetWallHalvesProps(halve));
                     obj.ApplyCreativeInventoryTab();
+                    api.ApplyTransforms(obj);
+                    matchedWallHalves = true;
                     break;
                 }
             }
+
+            if (matchedWallHalves) continue;
+
             foreach (var quadrant in config.Quadrants)
             {
-                if (quadrant.Key != null && quadrant.Value && obj.WildcardRegexMatch(quadrant.Key))
+                if (quadrant.Value && obj.IsMatched(quadrant.Key))
                 {
                     obj.AppendBehavior(quadrantProps);
                     obj.ApplyCreativeInventoryTab();
+                    api.ApplyTransforms(obj);
+                    matchedQuadrants = true;
                     break;
                 }
             }
 
-            api.ApplyTransforms(obj);
+            if (matchedQuadrants) continue;
 
-            if (!config.AllBlocks || obj is not Block) continue;
+            if (!config.AllBlocks || obj is not Block block) continue;
 
             obj.AppendBehavior(blockStorageProps);
             obj.ApplyCreativeInventoryTab();
-            (obj as Block)?.ApplyBlockTransform();
+            block.ApplyBlockTransform();
         }
     }
 }
