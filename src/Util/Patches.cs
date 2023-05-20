@@ -1,8 +1,6 @@
-using System.Collections.Generic;
 using PlaceEveryItem.Configuration;
 using Vintagestory.API.Common;
-using Vintagestory.API.MathTools;
-using Vintagestory.GameContent;
+using static Vintagestory.GameContent.EnumGroundStorageLayout;
 
 namespace PlaceEveryItem;
 
@@ -15,119 +13,92 @@ public class DataWallHalves
 
 public static class Patches
 {
-    private static readonly Cuboidf defaultSelectionBox = new(0, 0, 0, 1, 0.125f, 1);
-    private static readonly Cuboidf defaultCollisionBox = new(0, 0, 0, 0, 0, 0);
-
-    private static readonly GroundStorageProperties singleProps = new()
-    {
-        Layout = EnumGroundStorageLayout.SingleCenter,
-        SelectionBox = defaultSelectionBox,
-        CollisionBox = defaultCollisionBox
-    };
-
-    private static readonly GroundStorageProperties halvesProps = new()
-    {
-        Layout = EnumGroundStorageLayout.Halves,
-        SelectionBox = defaultSelectionBox,
-        CollisionBox = defaultCollisionBox
-    };
-
-    private static readonly GroundStorageProperties quadrantProps = new()
-    {
-        Layout = EnumGroundStorageLayout.Quadrants,
-        SelectionBox = defaultSelectionBox,
-        CollisionBox = defaultCollisionBox
-    };
-
-    private static readonly GroundStorageProperties blockStorageProps = new()
-    {
-        Layout = EnumGroundStorageLayout.Quadrants,
-        SelectionBox = defaultSelectionBox,
-        CollisionBox = defaultCollisionBox
-    };
-
-    private static GroundStorageProperties GetWallHalvesProps(KeyValuePair<string, DataWallHalves> val) => new()
-    {
-        Layout = EnumGroundStorageLayout.WallHalves,
-        SprintKey = val.Value.SprintKey,
-        WallOffY = val.Value.WallOffY,
-        SelectionBox = defaultSelectionBox,
-        CollisionBox = defaultCollisionBox
-    };
-
     public static void AppendBehaviors(this ICoreAPI api, PlaceEveryItemConfig config)
     {
+        var transformations = api.ModLoader.GetModSystem<Core>().transformations;
+
         foreach (var obj in api.World.Collectibles)
         {
-            bool matchedSingle = false;
-            bool matchedHalves = false;
-            bool matchedWallHalves = false;
-            bool matchedQuadrants = false;
-
             if (obj.Code == null || obj.Id == 0 || obj.IsGroundStorable())
                 continue;
+
+            if (config.AllBlocks && obj is Block block)
+            {
+                obj.AppendBehavior(Quadrants.GetProps());
+                obj.ApplyCreativeInventoryTab();
+                block.ApplyBlockTransform();
+                continue;
+            }
+
+            bool matched = false;
 
             foreach (var single in config.SingleCenter)
             {
                 if (single.Value && obj.IsMatched(single.Key))
                 {
-                    obj.AppendBehavior(singleProps);
-                    obj.ApplyCreativeInventoryTab();
-                    api.ApplyTransforms(obj);
-                    matchedSingle = true;
+                    obj.AppendBehavior(SingleCenter.GetProps());
+                    matched = true;
                     break;
                 }
             }
 
-            if (matchedSingle) continue;
+            if (matched)
+            {
+                obj.ApplyCreativeInventoryTab();
+                obj.ApplyTransforms(transformations);
+                continue;
+            }
 
             foreach (var halve in config.Halves)
             {
                 if (halve.Value && obj.IsMatched(halve.Key))
                 {
-                    obj.AppendBehavior(halvesProps);
-                    obj.ApplyCreativeInventoryTab();
-                    api.ApplyTransforms(obj);
-                    matchedHalves = true;
+                    obj.AppendBehavior(Halves.GetProps());
+                    matched = true;
                     break;
                 }
             }
 
-            if (matchedHalves) continue;
-
-            foreach (var halve in config.WallHalves)
+            if (matched)
             {
-                if (halve.Value?.Enabled == true && obj.IsMatched(halve.Key))
+                obj.ApplyCreativeInventoryTab();
+                obj.ApplyTransforms(transformations);
+                continue;
+            }
+
+            foreach (var wallHalve in config.WallHalves)
+            {
+                if (wallHalve.Value?.Enabled == true && obj.IsMatched(wallHalve.Key))
                 {
-                    obj.AppendBehavior(GetWallHalvesProps(halve));
-                    obj.ApplyCreativeInventoryTab();
-                    api.ApplyTransforms(obj);
-                    matchedWallHalves = true;
+                    obj.AppendBehavior(WallHalves.GetProps(wallHalve.Value));
+                    matched = true;
                     break;
                 }
             }
 
-            if (matchedWallHalves) continue;
+            if (matched)
+            {
+                obj.ApplyCreativeInventoryTab();
+                obj.ApplyTransforms(transformations);
+                continue;
+            }
 
             foreach (var quadrant in config.Quadrants)
             {
                 if (quadrant.Value && obj.IsMatched(quadrant.Key))
                 {
-                    obj.AppendBehavior(quadrantProps);
-                    obj.ApplyCreativeInventoryTab();
-                    api.ApplyTransforms(obj);
-                    matchedQuadrants = true;
+                    obj.AppendBehavior(Quadrants.GetProps());
+                    matched = true;
                     break;
                 }
             }
 
-            if (matchedQuadrants) continue;
-
-            if (!config.AllBlocks || obj is not Block block) continue;
-
-            obj.AppendBehavior(blockStorageProps);
-            obj.ApplyCreativeInventoryTab();
-            block.ApplyBlockTransform();
+            if (matched)
+            {
+                obj.ApplyCreativeInventoryTab();
+                obj.ApplyTransforms(transformations);
+                continue;
+            }
         }
     }
 }

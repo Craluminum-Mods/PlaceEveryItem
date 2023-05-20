@@ -1,4 +1,4 @@
-using System.Text.RegularExpressions;
+using System.Collections.Generic;
 using Newtonsoft.Json.Linq;
 using Vintagestory.API.Common;
 using Vintagestory.API.Datastructures;
@@ -41,10 +41,8 @@ namespace PlaceEveryItem
             }
         }
 
-        public static void ApplyTransforms(this ICoreAPI api, CollectibleObject obj)
+        public static void ApplyTransforms(this CollectibleObject obj, Dictionary<string, ModelTransform> transformations)
         {
-            var transformations = api.ModLoader.GetModSystem<Core>().transformations;
-
             foreach (var item in transformations)
             {
                 if (obj.WildcardRegexMatch(item.Key))
@@ -68,6 +66,18 @@ namespace PlaceEveryItem
             tf.Origin.Z = 0.5f;
             tf.Scale = 0.4f;
             ApplyTransform(block, tf);
+        }
+
+        public static GroundStorageProperties GetProps(this EnumGroundStorageLayout layout, DataWallHalves val = null)
+        {
+            return new()
+            {
+                Layout = layout,
+                SprintKey = val?.SprintKey ?? default,
+                WallOffY = val?.WallOffY ?? default,
+                SelectionBox = new(0, 0, 0, 1, 0.125f, 1),
+                CollisionBox = new(0, 0, 0, 0, 0, 0)
+            };
         }
     }
 }
