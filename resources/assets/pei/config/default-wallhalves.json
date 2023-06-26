@@ -1,0 +1,7 @@
+{
+    "bowstave-*": { "Enabled": true, "SprintKey": true, "WallOffY": 2 },
+    "helvehammer-*": { "Enabled": true, "SprintKey": true, "WallOffY": 3 },
+    "largegearsection-*": { "Enabled": true, "SprintKey": true, "WallOffY": 1 },
+    "pounder-*": { "Enabled": true, "SprintKey": true, "WallOffY": 3 },
+    "pulverizertoggle-*": { "Enabled": true, "SprintKey": true, "WallOffY": 1 }
+}

@@ -42,7 +42,7 @@ public static class Patches
                 {
                     obj.AppendBehavior(val.Value.GetProps());
                     obj.ApplyCreativeInventoryTab();
-                    obj.ApplyTransforms(api.ModLoader.GetModSystem<Core>().transformations);
+                    obj.ApplyTransforms(api.ModLoader.GetModSystem<Core>().Transformations);
                     break;
                 }
             }

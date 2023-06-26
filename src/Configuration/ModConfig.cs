@@ -1,4 +1,5 @@
 using Vintagestory.API.Common;
+using Vintagestory.API.Server;
 
 namespace PlaceEveryItem.Configuration
 {
@@ -6,9 +7,12 @@ namespace PlaceEveryItem.Configuration
     {
         private const string jsonConfig = "PlaceEveryItemConfig.json";
         private static PlaceEveryItemConfig config;
+        private static ICoreServerAPI sapi;
 
-        public static void ReadConfig(ICoreAPI api)
+        public static void ReadConfig(ICoreServerAPI api)
         {
+            sapi = api;
+
             try
             {
                 config = LoadConfig(api);
@@ -33,7 +37,7 @@ namespace PlaceEveryItem.Configuration
         }
 
         private static PlaceEveryItemConfig LoadConfig(ICoreAPI api) => api.LoadModConfig<PlaceEveryItemConfig>(jsonConfig);
-        private static void GenerateConfig(ICoreAPI api) => api.StoreModConfig(new PlaceEveryItemConfig(), jsonConfig);
+        private static void GenerateConfig(ICoreAPI api) => api.StoreModConfig(new PlaceEveryItemConfig(sapi), jsonConfig);
         private static void GenerateConfig(ICoreAPI api, PlaceEveryItemConfig previousConfig) => api.StoreModConfig(new PlaceEveryItemConfig(previousConfig), jsonConfig);
     }
 }
