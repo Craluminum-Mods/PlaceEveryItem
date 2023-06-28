@@ -30,7 +30,9 @@ public static class Patches
 
             if (config.AllBlocks && obj is Block block)
             {
-                obj.AppendBehavior(Quadrants.GetProps());
+                var gsprops = Quadrants.GetProps();
+                gsprops.SprintKey = true;
+                obj.AppendBehavior(gsprops);
                 obj.ApplyCreativeInventoryTab();
                 block.ApplyBlockTransform();
                 continue;
@@ -40,7 +42,9 @@ public static class Patches
             {
                 if (val.Value.Enabled && obj.IsMatched(val.Key))
                 {
-                    obj.AppendBehavior(val.Value.GetProps());
+                    var gsprops = val.Value.GetProps();
+                    if (obj is Block) gsprops.SprintKey = true;
+                    obj.AppendBehavior(gsprops);
                     obj.ApplyCreativeInventoryTab();
                     obj.ApplyTransforms(api.ModLoader.GetModSystem<Core>().Transformations);
                     break;

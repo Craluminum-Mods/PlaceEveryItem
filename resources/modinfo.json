@@ -3,9 +3,9 @@
     "side": "server",
     "modid": "pei",
     "name": "Place Every Item",
-    "version": "1.4.1",
+    "version": "1.4.2",
     "authors": ["Craluminum2413"],
     "dependencies": {
-        "game": "1.18.0-pre.1"
+        "game": "1.18.0-*"
     }
 }
