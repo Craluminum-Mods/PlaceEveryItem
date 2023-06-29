@@ -150,10 +150,13 @@ public class HarmonyPatchesForPei : ModSystem
             if (blockSel == null || byEntity == null) return true;
 
             var bh = slot.Itemstack.Collectible.GetBehavior<CollectibleBehaviorGroundStorable>();
+            if (bh == null) return true;
+
             var isUpFace = blockSel.Face == BlockFacing.UP;
             var isGroundStorage = blockSel.Block is BlockGroundStorage;
+            var begs = byEntity.World.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGroundStorage;
 
-            if (bh != null && (isGroundStorage || isUpFace))
+            if ((isGroundStorage && begs?.OnTryCreateKiln() == false) || isUpFace)
             {
                 var ctrlKey = byEntity.Controls.CtrlKey;
 
