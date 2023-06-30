@@ -156,7 +156,8 @@ public class HarmonyPatchesForPei : ModSystem
             var isGroundStorage = blockSel.Block is BlockGroundStorage;
             var begs = byEntity.World.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGroundStorage;
 
-            if ((isGroundStorage && begs?.OnTryCreateKiln() == false) || isUpFace)
+            if (isGroundStorage && begs.CanCreateCharcoalFirepit(slot, blockSel)) return true;
+
             if ((isGroundStorage && !begs.CanCreatePitKiln()) || isUpFace)
             {
                 var ctrlKey = byEntity.Controls.CtrlKey;
