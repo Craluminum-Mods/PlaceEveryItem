@@ -61,6 +61,8 @@ public class HarmonyPatches : ModSystem
             var isGroundStorage = blockSel.Block is BlockGroundStorage;
             var begs = world.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGroundStorage;
 
+            // breaks creating of charcoal firepit
+            // if ((isGroundStorage && !begs.CanCreatePitKiln()) || (isGroundStorage && BlockFacing.ALLFACES.Contains(blockSel.Face)))
             if (isGroundStorage && !begs.CanCreatePitKiln())
             {
                 blockSel.Block.PriorityInteract = true;
