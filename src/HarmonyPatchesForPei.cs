@@ -157,6 +157,7 @@ public class HarmonyPatchesForPei : ModSystem
             var begs = byEntity.World.BlockAccessor.GetBlockEntity(blockSel.Position) as BlockEntityGroundStorage;
 
             if ((isGroundStorage && begs?.OnTryCreateKiln() == false) || isUpFace)
+            if ((isGroundStorage && !begs.CanCreatePitKiln()) || isUpFace)
             {
                 var ctrlKey = byEntity.Controls.CtrlKey;
 
