@@ -1,14 +1,12 @@
-using System.Collections.Generic;
 using System.Linq;
-using PlaceEveryItem.Configuration;
 using Vintagestory.API.Common;
 using static Vintagestory.GameContent.EnumGroundStorageLayout;
 
 namespace PlaceEveryItem;
 
-public static class Patches
+public static class PatchExtensions
 {
-    public static void AppendBehaviors(this ICoreAPI api, PlaceEveryItemConfig config)
+    public static void AppendBehaviors(this ICoreAPI api, Config config)
     {
         var compactProps = config
             .SingleCenter

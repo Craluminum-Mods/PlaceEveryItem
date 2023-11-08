@@ -1,43 +1,44 @@
 using Vintagestory.API.Common;
 using Vintagestory.API.Server;
 
-namespace PlaceEveryItem.Configuration
+namespace PlaceEveryItem;
+
+public static class ModConfig
 {
-    static class ModConfig
+    private const string jsonConfig = "PlaceEveryItemConfig.json";
+    private static Config config;
+    private static ICoreServerAPI sapi;
+
+    public static Config ReadConfig(ICoreServerAPI api)
     {
-        private const string jsonConfig = "PlaceEveryItemConfig.json";
-        private static PlaceEveryItemConfig config;
-        private static ICoreServerAPI sapi;
+        sapi = api;
 
-        public static void ReadConfig(ICoreServerAPI api)
+        try
         {
-            sapi = api;
+            config = LoadConfig(api);
 
-            try
-            {
-                config = LoadConfig(api);
-
-                if (config == null)
-                {
-                    GenerateConfig(api);
-                    config = LoadConfig(api);
-                }
-                else
-                {
-                    GenerateConfig(api, config);
-                }
-            }
-            catch
+            if (config == null)
             {
                 GenerateConfig(api);
                 config = LoadConfig(api);
             }
-
-            api.AppendBehaviors(config);
+            else
+            {
+                GenerateConfig(api, config);
+            }
+        }
+        catch
+        {
+            GenerateConfig(api);
+            config = LoadConfig(api);
         }
 
-        private static PlaceEveryItemConfig LoadConfig(ICoreAPI api) => api.LoadModConfig<PlaceEveryItemConfig>(jsonConfig);
-        private static void GenerateConfig(ICoreAPI api) => api.StoreModConfig(new PlaceEveryItemConfig(sapi), jsonConfig);
-        private static void GenerateConfig(ICoreAPI api, PlaceEveryItemConfig previousConfig) => api.StoreModConfig(new PlaceEveryItemConfig(previousConfig), jsonConfig);
+        api.AppendBehaviors(config);
+
+        return config;
     }
+
+    private static Config LoadConfig(ICoreAPI api) => api.LoadModConfig<Config>(jsonConfig);
+    private static void GenerateConfig(ICoreAPI api) => api.StoreModConfig(new Config(sapi), jsonConfig);
+    private static void GenerateConfig(ICoreAPI api, Config previousConfig) => api.StoreModConfig(new Config(previousConfig), jsonConfig);
 }
