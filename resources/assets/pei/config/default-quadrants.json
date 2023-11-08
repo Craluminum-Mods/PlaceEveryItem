@@ -77,7 +77,7 @@
     "clearquartz": true,
     "cloth-*": true,
     "crystalizedore-*": true,
-    "drygrass": true,
+    "drygrass": false,
     "fat": true,
     "feather": true,
     "flaxfibers": true,
