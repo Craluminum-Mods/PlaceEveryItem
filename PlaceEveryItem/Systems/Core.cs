@@ -1,35 +1,80 @@
-using Vintagestory.API.Common;
+using PlaceEveryItem.Configuration;
 using System.Collections.Generic;
-using Vintagestory.API.Server;
-
-[assembly: ModInfo(name: "Place Every Item", modID: "pei", Side = "Server")]
+using Vintagestory.API.Common;
+using Vintagestory.GameContent;
 
 namespace PlaceEveryItem;
 
 public class Core : ModSystem
 {
-    public static Config Config { get; private set; }
+    public ConfigPlaceEveryItem Config { get; private set; }
 
-    public Dictionary<string, ModelTransform> Transformations { get; private set; }
+    public Dictionary<string, ModelTransform> ItemTransformations { get; private set; } = new();
+    public Dictionary<string, ModelTransform> BlockTransformations { get; private set; } = new();
 
-    public Dictionary<string, bool> DefaultHalves { get; private set; }
-    public Dictionary<string, bool> DefaultQuadrants { get; private set; }
-    public Dictionary<string, bool> DefaultSingleCenter { get; private set; }
-    public Dictionary<string, DataWallHalves> DefaultWallHalves { get; private set; }
+    public GroundStorables DefaultGroundStorableItems { get; private set; } = new();
+    public GroundStorables DefaultGroundStorableBlocks { get; private set; } = new();
 
-    public override void AssetsFinalize(ICoreAPI api)
-    {
-        Config = ModConfig.ReadConfig(api as ICoreServerAPI);
-        api.World.Logger.Event("started '{0}' mod", Mod.Info.Name);
-    }
+    public static Core GetInstance(ICoreAPI api) => api.ModLoader.GetModSystem<Core>();
 
     public override void AssetsLoaded(ICoreAPI api)
     {
-        Transformations = api.Assets.Get(new AssetLocation("pei:config/transformations.json")).ToObject<Dictionary<string, ModelTransform>>();
+        ItemTransformations = api.Assets.Get(new AssetLocation("pei:config/groundstorage-transformations-for-items.json")).ToObject<Dictionary<string, ModelTransform>>();
+        BlockTransformations = api.Assets.Get(new AssetLocation("pei:config/groundstorage-transformations-for-blocks.json")).ToObject<Dictionary<string, ModelTransform>>();
 
-        DefaultHalves = api.Assets.Get(new AssetLocation("pei:config/default-halves.json")).ToObject<Dictionary<string, bool>>();
-        DefaultQuadrants = api.Assets.Get(new AssetLocation("pei:config/default-quadrants.json")).ToObject<Dictionary<string, bool>>();
-        DefaultSingleCenter = api.Assets.Get(new AssetLocation("pei:config/default-singlecenter.json")).ToObject<Dictionary<string, bool>>();
-        DefaultWallHalves = api.Assets.Get(new AssetLocation("pei:config/default-wallhalves.json")).ToObject<Dictionary<string, DataWallHalves>>();
+        DefaultGroundStorableItems = api.Assets.Get(new AssetLocation("pei:config/default-groundstorable-items.json")).ToObject<GroundStorables>();
+        DefaultGroundStorableBlocks = api.Assets.Get(new AssetLocation("pei:config/default-groundstorable-blocks.json")).ToObject<GroundStorables>();
+    }
+
+    public override void AssetsFinalize(ICoreAPI api)
+    {
+        long elapsedMilliseconds = api.World.ElapsedMilliseconds;
+
+        Config = ModConfig.ReadConfig<ConfigPlaceEveryItem>(api, "PlaceEveryItemConfig.json");
+
+        Dictionary<string, GroundStorageProperties> items = Config.Items.GetPropsFromAll();
+        Dictionary<string, GroundStorageProperties> blocks = Config.Blocks.GetPropsFromAll();
+
+        foreach (CollectibleObject obj in api.World.Collectibles)
+        {
+            if (obj.Code == null || obj.Id == 0 || obj.IsGroundStorable()) continue;
+
+            switch (obj.ItemClass)
+            {
+                case EnumItemClass.Block:
+                    foreach (KeyValuePair<string, GroundStorageProperties> props in blocks)
+                    {
+                        if (!obj.WildCardMatch(AssetLocation.Create(props.Key))) continue;
+                        obj.AppendBehavior(props.Value);
+                        obj.AddToCreativeInventory();
+                        break;
+                    }
+                    foreach (KeyValuePair<string, ModelTransform> transform in BlockTransformations)
+                    {
+                        if (!obj.WildCardMatch(AssetLocation.Create(transform.Key))) continue;
+                        obj.ApplyTransform(transform.Value);
+                        break;
+                    }
+                    break;
+                case EnumItemClass.Item:
+
+                    foreach (KeyValuePair<string, GroundStorageProperties> props in items)
+                    {
+                        if (!obj.WildCardMatch(AssetLocation.Create(props.Key))) continue;
+                        obj.AppendBehavior(props.Value);
+                        obj.AddToCreativeInventory();
+                        break;
+                    }
+                    foreach (KeyValuePair<string, ModelTransform> transform in ItemTransformations)
+                    {
+                        if (!obj.WildCardMatch(AssetLocation.Create(transform.Key))) continue;
+                        obj.ApplyTransform(transform.Value);
+                        break;
+                    }
+                    break;
+            }
+        }
+
+        Mod.Logger.Event("started '{0}' mod ({1} ms)", Mod.Info.Name, api.World.ElapsedMilliseconds - elapsedMilliseconds);
     }
 }

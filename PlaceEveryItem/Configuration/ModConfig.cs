@@ -1,44 +1,49 @@
+using System;
 using Vintagestory.API.Common;
-using Vintagestory.API.Server;
 
-namespace PlaceEveryItem;
+namespace PlaceEveryItem.Configuration;
 
 public static class ModConfig
 {
-    private const string jsonConfig = "PlaceEveryItemConfig.json";
-    private static Config config;
-    private static ICoreServerAPI sapi;
-
-    public static Config ReadConfig(ICoreServerAPI api)
+    public static T ReadConfig<T>(ICoreAPI api, string jsonConfig) where T : class, IModConfig
     {
-        sapi = api;
+        T config;
 
         try
         {
-            config = LoadConfig(api);
+            config = LoadConfig<T>(api, jsonConfig);
 
             if (config == null)
             {
-                GenerateConfig(api);
-                config = LoadConfig(api);
+                GenerateConfig<T>(api, jsonConfig);
+                config = LoadConfig<T>(api, jsonConfig);
             }
             else
             {
-                GenerateConfig(api, config);
+                GenerateConfig(api, jsonConfig, config);
             }
         }
         catch
         {
-            GenerateConfig(api);
-            config = LoadConfig(api);
+            GenerateConfig<T>(api, jsonConfig);
+            config = LoadConfig<T>(api, jsonConfig);
         }
-
-        api.AppendBehaviors(config);
 
         return config;
     }
 
-    private static Config LoadConfig(ICoreAPI api) => api.LoadModConfig<Config>(jsonConfig);
-    private static void GenerateConfig(ICoreAPI api) => api.StoreModConfig(new Config(sapi), jsonConfig);
-    private static void GenerateConfig(ICoreAPI api, Config previousConfig) => api.StoreModConfig(new Config(previousConfig), jsonConfig);
+    private static T LoadConfig<T>(ICoreAPI api, string jsonConfig) where T : IModConfig
+    {
+        return api.LoadModConfig<T>(jsonConfig);
+    }
+
+    private static void GenerateConfig<T>(ICoreAPI api, string jsonConfig, T previousConfig = null) where T : class, IModConfig
+    {
+        api.StoreModConfig(CloneConfig<T>(api, previousConfig), jsonConfig);
+    }
+
+    private static T CloneConfig<T>(ICoreAPI api, T config = null) where T : class, IModConfig
+    {
+        return (T)Activator.CreateInstance(typeof(T), new object[] { api, config });
+    }
 }
