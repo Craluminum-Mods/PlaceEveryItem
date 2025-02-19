@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35728.132 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaceEveryItem", "PlaceEveryItem\PlaceEveryItem.csproj", "{EF86FA6C-FDCB-46EB-BBFA-648DC7172B54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeBuild", "ZZCakeBuild\CakeBuild.csproj", "{A798B288-8428-449E-9CAB-13E1AF4B1444}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF86FA6C-FDCB-46EB-BBFA-648DC7172B54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF86FA6C-FDCB-46EB-BBFA-648DC7172B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF86FA6C-FDCB-46EB-BBFA-648DC7172B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF86FA6C-FDCB-46EB-BBFA-648DC7172B54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A798B288-8428-449E-9CAB-13E1AF4B1444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A798B288-8428-449E-9CAB-13E1AF4B1444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A798B288-8428-449E-9CAB-13E1AF4B1444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A798B288-8428-449E-9CAB-13E1AF4B1444}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
