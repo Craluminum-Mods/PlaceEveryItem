@@ -16,6 +16,8 @@ public class GroundStorables
 
         foreach (KeyValuePair<string, bool> elem in SingleCenter)
         {
+            if (!elem.Value) continue;
+
             GroundStorageProperties props = new()
             {
                 Layout = EnumGroundStorageLayout.SingleCenter,
@@ -27,6 +29,8 @@ public class GroundStorables
 
         foreach (KeyValuePair<string, bool> elem in Halves)
         {
+            if (!elem.Value) continue;
+
             GroundStorageProperties props = new()
             {
                 Layout = EnumGroundStorageLayout.Halves,
@@ -38,6 +42,8 @@ public class GroundStorables
 
         foreach (KeyValuePair<string, DataWallHalves> elem in WallHalves)
         {
+            if (!elem.Value.Enabled) continue;
+
             GroundStorageProperties props = new()
             {
                 Layout = EnumGroundStorageLayout.WallHalves,
@@ -51,6 +57,8 @@ public class GroundStorables
 
         foreach (KeyValuePair<string, bool> elem in Quadrants)
         {
+            if (!elem.Value) continue;
+
             GroundStorageProperties props = new()
             {
                 Layout = EnumGroundStorageLayout.Quadrants,
