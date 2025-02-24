@@ -104,7 +104,7 @@
         "papyrusroot": { "Enabled": true },
         "poultice-*": { "Enabled": true },
         "seashell-*": { "Enabled": true },
-        "seeds-*": { "Enabled": true },
+        "seeds-*": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "torchholder-*": { "Enabled": true },
         "treeseed-*": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "woodenaxle-ud": { "Enabled": true },
