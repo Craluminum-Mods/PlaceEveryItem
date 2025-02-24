@@ -1,6 +1,4 @@
 using Newtonsoft.Json;
-using System.Collections.Generic;
-using System.Linq;
 using Vintagestory.API.Common;
 using Vintagestory.API.Util;
 
@@ -15,15 +13,9 @@ public class ConfigPlaceEveryItem : IModConfig
     public string Description => "AutoFill defaults entire config file every time you load any world. You need to disable it in order to make changes";
 
     [JsonProperty(Order = 3)]
-    public List<string> BlacklistItems { get; set; } = new();
-
-    [JsonProperty(Order = 4)]
-    public List<string> BlacklistBlocks { get; set; } = new();
-
-    [JsonProperty(Order = 5)]
     public GroundStorables Items { get; set; } = new();
 
-    [JsonProperty(Order = 6)]
+    [JsonProperty(Order = 4)]
     public GroundStorables Blocks { get; set; } = new();
 
     public ConfigPlaceEveryItem(ICoreAPI api, ConfigPlaceEveryItem previousConfig = null)
@@ -41,9 +33,6 @@ public class ConfigPlaceEveryItem : IModConfig
             Blocks.Halves.AddRange(previousConfig.Blocks.Halves);
             Blocks.WallHalves.AddRange(previousConfig.Blocks.WallHalves);
             Blocks.Quadrants.AddRange(previousConfig.Blocks.Quadrants);
-
-            BlacklistItems.AddRange(previousConfig.BlacklistItems.Where(item => !BlacklistItems.Contains(item)));
-            BlacklistBlocks.AddRange(previousConfig.BlacklistBlocks.Where(block => !BlacklistBlocks.Contains(block)));
         }
 
         if (api != null && AutoFill)
@@ -57,9 +46,6 @@ public class ConfigPlaceEveryItem : IModConfig
             Blocks.Halves.Clear();
             Blocks.WallHalves.Clear();
             Blocks.Quadrants.Clear();
-
-            BlacklistItems.Clear();
-            BlacklistBlocks.Clear();
 
             FillDefault(api);
         }
@@ -78,8 +64,5 @@ public class ConfigPlaceEveryItem : IModConfig
         Blocks.Halves.AddRange(core.DefaultGroundStorableBlocks.Halves);
         Blocks.WallHalves.AddRange(core.DefaultGroundStorableBlocks.WallHalves);
         Blocks.Quadrants.AddRange(core.DefaultGroundStorableBlocks.Quadrants);
-
-        BlacklistItems.AddRange(core.DefaultBlacklistItems.Where(item => !BlacklistItems.Contains(item)));
-        BlacklistBlocks.AddRange(core.DefaultBlacklistBlocks.Where(block => !BlacklistBlocks.Contains(block)));
     }
 }
