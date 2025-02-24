@@ -111,4 +111,24 @@ public static class GroundStoragePatches
         public static bool Prefix(ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handHandling)
             => slot.TryFixGroundStoragePlacement(byEntity, blockSel, entitySel, firstEvent, ref handHandling);
     }
+
+    [HarmonyPatch(typeof(BlockTorch), nameof(BlockTorch.OnHeldInteractStart))]
+    public static class FixTorchPlacement
+    {
+        public static bool Prefix(ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handling)
+            => slot.TryFixGroundStoragePlacement(byEntity, blockSel, entitySel, firstEvent, ref handling);
+    }
+
+    [HarmonyPatch(typeof(Block), nameof(Block.CanPlaceBlock))]
+    public static class FixBlockPlacement
+    {
+        public static bool Prefix(ref bool __result, IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel, ref string failureCode)
+        {
+            ItemSlot activeSlot = byPlayer.InventoryManager?.ActiveHotbarSlot;
+            EnumHandHandling handHandling = EnumHandHandling.NotHandled;
+            bool result = activeSlot.TryFixGroundStoragePlacement(byPlayer.Entity, blockSel, byPlayer.CurrentEntitySelection, true, ref handHandling);
+            __result = !result;
+            return result;
+        }
+    }
 }

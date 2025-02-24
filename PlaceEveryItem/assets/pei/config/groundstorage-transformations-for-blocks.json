@@ -1,6 +1,7 @@
 {
-    "*": {
-        "origin": { "x": 0.5, "y": 0, "z": 0.5 },
-        "scale": 0.4
-    }
+    "torchholder-*": { "translation": { "x": 0.21, "y": 0.443, "z": 0.21 }, "rotation": { "x": -90, "y": 0, "z": 45 }, "origin": { "x": 0.5, "y": 0, "z": 0.5 }, "scale": 0.9 },
+    "woodenaxle-ud": { "translation": { "x": 0.2, "y": 0.036, "z": -0.2 }, "origin": { "x": 0.5, "y": 0, "z": 0.5 }, "rotation": { "x": 90, "y": 0, "z": 45 }, "scale": 0.5 },
+    "angledgears-s": { "translation": { "x": 0, "y": -0.12, "z": 0 }, "origin": { "x": 0.5, "y": 0.5, "z": 0.5 }, "rotation": { "x": 90, "y": 0, "z": 0 }, "scale": 0.7 },
+    "oillamp-*": { "origin": { "x": 0.5, "y": 0, "z": 0.5 } },
+    "*": { "origin": { "x": 0.5, "y": 0, "z": 0.5 }, "scale": 0.4 }
 }

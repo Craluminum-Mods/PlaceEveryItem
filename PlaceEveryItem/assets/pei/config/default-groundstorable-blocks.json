@@ -3,9 +3,9 @@
     "halves": {},
     "wallhalves": {},
     "quadrants": {
-        "flowerpot-*": { "Enabled": true },
-        "oillamp-up": { "Enabled": true },
-        "oreblastingbomb": { "Enabled": true },
-        "torchholder-*": { "Enabled": true }
+        "flowerpot-*": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true }  },
+        "oillamp-up": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true }  },
+        "bomb-*": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true }  },
+        "torchholder-*": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true }  }
     }
 }
