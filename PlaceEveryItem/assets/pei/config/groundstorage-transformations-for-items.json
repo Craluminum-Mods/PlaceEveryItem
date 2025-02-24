@@ -41,7 +41,7 @@
     "clothes-shoulder-*": { "translation": { "x": 0, "y": -0.5, "z": 0 }, "origin": { "x": 0.5, "y": 0.5, "z": 0.5 }, "scale": 1 },
     "clothes-waist-*": { "translation": { "x": 0, "y": -0.8, "z": 0 }, "origin": { "x": 0.5, "y": 0.5, "z": 0.5 }, "scale": 1 },
     "tuleroot": { "rotation": { "x": 0, "y": -30, "z": 0 } },
-    "drygrass": { "origin": { "x": 0.5, "y": -0.12, "z": 0.5 }, "rotation": { "x": 0, "y": 45, "z": 0 }, "scale": 0.7 },
+    "drygrass": { "origin": { "x": 0.5, "y": -0.32, "z": 0.5 }, "rotation": { "x": 0, "y": 45, "z": 0 }, "scale": 0.7 },
     "gear-rusty": { "translation": { "x": 0.15, "y": 0, "z": 0.05 }, "origin": { "x": 0.5, "y": 0, "z": 0.5 }, "scale": 1 },
     "hammerhead-*": { "translation": { "x": -0.3, "y": -0.43, "z": 0 }, "origin": { "x": 0.8, "y": 0.5, "z": 0.5 }, "rotation": { "x": 0, "y": 45, "z": 0 }, "scale": 1 },
     "helvehammer-*": { "translation": { "x": 0, "y": -0.8, "z": 0.1 }, "origin": { "x": 0.5, "y": 0.5, "z": 0.5 }, "rotation": { "x": -80, "y": 0, "z": 0 }, "scale": 1 },

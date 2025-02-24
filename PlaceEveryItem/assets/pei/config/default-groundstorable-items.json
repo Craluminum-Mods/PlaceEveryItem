@@ -44,6 +44,7 @@
         }
     },
     "quadrants": {
+        "drygrass": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "oakbark": { "Enabled": true },
         "scrapweaponkit": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "stone-*": { "Enabled": true, "CtrlKey": true },
