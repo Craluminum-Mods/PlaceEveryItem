@@ -48,7 +48,7 @@
         "scrapweaponkit": { "Enabled": true },
         "stone-*": { "Enabled": true, "CtrlKey": true },
         "workitem-*": { "Enabled": true },
-        "sling": { "Enabled": true },
+        "sling": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "clay-*": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "eidolongearbox": { "Enabled": true },
         "nightvisiondevice": { "Enabled": true },
