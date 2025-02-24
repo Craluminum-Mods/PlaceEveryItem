@@ -59,7 +59,7 @@
         "saltpeter": { "Enabled": true },
         "charcoal": { "Enabled": true },
         "coke": { "Enabled": true },
-        "flint": { "Enabled": true },
+        "flint": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "herbbundle-*": { "Enabled": true },
         "mortar": { "Enabled": true },
         "pulp-*": { "Enabled": true },
