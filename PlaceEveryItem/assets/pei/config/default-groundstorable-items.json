@@ -91,6 +91,7 @@
         "beenade-*": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "candle": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "cattailroot": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
+        "tuleroot": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "flowerpot-*": { "Enabled": true },
         "fruittree-*": { "Enabled": true },
         "gear-rusty": { "Enabled": true },
