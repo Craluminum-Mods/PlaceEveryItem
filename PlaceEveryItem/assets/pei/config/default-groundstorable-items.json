@@ -88,7 +88,7 @@
 
         "angledgears-s": { "Enabled": true },
         "bandage-*": { "Enabled": true },
-        "beenade-*": { "Enabled": true },
+        "beenade-*": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "candle": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "cattailroot": { "Enabled": true },
         "flowerpot-*": { "Enabled": true },
