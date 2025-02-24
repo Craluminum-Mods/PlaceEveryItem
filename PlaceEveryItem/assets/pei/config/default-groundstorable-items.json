@@ -45,7 +45,7 @@
     },
     "quadrants": {
         "oakbark": { "Enabled": true },
-        "scrapweaponkit": { "Enabled": true },
+        "scrapweaponkit": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "stone-*": { "Enabled": true, "CtrlKey": true },
         "workitem-*": { "Enabled": true },
         "sling": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
