@@ -106,7 +106,6 @@
         "padlock-*": { "Enabled": true },
         "papyrusroot": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "poultice-*": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
-        "seashell-*": { "Enabled": true },
         "seeds-*": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "torchholder-*": { "Enabled": true },
         "treeseed-*": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
