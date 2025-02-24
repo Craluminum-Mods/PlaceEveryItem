@@ -49,7 +49,7 @@
         "stone-*": { "Enabled": true, "CtrlKey": true },
         "workitem-*": { "Enabled": true },
         "sling": { "Enabled": true },
-        "clay-*": { "Enabled": true },
+        "clay-*": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "eidolongearbox": { "Enabled": true },
         "nightvisiondevice": { "Enabled": true },
         "bonemeal": { "Enabled": true },
