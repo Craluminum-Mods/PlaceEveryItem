@@ -97,4 +97,18 @@ public static class GroundStoragePatches
         public static bool Prefix(ItemSlot itemslot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handHandling)
             => itemslot.TryFixGroundStoragePlacement(byEntity, blockSel, entitySel, firstEvent, ref handHandling);
     }
+
+    [HarmonyPatch(typeof(ItemRustyGear), nameof(ItemRustyGear.OnHeldInteractStart))]
+    public static class FixRustyGearPlacement
+    {
+        public static bool Prefix(ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handling)
+            => slot.TryFixGroundStoragePlacement(byEntity, blockSel, entitySel, firstEvent, ref handling);
+    }
+
+    [HarmonyPatch(typeof(ItemTemporalGear), nameof(ItemTemporalGear.OnHeldInteractStart))]
+    public static class FixTemporalGearPlacement
+    {
+        public static bool Prefix(ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handHandling)
+            => slot.TryFixGroundStoragePlacement(byEntity, blockSel, entitySel, firstEvent, ref handHandling);
+    }
 }
