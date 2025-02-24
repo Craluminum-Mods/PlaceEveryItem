@@ -2,5 +2,10 @@
     "singlecenter": {},
     "halves": {},
     "wallhalves": {},
-    "quadrants": {}
+    "quadrants": {
+        "flowerpot-*": { "Enabled": true },
+        "oillamp-up": { "Enabled": true },
+        "oreblastingbomb": { "Enabled": true },
+        "torchholder-*": { "Enabled": true }
+    }
 }
