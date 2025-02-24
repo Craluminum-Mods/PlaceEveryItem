@@ -102,7 +102,7 @@
         "oreblastingbomb": { "Enabled": true },
         "padlock-*": { "Enabled": true },
         "papyrusroot": { "Enabled": true },
-        "poultice-*": { "Enabled": true },
+        "poultice-*": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "seashell-*": { "Enabled": true },
         "seeds-*": { "Enabled": true, "CtrlKey": true, "PlaceEveryItemProperties": { "FixPlacement": true } },
         "torchholder-*": { "Enabled": true },
