@@ -7,10 +7,13 @@ namespace PlaceEveryItem;
 
 public class DataGroundStorable
 {
+    [JsonProperty(Order = 1)]
     public bool Enabled { get; set; }
+
+    [JsonProperty(Order = 2)]
     public bool CtrlKey { get; set; }
 
-    [JsonProperty]
+    [JsonProperty(Order = 3)]
     [JsonConverter(typeof(JsonAttributesConverter))]
     public JsonObject PlaceEveryItemProperties;
 

@@ -1,9 +1,11 @@
-﻿using Vintagestory.GameContent;
+﻿using Newtonsoft.Json;
+using Vintagestory.GameContent;
 
 namespace PlaceEveryItem;
 
 public class DataWallHalves : DataGroundStorable
 {
+    [JsonProperty(Order = 4)]
     public int WallOffY { get; set; }
 
     public override GroundStoragePropertiesExtended GetProps(EnumGroundStorageLayout forLayout)
