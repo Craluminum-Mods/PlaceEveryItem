@@ -127,7 +127,7 @@ public static class GroundStoragePatches
             ItemSlot activeSlot = byPlayer.InventoryManager?.ActiveHotbarSlot;
             EnumHandHandling handHandling = EnumHandHandling.NotHandled;
             bool result = activeSlot.TryFixGroundStoragePlacement(byPlayer.Entity, blockSel, byPlayer.CurrentEntitySelection, true, ref handHandling);
-            __result = !result;
+            __result = result;
             return result;
         }
     }
