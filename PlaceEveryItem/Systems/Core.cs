@@ -1,13 +1,15 @@
+using HarmonyLib;
 using PlaceEveryItem.Configuration;
 using System.Collections.Generic;
 using System.Linq;
 using Vintagestory.API.Common;
-using Vintagestory.GameContent;
 
 namespace PlaceEveryItem;
 
 public class Core : ModSystem
 {
+    public const string HarmonyID = "craluminum2413.PlaceEveryItem";
+    public Harmony HarmonyInstance => new Harmony(HarmonyID);
     public ConfigPlaceEveryItem Config { get; private set; }
 
     public Dictionary<string, ModelTransform> ItemTransformations { get; private set; } = new();
@@ -21,6 +23,16 @@ public class Core : ModSystem
 
     public static Core GetInstance(ICoreAPI api) => api.ModLoader.GetModSystem<Core>();
 
+    public override void StartPre(ICoreAPI api)
+    {
+        HarmonyInstance.PatchAll();
+    }
+
+    public override void Dispose()
+    {
+        HarmonyInstance.UnpatchAll(HarmonyID);
+    }
+
     public override void AssetsLoaded(ICoreAPI api)
     {
         ItemTransformations = api.Assets.Get(new AssetLocation("pei:config/groundstorage-transformations-for-items.json")).ToObject<Dictionary<string, ModelTransform>>();
@@ -31,16 +43,16 @@ public class Core : ModSystem
 
         DefaultGroundStorableItems = api.Assets.Get(new AssetLocation("pei:config/default-groundstorable-items.json")).ToObject<GroundStorables>();
         DefaultGroundStorableBlocks = api.Assets.Get(new AssetLocation("pei:config/default-groundstorable-blocks.json")).ToObject<GroundStorables>();
+
+        Config = ModConfig.ReadConfig<ConfigPlaceEveryItem>(api, "PlaceEveryItemConfig.json");
     }
 
     public override void AssetsFinalize(ICoreAPI api)
     {
         long elapsedMilliseconds = api.World.ElapsedMilliseconds;
 
-        Config = ModConfig.ReadConfig<ConfigPlaceEveryItem>(api, "PlaceEveryItemConfig.json");
-
-        Dictionary<string, GroundStorageProperties> items = Config.Items.GetPropsFromAll();
-        Dictionary<string, GroundStorageProperties> blocks = Config.Blocks.GetPropsFromAll();
+        Dictionary<string, GroundStoragePropertiesExtended> items = Config.Items.GetPropsFromAll();
+        Dictionary<string, GroundStoragePropertiesExtended> blocks = Config.Blocks.GetPropsFromAll();
 
         foreach (CollectibleObject obj in api.World.Collectibles)
         {
@@ -49,10 +61,10 @@ public class Core : ModSystem
             switch (obj.ItemClass)
             {
                 case EnumItemClass.Block when !Config.BlacklistBlocks.Any(code => obj.WildCardMatch(AssetLocation.Create(code))):
-                    foreach (KeyValuePair<string, GroundStorageProperties> props in blocks)
+                    foreach (KeyValuePair<string, GroundStoragePropertiesExtended> props in blocks)
                     {
                         if (!obj.WildCardMatch(AssetLocation.Create(props.Key))) continue;
-                        obj.AppendBehavior(props.Value);
+                        obj.AppendBehavior(props.Value.Clone());
                         obj.AddToCreativeInventory();
                         break;
                     }
@@ -65,10 +77,10 @@ public class Core : ModSystem
                     break;
                 case EnumItemClass.Item when !Config.BlacklistItems.Any(code => obj.WildCardMatch(AssetLocation.Create(code))):
 
-                    foreach (KeyValuePair<string, GroundStorageProperties> props in items)
+                    foreach (KeyValuePair<string, GroundStoragePropertiesExtended> props in items)
                     {
                         if (!obj.WildCardMatch(AssetLocation.Create(props.Key))) continue;
-                        obj.AppendBehavior(props.Value);
+                        obj.AppendBehavior(props.Value.Clone());
                         obj.AddToCreativeInventory();
                         break;
                     }

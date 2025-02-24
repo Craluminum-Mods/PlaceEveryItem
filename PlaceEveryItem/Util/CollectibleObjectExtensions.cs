@@ -11,6 +11,16 @@ public static class CollectibleObjectExtensions
 {
     public const string TransformAttributeName = "groundStorageTransform";
 
+    public static JsonObject GetProperties(this CollectibleBehavior behavior)
+    {
+        return new JsonObject(JToken.Parse(behavior.propertiesAtString));
+    }
+
+    public static bool CanFixPlacement(this CollectibleBehaviorGroundStorable behavior)
+    {
+        return behavior.GetProperties()?["PlaceEveryItemProperties"]?.IsTrue("FixPlacement") == true;
+    }
+
     public static void AppendBehavior(this CollectibleObject collobj, object objectProperties)
     {
         CollectibleBehaviorGroundStorable instance = new CollectibleBehaviorGroundStorable(collobj);
@@ -18,7 +28,15 @@ public static class CollectibleObjectExtensions
         collobj.CollectibleBehaviors = collobj.CollectibleBehaviors.Append(instance);
     }
 
-    public static bool IsGroundStorable(this CollectibleObject obj) => obj.HasBehavior<CollectibleBehaviorGroundStorable>();
+    public static bool IsGroundStorable(this CollectibleObject obj)
+    {
+        return obj.HasBehavior<CollectibleBehaviorGroundStorable>();
+    }
+
+    public static CollectibleBehaviorGroundStorable GetGroundStorableBehavior(this ItemSlot slot)
+    {
+        return slot?.Itemstack?.Collectible?.GetBehavior<CollectibleBehaviorGroundStorable>();
+    }
 
     public static void ApplyTransform(this CollectibleObject obj, ModelTransform transform)
     {
@@ -28,7 +46,12 @@ public static class CollectibleObjectExtensions
 
     public static void AddToCreativeInventory(this CollectibleObject obj)
     {
-        if (obj.CreativeInventoryStacks != null)
+        if (obj.CreativeInventoryTabs?.Length > 0 && !obj.CreativeInventoryTabs.Contains("groundstorable"))
+        {
+            obj.CreativeInventoryTabs = obj.CreativeInventoryTabs.Append("groundstorable");
+            return;
+        }
+        if (obj.CreativeInventoryStacks?.Length > 0)
         {
             for (int i = 0; i < obj.CreativeInventoryStacks.Length; i++)
             {
@@ -38,11 +61,6 @@ public static class CollectibleObjectExtensions
                 }
                 obj.CreativeInventoryStacks[i].Tabs = obj.CreativeInventoryStacks[i].Tabs.Append("groundstorable");
             }
-            return;
-        }
-        if (obj.CreativeInventoryTabs != null && !obj.CreativeInventoryTabs.Contains("groundstorable"))
-        {
-            obj.CreativeInventoryTabs = obj.CreativeInventoryTabs.Append("groundstorable");
         }
     }
 }

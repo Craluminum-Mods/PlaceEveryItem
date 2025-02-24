@@ -5,67 +5,45 @@ namespace PlaceEveryItem;
 
 public class GroundStorables
 {
-    public Dictionary<string, bool> SingleCenter { get; set; } = new();
-    public Dictionary<string, bool> Halves { get; set; } = new();
+    public Dictionary<string, DataGroundStorable> SingleCenter { get; set; } = new();
+    public Dictionary<string, DataGroundStorable> Halves { get; set; } = new();
     public Dictionary<string, DataWallHalves> WallHalves { get; set; } = new();
-    public Dictionary<string, bool> Quadrants { get; set; } = new();
+    public Dictionary<string, DataGroundStorable> Quadrants { get; set; } = new();
 
-    public Dictionary<string, GroundStorageProperties> GetPropsFromAll()
+    public Dictionary<string, GroundStoragePropertiesExtended> GetPropsFromAll()
     {
-        Dictionary<string, GroundStorageProperties> dict = new Dictionary<string, GroundStorageProperties>();
+        Dictionary<string, GroundStoragePropertiesExtended> dict = new Dictionary<string, GroundStoragePropertiesExtended>();
 
-        foreach (KeyValuePair<string, bool> elem in SingleCenter)
+        foreach (KeyValuePair<string, DataGroundStorable> elem in SingleCenter)
         {
-            if (!elem.Value) continue;
-
-            GroundStorageProperties props = new()
+            if (elem.Value.Enabled)
             {
-                Layout = EnumGroundStorageLayout.SingleCenter,
-                SelectionBox = new(0, 0, 0, 1, 0.125f, 1),
-                CollisionBox = new(0, 0, 0, 0, 0, 0)
-            };
-            dict.Add(elem.Key, props);
+                dict.Add(elem.Key, elem.Value.GetProps(EnumGroundStorageLayout.SingleCenter).Clone());
+            }
         }
 
-        foreach (KeyValuePair<string, bool> elem in Halves)
+        foreach (KeyValuePair<string, DataGroundStorable> elem in Halves)
         {
-            if (!elem.Value) continue;
-
-            GroundStorageProperties props = new()
+            if (elem.Value.Enabled)
             {
-                Layout = EnumGroundStorageLayout.Halves,
-                SelectionBox = new(0, 0, 0, 1, 0.125f, 1),
-                CollisionBox = new(0, 0, 0, 0, 0, 0)
-            };
-            dict.Add(elem.Key, props);
+                dict.Add(elem.Key, elem.Value.GetProps(EnumGroundStorageLayout.Halves).Clone());
+            }
         }
 
         foreach (KeyValuePair<string, DataWallHalves> elem in WallHalves)
         {
-            if (!elem.Value.Enabled) continue;
-
-            GroundStorageProperties props = new()
+            if (elem.Value.Enabled)
             {
-                Layout = EnumGroundStorageLayout.WallHalves,
-                SprintKey = elem.Value.SprintKey,
-                WallOffY = elem.Value.WallOffY,
-                SelectionBox = new(0, 0, 0, 1, 0.125f, 1),
-                CollisionBox = new(0, 0, 0, 0, 0, 0)
-            };
-            dict.Add(elem.Key, props);
+                dict.Add(elem.Key, elem.Value.GetProps(EnumGroundStorageLayout.WallHalves).Clone());
+            }
         }
 
-        foreach (KeyValuePair<string, bool> elem in Quadrants)
+        foreach (KeyValuePair<string, DataGroundStorable> elem in Quadrants)
         {
-            if (!elem.Value) continue;
-
-            GroundStorageProperties props = new()
+            if (elem.Value.Enabled)
             {
-                Layout = EnumGroundStorageLayout.Quadrants,
-                SelectionBox = new(0, 0, 0, 1, 0.125f, 1),
-                CollisionBox = new(0, 0, 0, 0, 0, 0)
-            };
-            dict.Add(elem.Key, props);
+                dict.Add(elem.Key, elem.Value.GetProps(EnumGroundStorageLayout.Quadrants).Clone());
+            }
         }
 
         return dict;
