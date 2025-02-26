@@ -66,7 +66,7 @@ public static class CollectibleObjectExtensions
 
     public static bool TryFixGroundStoragePlacement(this ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handHandling)
     {
-        if (blockSel == null || byEntity == null)
+        if (slot == null || blockSel == null || byEntity == null)
         {
             return true;
         }

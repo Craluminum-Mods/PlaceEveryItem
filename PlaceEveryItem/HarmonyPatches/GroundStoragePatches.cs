@@ -122,11 +122,11 @@ public static class GroundStoragePatches
     [HarmonyPatch(typeof(Block), nameof(Block.CanPlaceBlock))]
     public static class FixBlockPlacement
     {
-        public static bool Prefix(ref bool __result, IWorldAccessor world, IPlayer byPlayer, BlockSelection blockSel, ref string failureCode)
+        public static bool Prefix(ref bool __result, IPlayer byPlayer, BlockSelection blockSel)
         {
-            ItemSlot activeSlot = byPlayer.InventoryManager?.ActiveHotbarSlot;
+            ItemSlot activeSlot = byPlayer?.InventoryManager?.ActiveHotbarSlot;
             EnumHandHandling handHandling = EnumHandHandling.NotHandled;
-            bool result = activeSlot.TryFixGroundStoragePlacement(byPlayer.Entity, blockSel, byPlayer.CurrentEntitySelection, true, ref handHandling);
+            bool result = activeSlot.TryFixGroundStoragePlacement(byPlayer?.Entity, blockSel, byPlayer?.CurrentEntitySelection, true, ref handHandling);
             __result = result;
             return result;
         }
