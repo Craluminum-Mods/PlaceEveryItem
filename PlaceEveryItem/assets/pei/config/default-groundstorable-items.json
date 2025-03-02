@@ -59,6 +59,7 @@
         "omokpiece-*": { "Enabled": true },
         "butterfly-dead-*": { "Enabled": true },
         "crushed-*": { "Enabled": true },
+        "antler-*": { "Enabled": true },
 
         "dough-*": { "Enabled": true },
         "insect-*": { "Enabled": true },

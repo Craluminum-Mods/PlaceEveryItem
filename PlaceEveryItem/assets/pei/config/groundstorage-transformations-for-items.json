@@ -71,5 +71,32 @@
     "sling": { "translation": { "x": 0.1, "y": 0.1, "z": 0.05 }, "rotation": { "x": 0, "y": -35, "z": 0 }, "origin": { "x": 0.5, "y": 0, "z": 0.5 }, "scale": 2 },
     "mortar": { "origin": { "x": 0.5, "y": 0, "z": 0.5 }, "scale": 0.65 },
     "scrapweaponkit": { "rotation": { "x": 0, "y": 35, "z": 0 }, "origin": { "x": 0.5, "y": 0, "z": 0.5 }, "scale": 0.65 },
-    "oakbark": { "translation": { "x": -0.2, "y": 0, "z": 0.2 }, "rotation": { "x": -90, "y": 0, "z": -45 }, "origin": { "x": 0.5, "y": 0, "z": 0.5 }, "scale": 0.65 }
+    "oakbark": { "translation": { "x": -0.2, "y": 0, "z": 0.2 }, "rotation": { "x": -90, "y": 0, "z": -45 }, "origin": { "x": 0.5, "y": 0, "z": 0.5 }, "scale": 0.65 },
+
+    "antler-angora-*": { "translation": { "x": 0.6, "y": -0.46, "z": 0.15 }, "rotation": { "x": 0, "y": 35, "z": -38 } },
+    "antler-caribou-*": { "translation": { "x": 0.4, "y": -0.5, "z": 0.05 }, "rotation": { "x": 0, "y": 45, "z": -35 }, "scale": 0.75 },
+    "antler-chital-*": { "translation": { "x": 0.4, "y": -0.68, "z": 0.15 }, "rotation": { "x": 0, "y": 35, "z": -59 }, "scale": 0.8 },
+    "antler-elk-*": { "translation": { "x": -0.05, "y": -0.25, "z": 0.2 }, "rotation": { "x": 0, "y": -35, "z": 90 }, "scale": 0.5 },
+    "antler-fallow-*": { "translation": { "x": 0.45, "y": -0.68, "z": 0.15 }, "rotation": { "x": 0, "y": 35, "z": -55 }, "scale": 0.9 },
+    "antler-guemal-*": { "translation": { "x": 0.375, "y": -0.9, "z": 0.275 }, "rotation": { "x": 0, "y": 35, "z": -81 } },
+    "antler-ibexalp-*": { "translation": { "x": -0.4, "y": -0.02, "z": 0.2 }, "rotation": { "x": 0, "y": -35, "z": 90 } },
+    "antler-ibexnub-*": { "translation": { "x": -0.4, "y": -0.05, "z": 0.25 }, "rotation": { "x": 0, "y": -35, "z": 90 } },
+    "antler-markhor-*": { "translation": { "x": 0.05, "y": -0.08, "z": 0.55 }, "rotation": { "x": 0, "y": -35, "z": 15 } },
+    "antler-marsh-*": { "translation": { "x": 0.45, "y": -0.7, "z": 0.15 }, "rotation": { "x": 0, "y": 35, "z": -50 } },
+    "antler-moose-*": { "translation": { "x": 0.05, "y": -0.52, "z": 0.1 }, "rotation": { "x": 0, "y": 35, "z": -41 }, "scale": 0.5 },
+    "antler-mountain-*": { "translation": { "x": 0.4, "y": -1.2, "z": 1.1 }, "rotation": { "x": 0, "y": 45, "z": -85 }, "origin": { "x": 0.5, "y": -0, "z": 0.5 }, "scale": 2.5 },
+    "antler-muskox-*": { "translation": { "x": 0.175, "y": -0.4, "z": 0.4 }, "rotation": { "x": 0, "y": 45, "z": -80 }, "origin": { "x": 0.5, "y": 0, "z": 0.5 } },
+    "antler-nubian-*": { "translation": { "x": -0.5, "y": 0.075, "z": 0.3 }, "rotation": { "x": 0, "y": -35, "z": 90 }, "scale": 1.25 },
+    "antler-pampas-*": { "translation": { "x": 0.55, "y": -0.72, "z": 0.15 }, "rotation": { "x": 0, "y": 35, "z": -60 } },
+    "antler-pudu-*": { "translation": { "x": 1.6, "y": 0.4, "z": 0.2 }, "rotation": { "x": 0, "y": 35, "z": 0 }, "scale": 2.5 },
+    "antler-redbrocket-*": { "translation": { "x": 0, "y": -1.9, "z": 1.6 }, "rotation": { "x": 0, "y": -35, "z": -90 }, "scale": 3 },
+    "antler-sirohi-*": { "translation": { "x": -0.5, "y": 0.075, "z": 0.3 }, "rotation": { "x": 0, "y": -35, "z": 90 }, "scale": 1.25 },
+    "antler-takingold-*": { "translation": { "x": 0.125, "y": -0.3, "z": 0.6 }, "rotation": { "x": 0, "y": -35, "z": 0 } },
+    "antler-taruca-*": { "translation": { "x": 0.4, "y": -0.9, "z": 0.25 }, "rotation": { "x": 0, "y": 35, "z": -81 } },
+    "antler-turdag-*": { "translation": { "x": -0.4, "y": -0.025, "z": 0.25 }, "rotation": { "x": 0, "y": -35, "z": 90 } },
+    "antler-valais-*": { "translation": { "x": 0.05, "y": -0.07, "z": 0.55 }, "rotation": { "x": -2, "y": -35, "z": 15 } },
+    "antler-water-01": { "translation": { "x": 2.6, "y": -1.56, "z": -0.5 }, "rotation": { "x": 0, "y": 45, "z": -60 }, "scale": 3.5 },
+    "antler-whitetail-*": { "translation": { "x": 0.4, "y": -0.54, "z": 0.05 }, "rotation": { "x": 0, "y": 35, "z": -45 }, "scale": 0.75 },
+
+    "antler-*": { "translation": { "x": 0, "y": 0.25, "z": 0 }, "rotation": { "x": 0, "y": 0, "z": 0 }, "origin": { "x": 0.5, "y": 0.5, "z": 0.5 }, "scale": 3 } // fallback
 }
